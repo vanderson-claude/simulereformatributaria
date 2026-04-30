@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simule Reforma Tributária — Descubra o Preço Certo para Sua Empresa</title>
+  <meta name="description" content="Calcule o preço correto do seu produto ou serviço em todos os 4 regimes tributários ao longo dos 8 anos de transição da Reforma Tributária (2026–2033). Experimente grátis." />
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MX6C5XMSKV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MX6C5XMSKV');
+  </script>
+
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://simulereformatributaria.com.br/" />
+
+  <!-- SEO: Open Graph (Facebook, WhatsApp, LinkedIn) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://simulereformatributaria.com.br/" />
+  <meta property="og:title" content="Simule Reforma Tributária — Descubra o Preço Certo para Sua Empresa" />
+  <meta property="og:description" content="Calcule o preço correto em todos os 4 regimes tributários ao longo dos 8 anos de transição da Reforma Tributária (2026–2033). Experimente grátis." />
+  <meta property="og:image" content="https://simulereformatributaria.com.br/og-image.png" />
+  <meta property="og:site_name" content="Simule Reforma Tributária" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- SEO: Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Simule Reforma Tributária — Descubra o Preço Certo para Sua Empresa" />
+  <meta name="twitter:description" content="Compare 4 regimes tributários de 2026 a 2033 e descubra o impacto da Reforma no seu preço de venda. Experimente grátis." />
+  <meta name="twitter:image" content="https://simulereformatributaria.com.br/og-image.png" />
+
+  <!-- SEO: Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://simulereformatributaria.com.br/#webpage",
+        "url": "https://simulereformatributaria.com.br/",
+        "name": "Simule Reforma Tributária — Descubra o Preço Certo para Sua Empresa",
+        "description": "Simule o impacto da Reforma Tributária no preço de venda da sua empresa. Compare Simples Nacional, Lucro Presumido e Lucro Real de 2026 a 2033.",
+        "inLanguage": "pt-BR",
+        "isPartOf": { "@id": "https://simulereformatributaria.com.br/#website" },
+        "about": { "@id": "https://simulereformatributaria.com.br/#app" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://simulereformatributaria.com.br/#website",
+        "url": "https://simulereformatributaria.com.br/",
+        "name": "Simule Reforma Tributária",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://simulereformatributaria.com.br/#organization" }
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://simulereformatributaria.com.br/#app",
+        "name": "Simulador de Precificação — Reforma Tributária",
+        "url": "https://simulereformatributaria.com.br/simulador.html",
+        "description": "Simule o impacto da Reforma Tributária no preço de venda da sua empresa. Compare Simples Nacional, Lucro Presumido e Lucro Real de 2026 a 2033.",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "inLanguage": "pt-BR",
+        "provider": { "@id": "https://simulereformatributaria.com.br/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://simulereformatributaria.com.br/#organization",
+        "name": "Meu Setor Contábil",
+        "url": "https://simulereformatributaria.com.br/",
+        "email": "vanderson.lima@meusetorcontabil.com.br",
+        "description": "Escritório de contabilidade especializado em Reforma Tributária, planejamento tributário e consultoria fiscal."
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://simulereformatributaria.com.br/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "O que é a Reforma Tributária e quando começa a valer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Reforma Tributária brasileira (LC 214/2025) substitui PIS, Cofins, ICMS e ISS pelos novos tributos CBS e IBS. A transição começa em 2026 com alíquotas reduzidas e vai até 2033, quando o sistema antigo é totalmente extinto."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como a Reforma Tributária vai impactar o preço dos meus produtos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O impacto depende do seu regime tributário (Simples Nacional, Lucro Presumido ou Lucro Real) e do ano de transição. O simulador calcula o preço de venda ideal para manter sua margem em cada ano de 2026 a 2033, comparando os 4 regimes simultaneamente."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qual regime tributário é mais vantajoso com a Reforma Tributária?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende do seu faturamento, margem e setor. O simulador compara Simples Nacional, Simples Híbrido (2027+), Lucro Presumido e Lucro Real, mostrando qual resulta no menor preço de venda para a mesma margem desejada."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O que são CBS e IBS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A CBS (Contribuição sobre Bens e Serviços) substitui PIS e Cofins, sob competência federal. O IBS (Imposto sobre Bens e Serviços) substitui ICMS e ISS, sob competência estadual e municipal. Juntos formam o IVA Dual — o novo sistema tributário sobre consumo do Brasil."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O simulador funciona para empresas do Simples Nacional?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. O simulador calcula o Simples Nacional tradicional e o Simples Híbrido (a partir de 2027, com CBS e IBS fora do DAS e direito a créditos), mostrando a diferença de preço e margem entre os dois cenários."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O simulador é gratuito?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Há uma versão de demonstração gratuita disponível. Para acesso completo com todos os regimes, anos de transição e funcionalidades avançadas, estão disponíveis planos pagos com diferentes níveis de acesso."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    body { background: #020617; color: #e2e8f0; }
+
+    /* Gradientes */
+    .hero-glow {
+      background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(124,58,237,0.35) 0%, transparent 70%);
+    }
+    .section-glow {
+      background: radial-gradient(ellipse 60% 40% at 50% 100%, rgba(124,58,237,0.15) 0%, transparent 70%);
+    }
+
+    /* Botões */
+    .btn-cta {
+      background: linear-gradient(135deg, #7c3aed, #6d28d9);
+      color: #fff;
+      font-weight: 700;
+      border-radius: 0.75rem;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: inline-block;
+      text-decoration: none;
+      box-shadow: 0 0 30px rgba(124,58,237,0.4);
+    }
+    .btn-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 40px rgba(124,58,237,0.6);
+    }
+    .btn-secondary {
+      background: transparent;
+      color: #c4b5fd;
+      font-weight: 600;
+      border-radius: 0.75rem;
+      padding: 0.875rem 1.75rem;
+      font-size: 1rem;
+      border: 1px solid #4c1d95;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .btn-secondary:hover {
+      background: rgba(124,58,237,0.1);
+      border-color: #7c3aed;
+    }
+
+    /* Cards */
+    .card {
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 1rem;
+      padding: 1.75rem;
+    }
+    .card-destaque {
+      background: linear-gradient(135deg, #1a0f3a, #0f172a);
+      border: 1px solid #7c3aed;
+      border-radius: 1rem;
+      padding: 1.75rem;
+      position: relative;
+    }
+
+    /* Animações */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    .float { animation: float 3s ease-in-out infinite; }
+
+    @keyframes pulse-slow {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+    .pulse-slow { animation: pulse-slow 2s ease-in-out infinite; }
+
+    /* Highlight */
+    .highlight { color: #a78bfa; }
+    .highlight-green { color: #34d399; }
+    .highlight-amber { color: #fbbf24; }
+
+    /* Accordion FAQ */
+    .faq-item { border-bottom: 1px solid #1e293b; }
+    .faq-btn { width: 100%; text-align: left; padding: 1.25rem 0; background: none; border: none; color: #e2e8f0; font-size: 1rem; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .faq-content { display: none; padding-bottom: 1.25rem; color: #94a3b8; line-height: 1.7; }
+    .faq-content.open { display: block; }
+    .faq-icon { transition: transform 0.2s; font-size: 1.25rem; color: #7c3aed; flex-shrink: 0; }
+    .faq-icon.open { transform: rotate(45deg); }
+
+    /* Badge */
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    /* Sticky header */
+    .header-sticky {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(2, 6, 23, 0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(30, 41, 59, 0.8);
+    }
+
+    /* Planos */
+    .plan-card {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 1rem;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .plan-card:hover { border-color: #7c3aed; transform: translateY(-4px); }
+    .plan-card.featured {
+      background: linear-gradient(135deg, #1a0f3a, #0f172a);
+      border-color: #7c3aed;
+      transform: scale(1.03);
+    }
+    .plan-card.featured:hover { transform: scale(1.03) translateY(-4px); }
+
+    /* Step */
+    .step-num {
+      width: 3rem; height: 3rem;
+      background: linear-gradient(135deg, #7c3aed, #4c1d95);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 1.1rem; color: #fff;
+      flex-shrink: 0;
+    }
+
+    /* Separator */
+    .separator {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #334155, transparent);
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════
+     HEADER
+══════════════════════════════════════════════════════ -->
+<header class="header-sticky">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <div class="w-8 h-8 rounded-lg bg-violet-600 flex items-center justify-center text-white font-bold text-sm">S</div>
+      <span class="font-bold text-white text-lg">Simule RT</span>
+    </div>
+    <nav class="hidden md:flex items-center gap-8 text-sm text-slate-400">
+      <a href="#como-funciona" class="hover:text-white transition">Como funciona</a>
+      <a href="#planos" class="hover:text-white transition">Planos</a>
+      <a href="#faq" class="hover:text-white transition">FAQ</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="auth.html" class="text-sm text-slate-400 hover:text-white transition hidden sm:block">Entrar</a>
+      <a href="auth.html" class="btn-cta" style="padding: 0.625rem 1.25rem; font-size: 0.9rem;">Testar grátis →</a>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════════════ -->
+<section class="hero-glow relative overflow-hidden">
+  <div class="max-w-6xl mx-auto px-6 py-20 md:py-28 text-center">
+
+    <!-- Badge urgência -->
+    <div class="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full bg-amber-900/30 border border-amber-700/40 text-amber-300 text-sm font-semibold pulse-slow">
+      <span>⚡</span>
+      <span>A Reforma Tributária já está em vigor — 2027 muda tudo</span>
+    </div>
+
+    <!-- Headline -->
+    <h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-6" style="letter-spacing:-0.02em">
+      Sua empresa vai cobrar<br>
+      o <span class="highlight">preço certo</span> com a<br>
+      Reforma Tributária?
+    </h1>
+
+    <!-- Subheadline -->
+    <p class="text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto mb-4 leading-relaxed">
+      Descubra em minutos qual regime tributário gera <span class="highlight-green font-semibold">menos imposto</span> e o <span class="highlight font-semibold">preço ideal</span> para cada produto ou serviço — nos 4 regimes, nos 8 anos de transição.
+    </p>
+
+    <p class="text-slate-500 mb-10 text-sm">Sem planilha. Sem contador. Resultado imediato.</p>
+
+    <!-- CTAs -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+      <a href="auth.html" class="btn-cta text-lg px-8 py-4">
+        🎯 Simular agora — é grátis
+      </a>
+      <a href="#como-funciona" class="btn-secondary">
+        Ver como funciona ↓
+      </a>
+    </div>
+
+    <!-- Social proof mini -->
+    <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-slate-500">
+      <span>✅ 3 simulações gratuitas</span>
+      <span>✅ Sem cartão de crédito</span>
+      <span>✅ Resultado em menos de 5 minutos</span>
+    </div>
+
+  </div>
+
+  <!-- Preview do simulador (mockup visual) -->
+  <div class="max-w-5xl mx-auto px-6 pb-16">
+    <div class="float rounded-2xl border border-violet-800/40 overflow-hidden shadow-2xl shadow-violet-900/30" style="background:#0f172a;">
+      <!-- Barra de título do navegador simulada -->
+      <div class="flex items-center gap-2 px-4 py-3 border-b border-slate-800" style="background:#1e293b;">
+        <div class="w-3 h-3 rounded-full bg-red-500/60"></div>
+        <div class="w-3 h-3 rounded-full bg-yellow-500/60"></div>
+        <div class="w-3 h-3 rounded-full bg-green-500/60"></div>
+        <div class="flex-1 ml-4 bg-slate-700 rounded text-xs text-slate-400 px-3 py-1 text-center max-w-xs mx-auto">
+          simulereformatributaria.com.br
+        </div>
+      </div>
+      <!-- Conteúdo simulado da tela de resultados -->
+      <div class="p-6">
+        <div class="text-xs text-slate-500 mb-4 uppercase tracking-widest">Comparativo dos 4 regimes — 2026</div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
+          <div class="rounded-xl p-4 border-2 border-violet-500" style="background:#1a0f3a;">
+            <div class="text-xs text-violet-300 font-semibold mb-1">★ MENOR PREÇO</div>
+            <div class="text-xs text-slate-400 mb-2">Simples Normal</div>
+            <div class="text-xl font-black text-white">R$ 520<span class="text-sm font-normal">,83</span></div>
+            <div class="text-xs text-slate-500">Imposto: R$ 20,83</div>
+          </div>
+          <div class="rounded-xl p-4 border border-slate-700" style="background:#0f172a;">
+            <div class="text-xs text-slate-500 mb-3">Simples Híbrido</div>
+            <div class="text-xl font-black text-white">R$ 520<span class="text-sm font-normal">,83</span></div>
+            <div class="text-xs text-slate-500">Imposto: R$ 20,83</div>
+          </div>
+          <div class="rounded-xl p-4 border border-slate-700" style="background:#0f172a;">
+            <div class="text-xs text-slate-500 mb-3">Lucro Presumido</div>
+            <div class="text-xl font-black text-white">R$ 567<span class="text-sm font-normal">,00</span></div>
+            <div class="text-xs text-slate-500">Imposto: R$ 67,00</div>
+          </div>
+          <div class="rounded-xl p-4 border border-slate-700" style="background:#0f172a;">
+            <div class="text-xs text-slate-500 mb-3">Lucro Real</div>
+            <div class="text-xl font-black text-white">R$ 568<span class="text-sm font-normal">,76</span></div>
+            <div class="text-xs text-slate-500">Imposto: R$ 68,76</div>
+          </div>
+        </div>
+        <div class="text-xs text-slate-600 text-center">Projeção 2026 → 2033 · Simples Normal · Minas Gerais · Serviços</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="separator w-full max-w-4xl"></div>
+
+<!-- ══════════════════════════════════════════════════════
+     NÚMEROS / PROVA SOCIAL
+══════════════════════════════════════════════════════ -->
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <div class="text-4xl font-black text-violet-400 mb-1">4</div>
+        <div class="text-slate-400 text-sm">Regimes tributários<br>comparados</div>
+      </div>
+      <div>
+        <div class="text-4xl font-black text-violet-400 mb-1">8</div>
+        <div class="text-slate-400 text-sm">Anos de transição<br>projetados</div>
+      </div>
+      <div>
+        <div class="text-4xl font-black text-violet-400 mb-1">&lt;5'</div>
+        <div class="text-slate-400 text-sm">Minutos para ter<br>seu resultado</div>
+      </div>
+      <div>
+        <div class="text-4xl font-black text-amber-400 mb-1">2027</div>
+        <div class="text-slate-400 text-sm">Ano em que a tributação<br>muda de vez</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="separator w-full max-w-4xl"></div>
+
+<!-- ══════════════════════════════════════════════════════
+     PROBLEMA
+══════════════════════════════════════════════════════ -->
+<section class="py-20 section-glow">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <span class="badge bg-red-900/30 text-red-300 border border-red-800/40 mb-6">O Problema</span>
+    <h2 class="text-3xl md:text-5xl font-black text-white mb-8 leading-tight">
+      A Reforma Tributária vai <span style="color:#f87171">mudar tudo</span>.<br>E a maioria das empresas<br>não sabe o impacto no preço.
+    </h2>
+    <p class="text-slate-400 text-lg leading-relaxed mb-12 max-w-2xl mx-auto">
+      A partir de 2027, CBS e IBS substituem gradualmente PIS, Cofins, ICMS e ISS. Dependendo do seu regime, seu preço atual pode estar <strong class="text-white">errado em até 15%</strong> — para mais ou para menos.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-6 text-left">
+      <div class="card">
+        <div class="text-3xl mb-3">😰</div>
+        <h3 class="font-bold text-white mb-2">Incerteza no preço</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Sem saber o impacto tributário real, muitos empresários estão cobrando menos do que deveriam — ou mais do que o mercado aceita.</p>
+      </div>
+      <div class="card">
+        <div class="text-3xl mb-3">📊</div>
+        <h3 class="font-bold text-white mb-2">Planilhas complexas</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">As planilhas de Reforma Tributária são difíceis de usar, cheias de variáveis e não consideram os 8 anos de transição de forma automática.</p>
+      </div>
+      <div class="card">
+        <div class="text-3xl mb-3">⏰</div>
+        <h3 class="font-bold text-white mb-2">O relógio está correndo</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">2027 está chegando rápido. Quem não ajustar o preço agora vai perder margem — ou clientes — para concorrentes que já se prepararam.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SOLUÇÃO
+══════════════════════════════════════════════════════ -->
+<section class="py-20" id="como-funciona">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <span class="badge bg-violet-900/40 text-violet-300 border border-violet-800/40 mb-6">A Solução</span>
+    <h2 class="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">
+      O simulador que calcula<br>o <span class="highlight">preço certo</span> automaticamente
+    </h2>
+    <p class="text-slate-400 text-lg mb-16 max-w-2xl mx-auto">
+      Desenvolvido com base na Matriz de Regras da Reforma Tributária. Responda 10 perguntas e veja o preço ideal no seu regime, no regime concorrente e em todos os 8 anos de transição.
+    </p>
+
+    <!-- Steps -->
+    <div class="space-y-8 text-left max-w-2xl mx-auto">
+      <div class="flex items-start gap-5">
+        <div class="step-num">1</div>
+        <div>
+          <h3 class="font-bold text-white text-lg mb-1">Informe os dados da sua empresa</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Estado, regime tributário atual, tipo de produto/serviço, faixa de faturamento e o quanto você quer receber líquido por venda.</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-5">
+        <div class="step-num">2</div>
+        <div>
+          <h3 class="font-bold text-white text-lg mb-1">O simulador calcula tudo</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Em segundos, o motor de precificação aplica as regras da Reforma para os 4 regimes tributários em cada um dos 8 anos de transição (2026 a 2033).</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-5">
+        <div class="step-num">3</div>
+        <div>
+          <h3 class="font-bold text-white text-lg mb-1">Veja o resultado e tome decisões</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Compare os 4 regimes lado a lado, veja qual gera menos carga tributária e descubra exatamente qual preço cobrar — agora e nos próximos anos.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12">
+      <a href="auth.html" class="btn-cta">Começar simulação grátis →</a>
+    </div>
+  </div>
+</section>
+
+<div class="separator w-full max-w-4xl"></div>
+
+<!-- ══════════════════════════════════════════════════════
+     BENEFÍCIOS
+══════════════════════════════════════════════════════ -->
+<section class="py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <span class="badge bg-emerald-900/30 text-emerald-300 border border-emerald-800/40 mb-6">Recursos</span>
+      <h2 class="text-3xl md:text-4xl font-black text-white">Tudo que você precisa para<br>precificar com confiança</h2>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="card">
+        <div class="text-2xl mb-3">⚖️</div>
+        <h3 class="font-bold text-white mb-2">4 Regimes Comparados</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Simples Normal, Simples Híbrido (2027+), Lucro Presumido e Lucro Real — todos calculados simultaneamente.</p>
+      </div>
+      <div class="card">
+        <div class="text-2xl mb-3">📅</div>
+        <h3 class="font-bold text-white mb-2">Projeção 2026 → 2033</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Veja como o preço e a carga tributária evoluem ao longo dos 8 anos de transição — ano a ano.</p>
+      </div>
+      <div class="card">
+        <div class="text-2xl mb-3">🎯</div>
+        <h3 class="font-bold text-white mb-2">Preço Líquido Desejado</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Informe quanto quer receber de verdade e o simulador calcula o preço de venda necessário para atingir essa meta.</p>
+      </div>
+      <div class="card">
+        <div class="text-2xl mb-3">🗺️</div>
+        <h3 class="font-bold text-white mb-2">Todas as UFs do Brasil</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">ICMS, DIFAL e alíquotas interestaduais já calibradas para cada estado, incluindo operações interestaduais.</p>
+      </div>
+      <div class="card">
+        <div class="text-2xl mb-3">🏭</div>
+        <h3 class="font-bold text-white mb-2">Comércio e Serviços</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Lógica específica para produtos (ICMS/IPI) e serviços (ISS/Fator R), com créditos corretos para cada caso.</p>
+      </div>
+      <div class="card">
+        <div class="text-2xl mb-3">📄</div>
+        <h3 class="font-bold text-white mb-2">Exportação em PDF</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Gere uma memória de cálculo completa em PDF para apresentar ao contador, sócio ou cliente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="separator w-full max-w-4xl"></div>
+
+<!-- ══════════════════════════════════════════════════════
+     PARA QUEM É
+══════════════════════════════════════════════════════ -->
+<section class="py-20">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl md:text-4xl font-black text-white">Para quem é o Simule RT?</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="card flex gap-4 items-start">
+        <span class="text-2xl">🏢</span>
+        <div>
+          <h3 class="font-bold text-white mb-1">Empresários e empreendedores</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Que precisam saber se o preço atual vai continuar sustentável com a mudança tributária e querem estar à frente da concorrência.</p>
+        </div>
+      </div>
+      <div class="card flex gap-4 items-start">
+        <span class="text-2xl">📋</span>
+        <div>
+          <h3 class="font-bold text-white mb-1">Contadores e consultores</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Que assessoram clientes e precisam de uma ferramenta rápida para demonstrar o impacto da Reforma no preço de cada negócio.</p>
+        </div>
+      </div>
+      <div class="card flex gap-4 items-start">
+        <span class="text-2xl">🛒</span>
+        <div>
+          <h3 class="font-bold text-white mb-1">Comércio e indústria</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Que trabalham com produtos físicos e precisam entender como ICMS, CBS e IBS vão afetar a formação de preço nos próximos anos.</p>
+        </div>
+      </div>
+      <div class="card flex gap-4 items-start">
+        <span class="text-2xl">🎓</span>
+        <div>
+          <h3 class="font-bold text-white mb-1">Prestadores de serviços</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Que querem entender como o Fator R, o ISS e o novo IBS vão interagir na sua nota fiscal — e quanto precisam cobrar para manter a margem.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SEÇÃO SIMPLES NACIONAL
+══════════════════════════════════════════════════════ -->
+<section class="py-20" style="background: linear-gradient(180deg, #020617 0%, #0c0a1a 50%, #020617 100%);">
+  <div class="max-w-4xl mx-auto px-6">
+
+    <div class="text-center mb-12">
+      <span class="badge bg-amber-900/30 text-amber-300 border border-amber-700/40 mb-6">⚠️ Atenção — Simples Nacional</span>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-4 leading-tight">
+        Uma decisão que vai definir<br>o preço da sua empresa por anos
+      </h2>
+      <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+        Se sua empresa é optante pelo Simples Nacional, você tem um prazo crítico: <strong class="text-amber-300">setembro de 2026</strong>.
+      </p>
+    </div>
+
+    <!-- Explicação da decisão -->
+    <div class="rounded-2xl border border-amber-700/30 overflow-hidden mb-10" style="background:rgba(120,53,15,0.15);">
+      <div class="px-6 py-4 border-b border-amber-700/20" style="background:rgba(120,53,15,0.2);">
+        <div class="font-bold text-amber-300 text-sm uppercase tracking-widest">O que muda em setembro de 2026</div>
+      </div>
+      <div class="px-6 py-6">
+        <p class="text-slate-300 leading-relaxed mb-4">
+          A partir de 2027, o Simples Nacional passa a ter <strong class="text-white">dois caminhos</strong>. Cada empresa deverá escolher um — e essa escolha impacta diretamente no preço de venda, na carga tributária e na competitividade com clientes que tomam crédito de CBS e IBS.
+        </p>
+        <p class="text-slate-500 text-sm">A opção precisa ser feita em setembro de 2026 para valer a partir de janeiro de 2027.</p>
+      </div>
+    </div>
+
+    <!-- Comparativo dos dois caminhos -->
+    <div class="grid md:grid-cols-2 gap-6 mb-10">
+
+      <div class="card">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center font-black text-lg" style="background:#1e293b; color:#94a3b8;">A</div>
+          <h3 class="font-bold text-white text-lg">Simples Normal</h3>
+        </div>
+        <p class="text-slate-400 text-sm leading-relaxed mb-4">Continua como hoje: paga tudo pelo DAS, sem destacar CBS/IBS na nota. Mais simples de operar, mas seus clientes <strong class="text-slate-300">não aproveitam crédito</strong> de CBS/IBS sobre as compras feitas com você.</p>
+        <div class="text-xs text-slate-500 space-y-1">
+          <div>✓ Operação mais simples</div>
+          <div>✓ Sem obrigações acessórias adicionais</div>
+          <div>✗ Cliente não toma crédito de CBS/IBS</div>
+          <div>✗ Pode perder competitividade no B2B</div>
+        </div>
+      </div>
+
+      <div class="card" style="border-color:#7c3aed; background: linear-gradient(135deg, #1a0f3a, #0f172a);">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center font-black text-lg" style="background:#4c1d95; color:#c4b5fd;">B</div>
+          <h3 class="font-bold text-white text-lg">Simples Híbrido</h3>
+        </div>
+        <p class="text-slate-400 text-sm leading-relaxed mb-4">Paga CBS e IBS por fora do DAS, destacados na nota fiscal. Seus clientes <strong class="text-slate-300">podem tomar crédito</strong> dessas contribuições, tornando seu produto mais atrativo para o mercado B2B.</p>
+        <div class="text-xs text-slate-500 space-y-1">
+          <div>✓ Cliente toma crédito de CBS/IBS</div>
+          <div>✓ Mais competitivo no mercado B2B</div>
+          <div>✗ Obrigações acessórias adicionais</div>
+          <div>✗ Preço de venda pode mudar</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA da seção -->
+    <div class="text-center rounded-2xl border border-slate-700 px-8 py-8" style="background:#0f172a;">
+      <div class="text-2xl mb-3">🎯</div>
+      <h3 class="font-bold text-white text-xl mb-3">Qual regime gera menos imposto para você?</h3>
+      <p class="text-slate-400 text-sm mb-6 max-w-lg mx-auto">Depende do seu produto, estado, faturamento e perfil de clientes. O simulador compara os dois lado a lado — e você decide com dados, não no escuro.</p>
+      <a href="auth.html" class="btn-cta" style="font-size:1rem; padding:0.875rem 2rem;">
+        Simular Simples Normal vs. Híbrido →
+      </a>
+      <p class="text-slate-600 text-xs mt-4">3 simulações gratuitas · Sem cartão de crédito</p>
+    </div>
+
+  </div>
+</section>
+
+<div class="separator w-full max-w-4xl"></div>
+
+<!-- ══════════════════════════════════════════════════════
+     PLANOS
+══════════════════════════════════════════════════════ -->
+<section class="py-20 section-glow" id="planos">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <span class="badge bg-violet-900/40 text-violet-300 border border-violet-800/40 mb-6">Planos</span>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-4">Comece grátis. Assine quando quiser.</h2>
+      <p class="text-slate-400 max-w-xl mx-auto">3 simulações gratuitas sem cartão de crédito. Se fizer sentido para o seu negócio, escolha o plano ideal.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 items-start">
+
+      <!-- Mensal -->
+      <div class="plan-card">
+        <div class="text-slate-400 text-sm font-semibold mb-1">Mensal</div>
+        <div class="text-3xl font-black text-white mb-1">R$ 499<span class="text-lg font-normal text-slate-400">,90</span></div>
+        <div class="text-slate-500 text-sm mb-6">/mês · acesso ilimitado</div>
+        <ul class="space-y-2 text-sm text-slate-400 mb-8 flex-1">
+          <li class="flex items-center gap-2"><span class="text-violet-400">✓</span> Simulações ilimitadas</li>
+          <li class="flex items-center gap-2"><span class="text-violet-400">✓</span> Todos os 4 regimes</li>
+          <li class="flex items-center gap-2"><span class="text-violet-400">✓</span> Projeção 2026–2033</li>
+          <li class="flex items-center gap-2"><span class="text-violet-400">✓</span> Exportação PDF</li>
+          <li class="flex items-center gap-2"><span class="text-violet-400">✓</span> Cancele quando quiser</li>
+        </ul>
+        <a href="auth.html" class="btn-cta text-center block" style="padding:0.75rem; font-size:0.95rem;">Assinar mensal</a>
+      </div>
+
+      <!-- Trimestral -->
+      <div class="plan-card">
+        <div class="text-slate-400 text-sm font-semibold mb-1">Trimestral</div>
+        <div class="text-3xl font-black text-white mb-1">R$ 1.349<span class="text-lg font-normal text-slate-400">,00</span></div>
+        <div class="text-slate-500 text-sm mb-1">/trimestre · R$ 449,67/mês</div>
+        <div class="text-emerald-400 text-xs font-bold mb-6">Economize 10%</div>
+        <ul class="space-y-2 text-sm text-slate-400 mb-8 flex-1">
+          <li class="flex items-center gap-2"><span class="text-violet-400">✓</span> Simulações ilimitadas</li>
+          <li class="flex items-center gap-2"><span class="text-violet-400">✓</span> Todos os 4 regimes</li>
+          <li class="flex items-center gap-2"><span class="text-violet-400">✓</span> Projeção 2026–2033</li>
+          <li class="flex items-center gap-2"><span class="text-violet-400">✓</span> Exportação PDF</li>
+          <li class="flex items-center gap-2"><span class="text-violet-400">✓</span> Cancele quando quiser</li>
+        </ul>
+        <a href="auth.html" class="btn-cta text-center block" style="padding:0.75rem; font-size:0.95rem;">Assinar trimestral</a>
+      </div>
+
+      <!-- Semestral -->
+      <div class="plan-card">
+        <div class="text-slate-400 text-sm font-semibold mb-1">Semestral</div>
+        <div class="text-3xl font-black text-white mb-1">R$ 2.249<span class="text-lg font-normal text-slate-400">,00</span></div>
+        <div class="text-slate-500 text-sm mb-1">/semestre · R$ 374,83/mês</div>
+        <div class="text-emerald-400 text-xs font-bold mb-6">Economize 25%</div>
+        <ul class="space-y-2 text-sm text-slate-400 mb-8 flex-1">
+          <li class="flex items-center gap-2"><span class="text-violet-400">✓</span> Simulações ilimitadas</li>
+          <li class="flex items-center gap-2"><span class="text-violet-400">✓</span> Todos os 4 regimes</li>
+          <li class="flex items-center gap-2"><span class="text-violet-400">✓</span> Projeção 2026–2033</li>
+          <li class="flex items-center gap-2"><span class="text-violet-400">✓</span> Exportação PDF</li>
+          <li class="flex items-center gap-2"><span class="text-violet-400">✓</span> Cancele quando quiser</li>
+        </ul>
+        <a href="auth.html" class="btn-cta text-center block" style="padding:0.75rem; font-size:0.95rem;">Assinar semestral</a>
+      </div>
+
+      <!-- Anual (destaque) -->
+      <div class="plan-card featured">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-violet-600 text-white text-xs font-black px-4 py-1 rounded-full uppercase tracking-wide whitespace-nowrap">⭐ Melhor custo-benefício</div>
+        <div class="text-violet-300 text-sm font-semibold mb-1">Anual</div>
+        <div class="text-3xl font-black text-white mb-1">R$ 2.999<span class="text-lg font-normal text-slate-400">,00</span></div>
+        <div class="text-slate-400 text-sm mb-1">/ano · R$ 249,92/mês</div>
+        <div class="text-emerald-400 text-xs font-bold mb-6">Economize 50%</div>
+        <ul class="space-y-2 text-sm text-slate-300 mb-8 flex-1">
+          <li class="flex items-center gap-2"><span class="text-violet-400">✓</span> Simulações ilimitadas</li>
+          <li class="flex items-center gap-2"><span class="text-violet-400">✓</span> Todos os 4 regimes</li>
+          <li class="flex items-center gap-2"><span class="text-violet-400">✓</span> Projeção 2026–2033</li>
+          <li class="flex items-center gap-2"><span class="text-violet-400">✓</span> Exportação PDF</li>
+          <li class="flex items-center gap-2"><span class="text-violet-400">✓</span> Cancele quando quiser</li>
+        </ul>
+        <a href="auth.html" class="btn-cta text-center block" style="padding:0.75rem; font-size:0.95rem; box-shadow:0 0 20px rgba(124,58,237,0.5);">Assinar anual</a>
+      </div>
+
+    </div>
+
+    <!-- Garantia -->
+    <div class="mt-12 text-center">
+      <div class="inline-flex items-center gap-3 px-6 py-4 rounded-2xl border border-slate-700" style="background:#0f172a;">
+        <span class="text-3xl">🔒</span>
+        <div class="text-left">
+          <div class="font-bold text-white text-sm">Pagamento 100% seguro</div>
+          <div class="text-slate-400 text-xs">Processado pelo Stripe · Cancele a qualquer momento pelo painel</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     FAQ
+══════════════════════════════════════════════════════ -->
+<section class="py-20" id="faq">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl md:text-4xl font-black text-white">Perguntas frequentes</h2>
+    </div>
+
+    <div class="space-y-0">
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          O simulador é realmente gratuito para começar?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          Sim. Você pode fazer 3 simulações completas sem pagar nada e sem cadastrar cartão de crédito. Se quiser simular mais, basta assinar um dos planos.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          Os cálculos são confiáveis? Com base em quê?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          O simulador foi desenvolvido com base na Matriz de Regras da Reforma Tributária, seguindo as alíquotas e cronogramas definidos na legislação. Os cálculos foram validados por especialistas em Reforma Tributária. Dito isso, o simulador é uma ferramenta de apoio à decisão — recomendamos sempre consultar seu contador para casos específicos.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          Funciona para qualquer tipo de empresa?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          O simulador atende empresas de comércio e serviços nos regimes Simples Nacional, Lucro Presumido e Lucro Real, em qualquer UF do Brasil. Indústrias com IPI e empresas no regime MEI não são suportadas neste momento.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          Posso cancelar a assinatura quando quiser?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          Sim. Não há fidelidade nem multa por cancelamento. Você pode cancelar a qualquer momento pelo painel do assinante e seu acesso continua até o fim do período pago.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          O simulador vai ser atualizado conforme a legislação evoluir?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          Sim. A Reforma Tributária ainda está sendo regulamentada e as alíquotas de referência podem ser ajustadas. Assinantes ativos terão acesso automático a todas as atualizações do simulador sem custo adicional.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          Meus dados ficam salvos entre sessões?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          O simulador funciona 100% no seu navegador. Os dados de cada simulação não são salvos no servidor — cada nova sessão começa do zero. Para guardar os resultados, use a exportação em PDF.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     CTA FINAL
+══════════════════════════════════════════════════════ -->
+<section class="py-24 hero-glow">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+    <div class="text-5xl mb-6">🚀</div>
+    <h2 class="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">
+      A Reforma já está em vigor.<br><span class="highlight">Seu preço está<br>preparado?</span>
+    </h2>
+    <p class="text-slate-400 text-lg mb-10 max-w-xl mx-auto">
+      Faça sua primeira simulação agora e descubra o preço certo para o seu produto ou serviço — em qualquer regime tributário, em menos de 5 minutos.
+    </p>
+    <a href="auth.html" class="btn-cta text-xl px-10 py-5">
+      🎯 Simular gratuitamente agora
+    </a>
+    <p class="text-slate-600 text-sm mt-6">3 simulações gratuitas · Sem cartão de crédito · Cancele quando quiser</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════════ -->
+<footer class="border-t border-slate-800 py-10">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+    <div class="flex items-center gap-2">
+      <div class="w-6 h-6 rounded bg-violet-600 flex items-center justify-center text-white font-bold text-xs">S</div>
+      <span class="font-semibold text-slate-400">Simule Reforma Tributária</span>
+    </div>
+    <div class="flex items-center gap-6">
+      <a href="auth.html" class="hover:text-slate-300 transition">Entrar</a>
+      <a href="auth.html" class="hover:text-slate-300 transition">Criar conta</a>
+      <a href="plans.html" class="hover:text-slate-300 transition">Planos</a>
+    </div>
+    <div class="text-slate-600 text-xs">
+      © 2025 Simule RT · Todos os direitos reservados
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleFaq(btn) {
+  const content = btn.nextElementSibling;
+  const icon = btn.querySelector('.faq-icon');
+  const isOpen = content.classList.contains('open');
+
+  // Fecha todos
+  document.querySelectorAll('.faq-content').forEach(c => c.classList.remove('open'));
+  document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('open'));
+
+  // Abre o clicado (se estava fechado)
+  if (!isOpen) {
+    content.classList.add('open');
+    icon.classList.add('open');
+  }
+}
+</script>
+
+</body>
+</html>

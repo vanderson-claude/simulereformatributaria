@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entrar — Simule Reforma Tributária</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    html { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    body { background: #020617; color: #e2e8f0; min-height: 100vh; }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus {
+      -webkit-box-shadow: 0 0 0 30px #1e293b inset !important;
+      -webkit-text-fill-color: #e2e8f0 !important;
+    }
+    .btn-primary {
+      background: #7c3aed;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      width: 100%;
+      transition: background 0.15s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary:hover:not(:disabled) { background: #6d28d9; }
+    .btn-primary:disabled { background: #4c1d95; opacity: 0.6; cursor: not-allowed; }
+    .input-field {
+      width: 100%;
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 0.5rem;
+      padding: 0.75rem 1rem;
+      color: #e2e8f0;
+      outline: none;
+      transition: border-color 0.15s;
+      box-sizing: border-box;
+    }
+    .input-field:focus { border-color: #7c3aed; }
+    .input-field::placeholder { color: #64748b; }
+    .tab-btn { padding: 0.5rem 1.5rem; border-radius: 0.375rem; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+    .tab-btn.ativo { background: #7c3aed; color: #fff; }
+    .tab-btn:not(.ativo) { background: transparent; color: #94a3b8; }
+    .tab-btn:not(.ativo):hover { color: #e2e8f0; }
+    .msg-erro { color: #f87171; font-size: 0.875rem; text-align: center; }
+    .msg-ok { color: #34d399; font-size: 0.875rem; text-align: center; }
+  </style>
+</head>
+<body class="flex items-center justify-center p-6">
+
+<!-- ──────────────────────────────────────────────
+     OVERLAY de carregamento (verificação de sessão)
+     ────────────────────────────────────────────── -->
+<div id="overlay-loading"
+     class="fixed inset-0 flex items-center justify-center"
+     style="background:#020617;z-index:9999;">
+  <div class="text-slate-400 animate-pulse">Verificando acesso…</div>
+</div>
+
+<!-- ──────────────────────────────────────────────
+     CARD PRINCIPAL
+     ────────────────────────────────────────────── -->
+<div id="card-auth" class="hidden w-full max-w-md">
+
+  <!-- Logo / título -->
+  <div class="text-center mb-8">
+    <div class="inline-block px-3 py-1 mb-4 rounded-full bg-violet-900/40 text-violet-300 text-xs font-medium tracking-wide">
+      Reforma Tributária · 2026–2033
+    </div>
+    <h1 class="text-2xl font-bold text-white">Simule Reforma Tributária</h1>
+    <p class="text-slate-400 text-sm mt-1">Acesse sua conta ou experimente grátis — 3 simulações</p>
+  </div>
+
+  <!-- Caixa do formulário -->
+  <div class="bg-slate-900 border border-slate-700 rounded-2xl p-8">
+
+    <!-- Mensagem de confirmação de e-mail / nova senha -->
+    <div id="area-confirmacao" class="hidden">
+      <p id="msg-confirmacao" class="text-center text-slate-300 leading-relaxed"></p>
+    </div>
+
+    <!-- Formulário principal (login / cadastro / redefinir senha) -->
+    <div id="area-formulario">
+
+      <!-- Tabs -->
+      <div id="tabs" class="flex gap-1 bg-slate-800 rounded-lg p-1 mb-6">
+        <button class="tab-btn ativo flex-1" onclick="ativarTab('login')">Entrar</button>
+        <button class="tab-btn flex-1" onclick="ativarTab('cadastro')">Cadastrar</button>
+      </div>
+
+      <!-- FORM: Login -->
+      <form id="form-login" onsubmit="fazerLogin(event)" class="space-y-4">
+        <div>
+          <label class="block text-sm text-slate-300 mb-1">E-mail</label>
+          <input id="login-email" type="email" required autocomplete="email"
+                 placeholder="seu@email.com.br" class="input-field" />
+        </div>
+        <div>
+          <label class="block text-sm text-slate-300 mb-1">Senha</label>
+          <input id="login-senha" type="password" required autocomplete="current-password"
+                 placeholder="••••••••" class="input-field" />
+        </div>
+        <div id="erro-login" class="msg-erro hidden"></div>
+        <button type="submit" id="btn-login" class="btn-primary">Entrar</button>
+        <p class="text-center text-xs mt-3">
+          <button type="button" onclick="mostrarRedefinirSenha()"
+                  class="text-violet-400 hover:text-violet-300 underline">
+            Esqueci minha senha
+          </button>
+        </p>
+      </form>
+
+      <!-- FORM: Cadastro -->
+      <form id="form-cadastro" onsubmit="fazerCadastro(event)" class="space-y-4 hidden">
+        <div>
+          <label class="block text-sm text-slate-300 mb-1">Nome completo</label>
+          <input id="cad-nome" type="text" required autocomplete="name"
+                 placeholder="João da Silva" class="input-field" />
+        </div>
+        <div>
+          <label class="block text-sm text-slate-300 mb-1">E-mail</label>
+          <input id="cad-email" type="email" required autocomplete="email"
+                 placeholder="seu@email.com.br" class="input-field" />
+        </div>
+        <div>
+          <label class="block text-sm text-slate-300 mb-1">Senha</label>
+          <input id="cad-senha" type="password" required autocomplete="new-password"
+                 minlength="6" placeholder="Mínimo 6 caracteres" class="input-field" />
+        </div>
+        <div id="erro-cadastro" class="msg-erro hidden"></div>
+        <button type="submit" id="btn-cadastro" class="btn-primary">Criar conta e testar grátis</button>
+        <p class="text-xs text-slate-500 text-center mt-2">
+          Ao criar a conta você concorda com os termos de uso.<br>
+          3 simulações gratuitas · Sem cartão de crédito.
+        </p>
+      </form>
+
+      <!-- FORM: Redefinir senha -->
+      <form id="form-redefinir" onsubmit="enviarRedefinicao(event)" class="space-y-4 hidden">
+        <p class="text-sm text-slate-400 text-center mb-2">
+          Digite seu e-mail e enviaremos um link para redefinir sua senha.
+        </p>
+        <div>
+          <label class="block text-sm text-slate-300 mb-1">E-mail</label>
+          <input id="red-email" type="email" required placeholder="seu@email.com.br" class="input-field" />
+        </div>
+        <div id="erro-redefinir" class="msg-erro hidden"></div>
+        <div id="ok-redefinir" class="msg-ok hidden"></div>
+        <button type="submit" id="btn-redefinir" class="btn-primary">Enviar link de redefinição</button>
+        <p class="text-center text-xs mt-2">
+          <button type="button" onclick="ativarTab('login')"
+                  class="text-violet-400 hover:text-violet-300 underline">← Voltar ao login</button>
+        </p>
+      </form>
+
+      <!-- FORM: Nova senha (após clicar no link de redefinição) -->
+      <form id="form-nova-senha" onsubmit="salvarNovaSenha(event)" class="space-y-4 hidden">
+        <p class="text-sm text-slate-400 text-center mb-2">Defina sua nova senha.</p>
+        <div>
+          <label class="block text-sm text-slate-300 mb-1">Nova senha</label>
+          <input id="nova-senha" type="password" required minlength="6"
+                 placeholder="Mínimo 6 caracteres" class="input-field" />
+        </div>
+        <div id="erro-nova-senha" class="msg-erro hidden"></div>
+        <button type="submit" id="btn-nova-senha" class="btn-primary">Salvar nova senha</button>
+      </form>
+
+    </div><!-- /area-formulario -->
+  </div><!-- /card -->
+</div><!-- /card-auth -->
+
+
+<script>
+// ════════════════════════════════════════════════════════════
+// CONFIGURAÇÃO — preencher com suas chaves do Supabase
+// Supabase Dashboard → Settings → API
+// ════════════════════════════════════════════════════════════
+const SUPABASE_URL      = 'https://ylterbejupvgkxdguyuk.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlsdGVyYmVqdXB2Z2t4ZGd1eXVrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY5NTE2MTgsImV4cCI6MjA5MjUyNzYxOH0.LBZVD30pYHIqw8Mc99A3Kn6MxESvctKU8Jtvta3UZA8';
+const APP_URL           = 'https://simulereformatributaria.com.br';
+
+const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+// ─── Inicialização ───────────────────────────────────────────
+async function init() {
+  const overlay = document.getElementById('overlay-loading');
+  const card    = document.getElementById('card-auth');
+
+  // Detecta hash na URL (confirmação de e-mail ou redefinição de senha)
+  const hash = window.location.hash;
+  if (hash.includes('type=recovery')) {
+    // Redefinição de senha: exibe form de nova senha
+    mostrarFormulario('form-nova-senha');
+    overlay.style.display = 'none';
+    card.classList.remove('hidden');
+    return;
+  }
+
+  // Verifica se já há sessão ativa (incluindo quando vindo do link de confirmação)
+  const { data: { session } } = await sb.auth.getSession();
+
+  if (session) {
+    await verificarAcessoERedirec(session);
+    return;
+  }
+
+  overlay.style.display = 'none';
+  card.classList.remove('hidden');
+}
+
+// ─── Verifica acesso e redireciona ──────────────────────────
+async function verificarAcessoERedirec(session) {
+  const overlay = document.getElementById('overlay-loading');
+  try {
+    // Busca acesso via view meu_acesso (já calcula tem_acesso e simulacoes_restantes)
+    const { data: perfil, error } = await sb
+      .from('meu_acesso')
+      .select('tem_acesso, simulacoes_restantes, subscription_status')
+      .single();
+
+    if (error) throw error;
+
+    // Usuário tem acesso (trial gratuito < 3 simulações OU assinatura ativa)
+    if (perfil.tem_acesso) {
+      window.location.href = 'simulador.html';
+    } else {
+      // Sem acesso: trial esgotado e sem assinatura ativa
+      window.location.href = 'plans.html';
+    }
+  } catch (err) {
+    console.error('Erro ao verificar acesso:', err);
+    overlay.style.display = 'none';
+    document.getElementById('card-auth').classList.remove('hidden');
+  }
+}
+
+// ─── Login ───────────────────────────────────────────────────
+async function fazerLogin(e) {
+  e.preventDefault();
+  const btn = document.getElementById('btn-login');
+  const erro = document.getElementById('erro-login');
+  erro.classList.add('hidden');
+  btn.disabled = true;
+  btn.textContent = 'Entrando…';
+
+  const email = document.getElementById('login-email').value.trim();
+  const senha  = document.getElementById('login-senha').value;
+
+  const { data, error } = await sb.auth.signInWithPassword({ email, password: senha });
+
+  if (error) {
+    erro.textContent = traduzirErro(error.message);
+    erro.classList.remove('hidden');
+    btn.disabled = false;
+    btn.textContent = 'Entrar';
+    return;
+  }
+
+  btn.textContent = 'Verificando acesso…';
+  await verificarAcessoERedirec(data.session);
+}
+
+// ─── Cadastro ────────────────────────────────────────────────
+async function fazerCadastro(e) {
+  e.preventDefault();
+  const btn  = document.getElementById('btn-cadastro');
+  const erro = document.getElementById('erro-cadastro');
+  erro.classList.add('hidden');
+  btn.disabled = true;
+  btn.textContent = 'Criando conta…';
+
+  const nome  = document.getElementById('cad-nome').value.trim();
+  const email = document.getElementById('cad-email').value.trim();
+  const senha = document.getElementById('cad-senha').value;
+
+  const { error } = await sb.auth.signUp({
+    email,
+    password: senha,
+    options: {
+      data: { full_name: nome },
+      emailRedirectTo: `${APP_URL}/auth.html`,
+    },
+  });
+
+  if (error) {
+    erro.textContent = traduzirErro(error.message);
+    erro.classList.remove('hidden');
+    btn.disabled = false;
+    btn.textContent = 'Criar conta e testar grátis';
+    return;
+  }
+
+  // Mostra instrução para verificar e-mail
+  document.getElementById('area-formulario').classList.add('hidden');
+  const area = document.getElementById('area-confirmacao');
+  area.classList.remove('hidden');
+  document.getElementById('msg-confirmacao').innerHTML = `
+    <div class="text-4xl mb-4">✉️</div>
+    <p class="text-white font-semibold text-lg mb-2">Verifique seu e-mail!</p>
+    <p class="text-slate-400">
+      Enviamos um link de confirmação para<br>
+      <strong class="text-slate-200">${email}</strong>
+    </p>
+    <p class="text-slate-500 text-sm mt-4">
+      Após confirmar o e-mail, você terá <strong class="text-violet-400">24 horas de trial gratuito</strong>.
+    </p>
+  `;
+}
+
+// ─── Redefinição de senha ────────────────────────────────────
+async function enviarRedefinicao(e) {
+  e.preventDefault();
+  const btn  = document.getElementById('btn-redefinir');
+  const erro = document.getElementById('erro-redefinir');
+  const ok   = document.getElementById('ok-redefinir');
+  erro.classList.add('hidden');
+  ok.classList.add('hidden');
+  btn.disabled = true;
+  btn.textContent = 'Enviando…';
+
+  const email = document.getElementById('red-email').value.trim();
+  const { error } = await sb.auth.resetPasswordForEmail(email, {
+    redirectTo: `${APP_URL}/auth.html`,
+  });
+
+  btn.disabled = false;
+  btn.textContent = 'Enviar link de redefinição';
+
+  if (error) {
+    erro.textContent = traduzirErro(error.message);
+    erro.classList.remove('hidden');
+  } else {
+    ok.textContent = 'Link enviado! Verifique seu e-mail.';
+    ok.classList.remove('hidden');
+  }
+}
+
+// ─── Salvar nova senha (após link de redefinição) ────────────
+async function salvarNovaSenha(e) {
+  e.preventDefault();
+  const btn  = document.getElementById('btn-nova-senha');
+  const erro = document.getElementById('erro-nova-senha');
+  erro.classList.add('hidden');
+  btn.disabled = true;
+  btn.textContent = 'Salvando…';
+
+  const novaSenha = document.getElementById('nova-senha').value;
+  const { error } = await sb.auth.updateUser({ password: novaSenha });
+
+  if (error) {
+    erro.textContent = traduzirErro(error.message);
+    erro.classList.remove('hidden');
+    btn.disabled = false;
+    btn.textContent = 'Salvar nova senha';
+    return;
+  }
+
+  // Redireciona para o simulador após trocar a senha com sucesso
+  window.location.href = 'simulador.html';
+}
+
+// ─── Helpers de UI ───────────────────────────────────────────
+function ativarTab(tab) {
+  const tabs    = document.querySelectorAll('.tab-btn');
+  const formLogin   = document.getElementById('form-login');
+  const formCadastro = document.getElementById('form-cadastro');
+  const formRedefinir = document.getElementById('form-redefinir');
+  const tabsEl  = document.getElementById('tabs');
+
+  // Resetar todos os forms
+  formLogin.classList.add('hidden');
+  formCadastro.classList.add('hidden');
+  formRedefinir.classList.add('hidden');
+  document.getElementById('form-nova-senha').classList.add('hidden');
+
+  tabs.forEach(b => b.classList.remove('ativo'));
+
+  if (tab === 'login') {
+    formLogin.classList.remove('hidden');
+    tabs[0].classList.add('ativo');
+    tabsEl.classList.remove('hidden');
+  } else if (tab === 'cadastro') {
+    formCadastro.classList.remove('hidden');
+    tabs[1].classList.add('ativo');
+    tabsEl.classList.remove('hidden');
+  }
+}
+
+function mostrarFormulario(formId) {
+  ['form-login','form-cadastro','form-redefinir','form-nova-senha'].forEach(id => {
+    document.getElementById(id).classList.add('hidden');
+  });
+  document.getElementById(formId).classList.remove('hidden');
+  // Oculta tabs quando mostra redefinir/nova senha
+  const semTabs = ['form-redefinir','form-nova-senha'].includes(formId);
+  document.getElementById('tabs').classList.toggle('hidden', semTabs);
+}
+
+function mostrarRedefinirSenha() {
+  mostrarFormulario('form-redefinir');
+}
+
+function traduzirErro(msg) {
+  const erros = {
+    'Invalid login credentials': 'E-mail ou senha incorretos.',
+    'Email not confirmed': 'Confirme seu e-mail antes de entrar.',
+    'User already registered': 'Este e-mail já está cadastrado.',
+    'Password should be at least 6 characters': 'A senha deve ter pelo menos 6 caracteres.',
+    'Unable to validate email address: invalid format': 'Formato de e-mail inválido.',
+  };
+  return erros[msg] || msg;
+}
+
+init();
+</script>
+</body>
+</html>

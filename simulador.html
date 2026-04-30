@@ -1,0 +1,2724 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulador de Precificação — Reforma Tributária 2026-2033 | Simule Agora</title>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MX6C5XMSKV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MX6C5XMSKV');
+  </script>
+
+  <!-- SEO: meta description -->
+  <meta name="description" content="Simule o impacto da Reforma Tributária no seu preço de venda. Compare Simples Nacional, Lucro Presumido e Lucro Real de 2026 a 2033 e precifique com margem garantida." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://simulereformatributaria.com.br/" />
+
+  <!-- SEO: Open Graph (Facebook, WhatsApp, LinkedIn) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://simulereformatributaria.com.br/" />
+  <meta property="og:title" content="Simulador de Precificação — Reforma Tributária 2026-2033" />
+  <meta property="og:description" content="Descubra como a Reforma Tributária impacta seu preço e margem. Compare 4 regimes tributários de 2026 a 2033 e simule agora." />
+  <meta property="og:image" content="https://simulereformatributaria.com.br/og-image.png" />
+  <meta property="og:site_name" content="Simule Reforma Tributária" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- SEO: Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Simulador de Precificação — Reforma Tributária 2026-2033" />
+  <meta name="twitter:description" content="Compare 4 regimes tributários de 2026 a 2033 e descubra o impacto da Reforma no seu preço de venda." />
+  <meta name="twitter:image" content="https://simulereformatributaria.com.br/og-image.png" />
+
+  <!-- SEO: Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://simulereformatributaria.com.br/#app",
+        "name": "Simulador de Precificação — Reforma Tributária",
+        "url": "https://simulereformatributaria.com.br/",
+        "description": "Simule o impacto da Reforma Tributária no preço de venda da sua empresa. Compare Simples Nacional, Lucro Presumido e Lucro Real de 2026 a 2033.",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "inLanguage": "pt-BR",
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock",
+          "priceCurrency": "BRL",
+          "price": "0",
+          "description": "Simulação gratuita disponível"
+        },
+        "provider": {
+          "@id": "https://simulereformatributaria.com.br/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://simulereformatributaria.com.br/#organization",
+        "name": "Meu Setor Contábil",
+        "url": "https://simulereformatributaria.com.br/",
+        "email": "vanderson.lima@meusetorcontabil.com.br",
+        "description": "Escritório de contabilidade especializado em Reforma Tributária, planejamento tributário e consultoria fiscal.",
+        "sameAs": []
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://simulereformatributaria.com.br/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "O que é a Reforma Tributária e quando começa a valer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Reforma Tributária brasileira (LC 214/2025) substitui PIS, Cofins, ICMS e ISS por CBS e IBS. A transição começa em 2026 e vai até 2033, com alíquotas aumentando gradualmente a cada ano."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como a Reforma Tributária vai impactar o preço dos meus produtos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O impacto depende do seu regime tributário (Simples Nacional, Lucro Presumido ou Lucro Real) e do ano de transição. Nosso simulador calcula o preço de venda ideal para manter sua margem em cada ano de 2026 a 2033."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qual regime tributário é mais vantajoso com a Reforma Tributária?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende do seu faturamento, margem e setor. O simulador compara simultaneamente Simples Nacional, Simples Híbrido (2027+), Lucro Presumido e Lucro Real, mostrando qual resulta no menor preço de venda para a mesma margem."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O CBS e o IBS substituem quais impostos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A CBS (Contribuição sobre Bens e Serviços) substitui PIS e Cofins, sob competência federal. O IBS (Imposto sobre Bens e Serviços) substitui ICMS e ISS, sob competência estadual e municipal. Juntos formam o IVA Dual brasileiro."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O simulador funciona para empresas do Simples Nacional?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. O simulador calcula separadamente o Simples Nacional tradicional (sem créditos) e o Simples Híbrido (a partir de 2027, com CBS e IBS fora do DAS e direito a créditos), mostrando a diferença de preço entre os dois cenários."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!--
+    ═══════════════════════════════════════════════════════════════════
+    BIBLIOTECAS EXTERNAS (CDN — carregadas uma vez)
+    ═══════════════════════════════════════════════════════════════════
+    Tailwind CSS: framework de estilização (classes prontas)
+    Chart.js: gráfico de linhas (usado na tela de resultados)
+  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <style>
+    /* Fonte do sistema — mais leve e profissional que Google Fonts */
+    html { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+
+    /* Transição suave entre perguntas (efeito Typeform) */
+    .pergunta-wrapper { transition: opacity 0.25s ease, transform 0.25s ease; }
+    .pergunta-wrapper.saindo { opacity: 0; transform: translateY(-8px); }
+    .pergunta-wrapper.entrando { opacity: 0; transform: translateY(8px); }
+
+    /* Slider (range) em branco para contrastar com o fundo escuro */
+    input[type=range] {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 6px;
+      background: #ffffff !important;
+      border-radius: 999px;
+      outline: none;
+      cursor: pointer;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+      height: 6px;
+      background: #ffffff;
+      border-radius: 999px;
+    }
+    input[type=range]::-moz-range-track {
+      height: 6px;
+      background: #ffffff;
+      border-radius: 999px;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 18px; height: 18px;
+      background: #6366f1;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+      margin-top: -6px;
+      cursor: pointer;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+    }
+    input[type=range]::-moz-range-thumb {
+      width: 18px; height: 18px;
+      background: #6366f1;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════════
+       TEMA DARK — remapeia a paleta clara para escura sem reescrever HTML
+       ═══════════════════════════════════════════════════════════════════ */
+    body { background: #020617; color: #e2e8f0; }
+
+    /* BACKGROUNDS */
+    .bg-white              { background-color: #0f172a !important; }      /* slate-900 */
+    .bg-slate-50           { background-color: #020617 !important; }      /* slate-950 */
+    .bg-slate-100          { background-color: #0f172a !important; }      /* slate-900 */
+    .bg-slate-200          { background-color: #1e293b !important; }      /* slate-800 */
+    .bg-slate-300          { background-color: #334155 !important; }      /* slate-700 */
+    .bg-indigo-50          { background-color: rgba(49,46,129,0.25) !important; }
+    .bg-indigo-100         { background-color: rgba(67,56,202,0.25) !important; }
+    .bg-emerald-50         { background-color: rgba(6,78,59,0.30) !important; }
+    .bg-amber-50           { background-color: rgba(120,53,15,0.30) !important; }
+
+    /* TEXT */
+    .text-slate-900        { color: #f1f5f9 !important; }
+    .text-slate-800        { color: #e2e8f0 !important; }
+    .text-slate-700        { color: #cbd5e1 !important; }
+    .text-slate-600        { color: #94a3b8 !important; }
+    .text-slate-500        { color: #94a3b8 !important; }
+    .text-slate-400        { color: #64748b !important; }
+    .text-indigo-600       { color: #818cf8 !important; }
+    .text-indigo-700       { color: #a5b4fc !important; }
+    .text-emerald-700      { color: #34d399 !important; }
+    .text-rose-600         { color: #fb7185 !important; }
+    .text-rose-700         { color: #fb7185 !important; }
+    .text-amber-900        { color: #fcd34d !important; }
+
+    /* BORDERS */
+    .border-slate-200      { border-color: #1e293b !important; }
+    .border-slate-300      { border-color: #334155 !important; }
+
+    /* HOVERS */
+    .hover\:bg-slate-100:hover   { background-color: #1e293b !important; }
+    .hover\:bg-slate-200:hover   { background-color: #334155 !important; }
+    .hover\:bg-indigo-50:hover   { background-color: rgba(67,56,202,0.30) !important; }
+
+    /* INPUTS / FORM */
+    input, select, textarea {
+      background-color: #0f172a !important;
+      color: #e2e8f0 !important;
+      border-color: #334155 !important;
+    }
+    input::placeholder, textarea::placeholder { color: #64748b !important; }
+    input[type=range] { background: transparent !important; }
+
+    /* TABELAS */
+    table { background-color: transparent !important; }
+    thead { background-color: #1e293b !important; }
+    tbody tr:nth-child(even) { background-color: rgba(30,41,59,0.4) !important; }
+
+    /* Opção selecionada (sim/não, escolha) — destaque forte, independente do tema */
+    .opcao-selecionada {
+      background: #4f46e5 !important;           /* indigo-600 sólido */
+      border-color: #a5b4fc !important;         /* indigo-300 */
+      box-shadow: 0 0 0 3px rgba(129,140,248,0.45), 0 6px 14px rgba(79,70,229,0.35) !important;
+      transform: translateY(-1px);
+    }
+    .opcao-selecionada, .opcao-selecionada * {
+      color: #ffffff !important;
+    }
+    .opcao-selecionada::before {
+      content: "✓";
+      position: absolute;
+      top: 6px; right: 10px;
+      width: 20px; height: 20px;
+      background: #ffffff;
+      color: #4f46e5;
+      border-radius: 9999px;
+      font-weight: 900;
+      font-size: 13px;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    }
+    .opcao-selecionada { position: relative; }
+
+    /* SCROLLBAR escura */
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 5px; }
+    ::-webkit-scrollbar-thumb:hover { background: #475569; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-200 min-h-screen">
+
+<!-- ───────── OVERLAY DE VERIFICAÇÃO DE ACESSO ───────── -->
+<div id="overlay-auth"
+     class="fixed inset-0 flex items-center justify-center"
+     style="background:#020617;z-index:9999;">
+  <div class="text-slate-400 text-sm animate-pulse">Verificando acesso…</div>
+</div>
+
+<!-- ───────── MENU DO USUÁRIO (canto superior direito, fixo) ───────── -->
+<div id="menu-usuario"
+     class="hidden fixed top-4 right-4 z-50">
+  <div class="relative">
+    <button id="btn-menu-usuario"
+            onclick="toggleMenuUsuario()"
+            class="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-medium transition"
+            style="background:#1e293b;border:1px solid #334155;color:#cbd5e1;">
+      <span id="menu-usuario-nome" class="max-w-[120px] truncate"></span>
+      <svg class="w-4 h-4 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </button>
+    <!-- Dropdown -->
+    <div id="dropdown-usuario"
+         class="hidden absolute right-0 mt-2 w-64 rounded-xl shadow-xl"
+         style="background:#0f172a;border:1px solid #334155;">
+      <div class="px-4 py-3 border-b border-slate-800">
+        <div id="dd-email" class="text-xs text-slate-500 truncate"></div>
+        <div id="dd-plano" class="text-sm font-medium text-violet-300 mt-1"></div>
+        <div id="dd-vencimento" class="text-xs text-slate-400 mt-0.5"></div>
+      </div>
+      <div class="p-2">
+        <button id="btn-portal" onclick="abrirPortalStripe()"
+                class="hidden w-full text-left px-3 py-2 rounded-lg text-sm text-slate-300 hover:bg-slate-800 transition">
+          Gerenciar assinatura
+        </button>
+        <button onclick="deslogarSimulador()"
+                class="w-full text-left px-3 py-2 rounded-lg text-sm text-red-400 hover:bg-slate-800 transition">
+          Sair
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+═══════════════════════════════════════════════════════════════════════
+CAMADA 2 — ESTRUTURA DE TELAS (só uma visível por vez)
+═══════════════════════════════════════════════════════════════════════
+-->
+
+<!-- ───────── TELA 1: ABERTURA ───────── -->
+<section id="tela-abertura" class="min-h-screen flex items-center justify-center p-6">
+  <div class="max-w-2xl w-full text-center">
+    <div class="inline-block px-4 py-1 mb-6 rounded-full bg-indigo-100 text-indigo-700 text-sm font-medium">
+      Reforma Tributária Brasileira · 2026 → 2033
+    </div>
+    <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+      Simulador de Precificação com a Reforma Tributária
+    </h1>
+    <p class="text-lg text-slate-600 mb-10">
+      Informe quanto você quer receber líquido por venda e descubra o preço necessário,
+      a carga tributária e a margem em <strong>4 regimes</strong> tributários ao longo dos
+      <strong>8 anos</strong> de transição.
+    </p>
+    <button onclick="irParaEtapa1()"
+            class="inline-flex items-center gap-2 px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition text-lg">
+      Começar simulação
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+      </svg>
+    </button>
+    <p class="text-xs text-slate-500 mt-8">
+      100% no seu navegador — nenhum dado é enviado a servidores externos.
+    </p>
+  </div>
+</section>
+
+<!-- ───────── TELA 2: FORMULÁRIO TYPEFORM (Etapas 1 e 2) ───────── -->
+<section id="tela-formulario" class="hidden min-h-screen">
+
+  <!-- Barra de progresso fixa no topo -->
+  <div class="sticky top-0 z-10 bg-white border-b border-slate-200">
+    <div class="max-w-3xl mx-auto px-6 py-4 flex items-center gap-4">
+      <button onclick="voltarAbertura()" class="text-slate-500 hover:text-slate-700 text-sm">
+        ← Início
+      </button>
+      <div class="flex-1 h-2 bg-slate-100 rounded-full overflow-hidden">
+        <div id="barra-progresso" class="h-full bg-indigo-500 transition-all duration-300" style="width: 0%"></div>
+      </div>
+      <div id="contador-progresso" class="text-sm text-slate-500 tabular-nums min-w-[56px] text-right">0 / 0</div>
+    </div>
+  </div>
+
+  <!-- Área onde cada pergunta é renderizada (uma por vez) -->
+  <div class="max-w-2xl mx-auto px-6 py-10 md:py-16">
+    <div id="pergunta-container" class="pergunta-wrapper"></div>
+
+    <!-- Botões de navegação -->
+    <div class="mt-10 flex items-center justify-between">
+      <button id="btn-voltar" onclick="perguntaAnterior()"
+              class="text-slate-500 hover:text-slate-700 text-sm font-medium hidden">
+        ← Voltar
+      </button>
+      <div></div>
+      <button id="btn-proximo" onclick="perguntaProxima()"
+              class="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg shadow transition disabled:bg-slate-300 disabled:cursor-not-allowed">
+        <span id="btn-proximo-texto">Próximo</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+        </svg>
+      </button>
+    </div>
+
+    <p class="text-xs text-slate-400 mt-6 text-center">
+      Dica: você também pode apertar <kbd class="px-1.5 py-0.5 bg-slate-100 rounded border border-slate-300 text-slate-600">Enter</kbd> para avançar.
+    </p>
+  </div>
+</section>
+
+<!-- ───────── TELA 3: RESULTADOS ───────── -->
+<section id="tela-resultados" class="hidden min-h-screen p-6 bg-slate-50">
+  <div class="max-w-7xl mx-auto py-8">
+
+    <header class="mb-6">
+      <h2 class="text-3xl font-bold text-slate-900 mb-2">Comparativo dos 4 regimes</h2>
+      <p class="text-slate-600">
+        Para cada ano, o preço unitário necessário para entregar sua Receita Líquida Desejada
+        em cada regime — considerando apenas os impostos sobre a venda e os custos unitários.
+        Selecione o ano abaixo:
+      </p>
+    </header>
+
+    <!-- Seletor de ano -->
+    <div class="mb-2 text-xs uppercase tracking-wider text-slate-500">Ano de referência</div>
+    <div id="seletor-ano" class="flex flex-wrap gap-2 mb-6"></div>
+
+    <!-- Explicação dos dois preços (por dentro / por fora) -->
+    <div class="bg-indigo-50 border-l-4 border-indigo-400 p-4 rounded-r mb-6 text-sm text-slate-700 leading-relaxed">
+      <strong class="text-indigo-800">Por que aparecem dois preços?</strong>
+      Com a Reforma Tributária, alguns impostos mudam de forma de cobrança:
+      <ul class="mt-2 space-y-1 list-disc list-inside">
+        <li><strong>Preço por dentro</strong> — é o valor que fica com a empresa após pagar os tributos embutidos (DAS, ICMS, ISS, PIS, Cofins). É o "preço cheio" que você cobraria hoje.</li>
+        <li><strong>Preço por fora (total na nota)</strong> — a partir de 2027, <strong>CBS e IBS</strong> (e o IPI na indústria) são destacados <em>além</em> do preço, como ocorre hoje com o IPI. O cliente paga esse valor maior; a empresa recolhe os tributos "por fora" e mantém a mesma RLD.</li>
+      </ul>
+      <p class="mt-2 text-slate-600 text-xs">Em 2026, na maioria dos regimes, os dois preços são iguais. A diferença aparece nos anos de transição, quando CBS/IBS começam a ser cobrados por fora.</p>
+    </div>
+
+    <!-- Resumo rápido dos 4 regimes (mini cards) -->
+    <div id="cards-regimes" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3 mb-6"></div>
+
+    <!-- Abas de regime -->
+    <div class="mb-2 text-xs uppercase tracking-wider text-slate-500">Detalhamento do regime</div>
+    <div id="seletor-regime" class="flex flex-wrap gap-2 mb-4"></div>
+
+    <!-- Painel detalhado (3 blocos: Cálculos | Mensal | Precificação) -->
+    <div id="painel-detalhado" class="mb-8"></div>
+
+    <!-- Botão exportar PDF -->
+    <div class="flex flex-wrap gap-3 mb-8">
+      <button onclick="exportarPDF()"
+              class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-lg shadow transition">
+        📄 Exportar memória de cálculo em PDF
+      </button>
+    </div>
+
+    <!-- Matriz resumida 8 anos × 4 regimes -->
+    <div class="bg-white rounded-lg border border-slate-200 p-6 mb-8">
+      <h3 class="text-xl font-bold text-slate-900 mb-1">Visão geral — 8 anos × 4 regimes</h3>
+      <p class="text-sm text-slate-500 mb-4">Preço de venda unitário necessário em cada cenário (menor valor destacado).</p>
+      <div class="overflow-x-auto">
+        <table class="min-w-full text-sm" id="tabela-matriz">
+          <thead><tr class="bg-slate-100 text-slate-700">
+            <th class="text-left p-2">Ano</th>
+            <th class="text-right p-2">Simples Normal</th>
+            <th class="text-right p-2">Simples Híbrido</th>
+            <th class="text-right p-2">Lucro Presumido</th>
+            <th class="text-right p-2">Lucro Real</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Avisos -->
+    <div id="avisos-resultados" class="space-y-3 mb-8"></div>
+
+    <!-- Debug temporário (respostas) -->
+    <details class="bg-white rounded-lg border border-slate-200 p-4 mb-8">
+      <summary class="cursor-pointer text-sm font-medium text-slate-700">Ver respostas coletadas (debug)</summary>
+      <div id="respostas-debug" class="mt-3 font-mono text-xs whitespace-pre-wrap text-slate-600"></div>
+    </details>
+
+    <div class="flex gap-3">
+      <button onclick="voltarAbertura()" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 rounded-lg">
+        ← Nova simulação
+      </button>
+      <button onclick="document.getElementById('tela-resultados').classList.add('hidden'); document.getElementById('tela-formulario').classList.remove('hidden');"
+              class="px-4 py-2 bg-white border border-slate-300 hover:bg-slate-100 rounded-lg">
+        ↻ Editar respostas
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<script>
+// ═══════════════════════════════════════════════════════════════════════
+// ACCESS CHECK — Supabase Auth + controle de acesso
+// ═══════════════════════════════════════════════════════════════════════
+
+const SUPABASE_URL      = 'https://ylterbejupvgkxdguyuk.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlsdGVyYmVqdXB2Z2t4ZGd1eXVrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY5NTE2MTgsImV4cCI6MjA5MjUyNzYxOH0.LBZVD30pYHIqw8Mc99A3Kn6MxESvctKU8Jtvta3UZA8';
+
+// URL do Stripe Customer Portal (configurar em Stripe → Billing → Customer portal)
+const STRIPE_PORTAL_URL = 'https://billing.stripe.com/p/login/COLE_AQUI_SEU_PORTAL_ID';
+
+const _supa = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+let _perfilAtual = null;
+
+// Nomes amigáveis dos planos
+const NOMES_PLANO = {
+  monthly:    'Mensal',
+  quarterly:  'Trimestral',
+  semiannual: 'Semestral',
+  annual:     'Anual',
+};
+
+async function verificarAcesso() {
+  const overlay = document.getElementById('overlay-auth');
+  try {
+    const { data: { session } } = await _supa.auth.getSession();
+
+    if (!session) {
+      window.location.href = 'auth.html';
+      return;
+    }
+
+    const { data: perfil, error } = await _supa
+      .from('meu_acesso')
+      .select('full_name, email, subscription_status, subscription_expires_at, plan_type, stripe_customer_id, tem_acesso, simulations_used, simulacoes_restantes')
+      .single();
+
+    if (error) throw error;
+
+    _perfilAtual = perfil;
+
+    if (!perfil.tem_acesso) {
+      window.location.href = 'plans.html';
+      return;
+    }
+
+    const assinaturaValida = perfil.subscription_status === 'active'
+      && perfil.subscription_expires_at
+      && new Date(perfil.subscription_expires_at) > new Date();
+
+    // Acesso liberado — renderiza menu do usuário
+    renderizarMenuUsuario(perfil, assinaturaValida);
+    overlay.style.display = 'none';
+
+  } catch (err) {
+    console.error('Erro na verificação de acesso:', err);
+    // Em caso de erro, libera o simulador (fail-open) e oculta o overlay
+    overlay.style.display = 'none';
+  }
+}
+
+function renderizarMenuUsuario(perfil, assinaturaValida) {
+  const menuEl = document.getElementById('menu-usuario');
+  menuEl.classList.remove('hidden');
+
+  // Nome no botão
+  const nome = perfil.full_name || perfil.email;
+  document.getElementById('menu-usuario-nome').textContent = nome;
+
+  // Dropdown: e-mail
+  document.getElementById('dd-email').textContent = perfil.email;
+
+  // Dropdown: plano / trial
+  const ddPlano = document.getElementById('dd-plano');
+  const ddVenc  = document.getElementById('dd-vencimento');
+
+  if (assinaturaValida) {
+    const nomePlano = NOMES_PLANO[perfil.plan_type] || 'Plano ativo';
+    ddPlano.textContent = `Plano ${nomePlano}`;
+    const venc = new Date(perfil.subscription_expires_at);
+    ddVenc.textContent = `Válido até ${venc.toLocaleDateString('pt-BR')}`;
+    document.getElementById('btn-portal').classList.remove('hidden');
+  } else {
+    ddPlano.textContent = 'Acesso gratuito';
+    const restantes = perfil.simulacoes_restantes ?? 0;
+    ddVenc.textContent = `${restantes} simulação(ões) gratuita(s) restante(s)`;
+  }
+}
+
+function toggleMenuUsuario() {
+  const dd = document.getElementById('dropdown-usuario');
+  dd.classList.toggle('hidden');
+}
+
+// Fecha dropdown ao clicar fora
+document.addEventListener('click', (e) => {
+  if (!document.getElementById('menu-usuario').contains(e.target)) {
+    document.getElementById('dropdown-usuario').classList.add('hidden');
+  }
+});
+
+async function abrirPortalStripe() {
+  if (STRIPE_PORTAL_URL.includes('COLE_AQUI')) {
+    alert('Configure a URL do Stripe Customer Portal no simulador.html (variável STRIPE_PORTAL_URL).');
+    return;
+  }
+  window.open(STRIPE_PORTAL_URL, '_blank');
+}
+
+async function deslogarSimulador() {
+  await _supa.auth.signOut();
+  window.location.href = 'auth.html';
+}
+
+// Executa a verificação imediatamente
+verificarAcesso();
+</script>
+
+<script>
+// ═══════════════════════════════════════════════════════════════════════
+// CAMADA 3 — CONSTANTES (nesta fase só UFs; alíquotas serão adicionadas depois)
+// ═══════════════════════════════════════════════════════════════════════
+
+const UFS = [
+  { sigla: 'AC', nome: 'Acre' },        { sigla: 'AL', nome: 'Alagoas' },
+  { sigla: 'AP', nome: 'Amapá' },       { sigla: 'AM', nome: 'Amazonas' },
+  { sigla: 'BA', nome: 'Bahia' },       { sigla: 'CE', nome: 'Ceará' },
+  { sigla: 'DF', nome: 'Distrito Federal' }, { sigla: 'ES', nome: 'Espírito Santo' },
+  { sigla: 'GO', nome: 'Goiás' },       { sigla: 'MA', nome: 'Maranhão' },
+  { sigla: 'MT', nome: 'Mato Grosso' }, { sigla: 'MS', nome: 'Mato Grosso do Sul' },
+  { sigla: 'MG', nome: 'Minas Gerais' },{ sigla: 'PA', nome: 'Pará' },
+  { sigla: 'PB', nome: 'Paraíba' },     { sigla: 'PR', nome: 'Paraná' },
+  { sigla: 'PE', nome: 'Pernambuco' },  { sigla: 'PI', nome: 'Piauí' },
+  { sigla: 'RJ', nome: 'Rio de Janeiro' }, { sigla: 'RN', nome: 'Rio Grande do Norte' },
+  { sigla: 'RS', nome: 'Rio Grande do Sul' }, { sigla: 'RO', nome: 'Rondônia' },
+  { sigla: 'RR', nome: 'Roraima' },     { sigla: 'SC', nome: 'Santa Catarina' },
+  { sigla: 'SP', nome: 'São Paulo' },   { sigla: 'SE', nome: 'Sergipe' },
+  { sigla: 'TO', nome: 'Tocantins' }
+];
+
+// Alíquotas internas de ICMS por UF (da matriz — serão usadas para pré-preencher)
+const ICMS_UF = {
+  AC: 0.19,  AL: 0.20,  AP: 0.18,  AM: 0.20,  BA: 0.205, CE: 0.20,  DF: 0.20,
+  ES: 0.17,  GO: 0.19,  MA: 0.22,  MT: 0.17,  MS: 0.17,  MG: 0.18,  PA: 0.19,
+  PB: 0.20,  PR: 0.195, PE: 0.205, PI: 0.225, RJ: 0.22,  RN: 0.18,  RS: 0.17,
+  RO: 0.195, RR: 0.20,  SC: 0.17,  SP: 0.18,  SE: 0.22,  TO: 0.20
+};
+
+// Regiões para cálculo de ICMS interestadual (Resolução Senado 22/89)
+const REGIAO_NORTE_NORDESTE_CO_ES = ['AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','PA','PB','PE','PI','RN','RO','RR','SE','TO'];
+const REGIAO_SUL_SUDESTE_EXC_ES   = ['MG','PR','RJ','RS','SC','SP'];
+
+// Premissas gerais (aba "Premissas Gerais" da matriz)
+const PREMISSAS = {
+  LIMITE_SIMPLES_NORMAL:    3_600_000,   // até esse valor, tudo dentro do DAS
+  LIMITE_SIMPLES_SUBLIMITE: 4_800_000,   // ICMS/ISS/IBS por fora; acima disso sai do Simples
+  PISO_FATOR_R:             0.28,        // (folha + pró-labore) / RBT12 ≥ 28% → Anexo V vira III
+
+  CBS_CHEIA: 0.088,    // 8,8% — alíquota cheia da CBS (estimativa Min. Fazenda)
+  IBS_CHEIA: 0.177,    // 17,7% — alíquota cheia do IBS (estimativa Min. Fazenda)
+
+  IRPJ_ALIQUOTA:        0.15,    // 15% sobre lucro/base
+  IRPJ_ADICIONAL:       0.10,    // 10% sobre o que excede R$ 20.000/mês
+  IRPJ_LIMITE_MENSAL:   20_000,
+  CSLL_ALIQUOTA:        0.09,
+
+  // Lucro Presumido — percentuais de presunção
+  PRESUNCAO_IRPJ_COM_IND:  0.08,   // Comércio/Indústria
+  PRESUNCAO_CSLL_COM_IND:  0.12,
+  PRESUNCAO_IRPJ_SERVICO:  0.32,   // Serviços em geral
+  PRESUNCAO_CSLL_SERVICO:  0.32,
+
+  // PIS/Cofins (só 2026 — extintos em 2027)
+  PIS_CUMULATIVO:    0.0065,   // Lucro Presumido
+  COFINS_CUMULATIVO: 0.03,
+  PIS_NAO_CUMULATIVO:    0.0165,   // Lucro Real
+  COFINS_NAO_CUMULATIVO: 0.076
+};
+
+// Cronograma da transição (aba "Cronograma" da matriz)
+// % do ICMS/ISS antigo que ainda vigora; alíquota IBS aplicável; CBS = 8,8% a partir de 2027
+const CRONOGRAMA = {
+  2026: { cbs: 0,     ibs: 0,      icmsPct: 1.00, issPct: 1.00, pisCofinsAtivo: true,  ipiAtivoIndustria: true  },
+  2027: { cbs: 0.088, ibs: 0.001,  icmsPct: 1.00, issPct: 1.00, pisCofinsAtivo: false, ipiAtivoIndustria: false },
+  2028: { cbs: 0.088, ibs: 0.001,  icmsPct: 1.00, issPct: 1.00, pisCofinsAtivo: false, ipiAtivoIndustria: false },
+  2029: { cbs: 0.088, ibs: 0.0177, icmsPct: 0.90, issPct: 0.90, pisCofinsAtivo: false, ipiAtivoIndustria: false },
+  2030: { cbs: 0.088, ibs: 0.0354, icmsPct: 0.80, issPct: 0.80, pisCofinsAtivo: false, ipiAtivoIndustria: false },
+  2031: { cbs: 0.088, ibs: 0.0531, icmsPct: 0.70, issPct: 0.70, pisCofinsAtivo: false, ipiAtivoIndustria: false },
+  2032: { cbs: 0.088, ibs: 0.0708, icmsPct: 0.60, issPct: 0.60, pisCofinsAtivo: false, ipiAtivoIndustria: false },
+  2033: { cbs: 0.088, ibs: 0.177,  icmsPct: 0,    issPct: 0,    pisCofinsAtivo: false, ipiAtivoIndustria: false }
+};
+
+const ANOS = [2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033];
+
+// ─── Helper para criar uma faixa do Simples (formato compacto) ───
+// Colunas: min, max, alíq nominal, parcela a deduzir, e a "repartição" (% de cada tributo no DAS)
+function f(min, max, aliq, dedu, irpj, csll, cofins, pis, cpp, icms, iss, ipi, cbs, ibs) {
+  return { min, max, aliq, dedu,
+           part: { irpj, csll, cofins, pis, cpp, icms, iss, ipi, cbs, ibs } };
+}
+
+// ════════════════════════════════════════════════════════════════════
+// SIMPLES NACIONAL — ANEXO I (COMÉRCIO) — todas as faixas × todos os anos
+// ════════════════════════════════════════════════════════════════════
+const SIMPLES_ANEXO_I = {
+  2026: [
+    f(0,         180000,  0.04,  0,      0.055, 0.035, 0.1274, 0.0276, 0.415, 0.34,  0, 0, 0,      0     ),
+    f(180000.01, 360000,  0.073, 5940,   0.055, 0.035, 0.1274, 0.0276, 0.415, 0.34,  0, 0, 0,      0     ),
+    f(360000.01, 720000,  0.095, 13860,  0.055, 0.035, 0.1274, 0.0276, 0.42,  0.335, 0, 0, 0,      0     ),
+    f(720000.01, 1800000, 0.107, 22500,  0.055, 0.035, 0.1274, 0.0276, 0.42,  0.335, 0, 0, 0,      0     ),
+    f(1800000.01,3600000, 0.143, 87300,  0.055, 0.035, 0.1274, 0.0276, 0.42,  0.335, 0, 0, 0,      0     ),
+    f(3600000.01,4800000, 0.19,  378000, 0.135, 0.10,  0.2827, 0.0613, 0.421, 0,     0, 0, 0,      0     )
+  ],
+  2027: [
+    f(0,         180000,  0.04,  0,      0.055, 0.035, 0, 0, 0.415, 0.34,  0, 0, 0.1533, 0.0017),
+    f(180000.01, 360000,  0.073, 5940,   0.055, 0.035, 0, 0, 0.415, 0.34,  0, 0, 0.1533, 0.0017),
+    f(360000.01, 720000,  0.095, 13860,  0.055, 0.035, 0, 0, 0.42,  0.335, 0, 0, 0.1533, 0.0017),
+    f(720000.01, 1800000, 0.107, 22500,  0.055, 0.035, 0, 0, 0.42,  0.335, 0, 0, 0.1533, 0.0017),
+    f(1800000.01,3600000, 0.143, 87300,  0.055, 0.035, 0, 0, 0.42,  0.335, 0, 0, 0.1533, 0.0017),
+    f(3600000.01,4800000, 0.189, 378000, 0.1358,0.1006,0, 0, 0.4234,0,     0, 0, 0.3402, 0     )
+  ],
+  2028: [
+    f(0,         180000,  0.04,  0,      0.055, 0.035, 0, 0, 0.415, 0.34,  0, 0, 0.1533, 0.0017),
+    f(180000.01, 360000,  0.073, 5940,   0.055, 0.035, 0, 0, 0.415, 0.34,  0, 0, 0.1533, 0.0017),
+    f(360000.01, 720000,  0.095, 13860,  0.055, 0.035, 0, 0, 0.42,  0.335, 0, 0, 0.1533, 0.0017),
+    f(720000.01, 1800000, 0.107, 22500,  0.055, 0.035, 0, 0, 0.42,  0.335, 0, 0, 0.1533, 0.0017),
+    f(1800000.01,3600000, 0.143, 87300,  0.055, 0.035, 0, 0, 0.42,  0.335, 0, 0, 0.1533, 0.0017),
+    f(3600000.01,4800000, 0.189, 378000, 0.1358,0.1006,0, 0, 0.4234,0,     0, 0, 0.3402, 0     )
+  ],
+  2029: [
+    f(0,         180000,  0.04,  0,      0.055, 0.035, 0, 0, 0.415, 0.306, 0, 0, 0.155, 0.034 ),
+    f(180000.01, 360000,  0.073, 5940,   0.055, 0.035, 0, 0, 0.415, 0.306, 0, 0, 0.155, 0.034 ),
+    f(360000.01, 720000,  0.095, 13860,  0.055, 0.035, 0, 0, 0.42,  0.3015,0, 0, 0.155, 0.0335),
+    f(720000.01, 1800000, 0.107, 22500,  0.055, 0.035, 0, 0, 0.42,  0.3015,0, 0, 0.155, 0.0335),
+    f(1800000.01,3600000, 0.143, 87300,  0.055, 0.035, 0, 0, 0.42,  0.3015,0, 0, 0.155, 0.0335),
+    f(3600000.01,4800000, 0.19,  378000, 0.135, 0.10,  0, 0, 0.421, 0,     0, 0, 0.344, 0     )
+  ],
+  2030: [
+    f(0,         180000,  0.04,  0,      0.055, 0.035, 0, 0, 0.415, 0.272, 0, 0, 0.155, 0.068),
+    f(180000.01, 360000,  0.073, 5940,   0.055, 0.035, 0, 0, 0.415, 0.272, 0, 0, 0.155, 0.068),
+    f(360000.01, 720000,  0.095, 13860,  0.055, 0.035, 0, 0, 0.42,  0.268, 0, 0, 0.155, 0.067),
+    f(720000.01, 1800000, 0.107, 22500,  0.055, 0.035, 0, 0, 0.42,  0.268, 0, 0, 0.155, 0.067),
+    f(1800000.01,3600000, 0.143, 87300,  0.055, 0.035, 0, 0, 0.42,  0.268, 0, 0, 0.155, 0.067),
+    f(3600000.01,4800000, 0.189, 378000, 0.135, 0.10,  0, 0, 0.421, 0,     0, 0, 0.344, 0    )
+  ],
+  2031: [
+    f(0,         180000,  0.04,  0,      0.055, 0.035, 0, 0, 0.415, 0.238, 0, 0, 0.155, 0.102 ),
+    f(180000.01, 360000,  0.073, 5940,   0.055, 0.035, 0, 0, 0.415, 0.238, 0, 0, 0.155, 0.102 ),
+    f(360000.01, 720000,  0.095, 13860,  0.055, 0.035, 0, 0, 0.42,  0.2345,0, 0, 0.155, 0.1005),
+    f(720000.01, 1800000, 0.107, 22500,  0.055, 0.035, 0, 0, 0.42,  0.2345,0, 0, 0.155, 0.1005),
+    f(1800000.01,3600000, 0.143, 87300,  0.055, 0.035, 0, 0, 0.42,  0.2345,0, 0, 0.155, 0.1005),
+    f(3600000.01,4800000, 0.189, 378000, 0.135, 0.10,  0, 0, 0.421, 0,     0, 0, 0.344, 0     )
+  ],
+  2032: [
+    f(0,         180000,  0.04,  0,      0.055, 0.035, 0, 0, 0.415, 0.204, 0, 0, 0.155, 0.136),
+    f(180000.01, 360000,  0.073, 5940,   0.055, 0.035, 0, 0, 0.415, 0.204, 0, 0, 0.155, 0.136),
+    f(360000.01, 720000,  0.095, 13860,  0.055, 0.035, 0, 0, 0.42,  0.201, 0, 0, 0.155, 0.134),
+    f(720000.01, 1800000, 0.107, 22500,  0.055, 0.035, 0, 0, 0.42,  0.201, 0, 0, 0.155, 0.134),
+    f(1800000.01,3600000, 0.143, 87300,  0.055, 0.035, 0, 0, 0.42,  0.201, 0, 0, 0.155, 0.134),
+    f(3600000.01,4800000, 0.189, 378000, 0.135, 0.10,  0, 0, 0.421, 0,     0, 0, 0.344, 0    )
+  ],
+  2033: [
+    f(0,         180000,  0.04,  0,      0.055, 0.035, 0, 0, 0.415, 0, 0, 0, 0.155, 0.34 ),
+    f(180000.01, 360000,  0.073, 5940,   0.055, 0.035, 0, 0, 0.415, 0, 0, 0, 0.155, 0.34 ),
+    f(360000.01, 720000,  0.095, 13860,  0.055, 0.035, 0, 0, 0.42,  0, 0, 0, 0.155, 0.335),
+    f(720000.01, 1800000, 0.107, 22500,  0.055, 0.035, 0, 0, 0.42,  0, 0, 0, 0.155, 0.335),
+    f(1800000.01,3600000, 0.143, 87300,  0.055, 0.035, 0, 0, 0.42,  0, 0, 0, 0.155, 0.335),
+    f(3600000.01,4800000, 0.189, 378000, 0.135, 0.10,  0, 0, 0.421, 0, 0, 0, 0.344, 0    )
+  ]
+};
+
+// ════════════════════════════════════════════════════════════════════
+// SIMPLES NACIONAL — ANEXO II (INDÚSTRIA)
+// ════════════════════════════════════════════════════════════════════
+const SIMPLES_ANEXO_II = {
+  2026: [
+    f(0,         180000,  0.045, 0,      0.055, 0.035, 0.1151, 0.0249, 0.375, 0.32, 0, 0.075, 0,      0     ),
+    f(180000.01, 360000,  0.078, 5940,   0.055, 0.035, 0.1151, 0.0249, 0.375, 0.32, 0, 0.075, 0,      0     ),
+    f(360000.01, 720000,  0.10,  13860,  0.055, 0.035, 0.1151, 0.0249, 0.375, 0.32, 0, 0.075, 0,      0     ),
+    f(720000.01, 1800000, 0.112, 22500,  0.055, 0.035, 0.1151, 0.0249, 0.375, 0.32, 0, 0.075, 0,      0     ),
+    f(1800000.01,3600000, 0.147, 85500,  0.055, 0.035, 0.1151, 0.0249, 0.375, 0.32, 0, 0.075, 0,      0     ),
+    f(3600000.01,4800000, 0.30,  720000, 0.085, 0.075, 0.2096, 0.0454, 0.235, 0,    0, 0.35,  0,      0     )
+  ],
+  2027: [
+    f(0,         180000,  0.045, 0,      0.055, 0.035, 0, 0, 0.375, 0.32, 0, 0.075, 0.1385, 0.0015),
+    f(180000.01, 360000,  0.078, 5940,   0.055, 0.035, 0, 0, 0.375, 0.32, 0, 0.075, 0.1385, 0.0015),
+    f(360000.01, 720000,  0.10,  13860,  0.055, 0.035, 0, 0, 0.375, 0.32, 0, 0.075, 0.1385, 0.0015),
+    f(720000.01, 1800000, 0.112, 22500,  0.055, 0.035, 0, 0, 0.375, 0.32, 0, 0.075, 0.1385, 0.0015),
+    f(1800000.01,3600000, 0.147, 85500,  0.055, 0.035, 0, 0, 0.375, 0.32, 0, 0.075, 0.1385, 0.0015),
+    f(3600000.01,4800000, 0.299, 720000, 0.0853,0.0753,0, 0, 0.2359,0,    0, 0.3513,0.2522, 0     )
+  ],
+  2028: [
+    f(0,         180000,  0.045, 0,      0.055, 0.035, 0, 0, 0.375, 0.32, 0, 0.075, 0.1385, 0.0015),
+    f(180000.01, 360000,  0.078, 5940,   0.055, 0.035, 0, 0, 0.375, 0.32, 0, 0.075, 0.1385, 0.0015),
+    f(360000.01, 720000,  0.10,  13860,  0.055, 0.035, 0, 0, 0.375, 0.32, 0, 0.075, 0.1385, 0.0015),
+    f(720000.01, 1800000, 0.112, 22500,  0.055, 0.035, 0, 0, 0.375, 0.32, 0, 0.075, 0.1385, 0.0015),
+    f(1800000.01,3600000, 0.147, 85500,  0.055, 0.035, 0, 0, 0.375, 0.32, 0, 0.075, 0.1385, 0.0015),
+    f(3600000.01,4800000, 0.299, 720000, 0.0853,0.0753,0, 0, 0.2359,0,    0, 0.3513,0.2522, 0     )
+  ],
+  2029: [
+    f(0,         180000,  0.045, 0,      0.055, 0.035, 0, 0, 0.375, 0.288,0, 0.075, 0.14, 0.032),
+    f(180000.01, 360000,  0.078, 5940,   0.055, 0.035, 0, 0, 0.375, 0.288,0, 0.075, 0.14, 0.032),
+    f(360000.01, 720000,  0.10,  13860,  0.055, 0.035, 0, 0, 0.375, 0.288,0, 0.075, 0.14, 0.032),
+    f(720000.01, 1800000, 0.112, 22500,  0.055, 0.035, 0, 0, 0.375, 0.288,0, 0.075, 0.14, 0.032),
+    f(1800000.01,3600000, 0.147, 85500,  0.055, 0.035, 0, 0, 0.375, 0.288,0, 0.075, 0.14, 0.032),
+    f(3600000.01,4800000, 0.30,  720000, 0.085, 0.075, 0, 0, 0.235, 0,    0, 0.35,  0.255,0    )
+  ],
+  2030: [
+    f(0,         180000,  0.045, 0,      0.055, 0.035, 0, 0, 0.375, 0.256,0, 0.075, 0.14, 0.064),
+    f(180000.01, 360000,  0.078, 5940,   0.055, 0.035, 0, 0, 0.375, 0.256,0, 0.075, 0.14, 0.064),
+    f(360000.01, 720000,  0.10,  13860,  0.055, 0.035, 0, 0, 0.375, 0.256,0, 0.075, 0.14, 0.064),
+    f(720000.01, 1800000, 0.112, 22500,  0.055, 0.035, 0, 0, 0.375, 0.256,0, 0.075, 0.14, 0.064),
+    f(1800000.01,3600000, 0.147, 85500,  0.055, 0.035, 0, 0, 0.375, 0.256,0, 0.075, 0.14, 0.064),
+    f(3600000.01,4800000, 0.30,  720000, 0.085, 0.075, 0, 0, 0.235, 0,    0, 0.35,  0.255,0    )
+  ],
+  2031: [
+    f(0,         180000,  0.045, 0,      0.055, 0.035, 0, 0, 0.375, 0.224,0, 0.075, 0.14, 0.096),
+    f(180000.01, 360000,  0.078, 5940,   0.055, 0.035, 0, 0, 0.375, 0.224,0, 0.075, 0.14, 0.096),
+    f(360000.01, 720000,  0.10,  13860,  0.055, 0.035, 0, 0, 0.375, 0.224,0, 0.075, 0.14, 0.096),
+    f(720000.01, 1800000, 0.112, 22500,  0.055, 0.035, 0, 0, 0.375, 0.224,0, 0.075, 0.14, 0.096),
+    f(1800000.01,3600000, 0.147, 85500,  0.055, 0.035, 0, 0, 0.375, 0.224,0, 0.075, 0.14, 0.096),
+    f(3600000.01,4800000, 0.30,  720000, 0.085, 0.075, 0, 0, 0.235, 0,    0, 0.35,  0.255,0    )
+  ],
+  2032: [
+    f(0,         180000,  0.045, 0,      0.055, 0.035, 0, 0, 0.375, 0.192,0, 0.075, 0.14, 0.128),
+    f(180000.01, 360000,  0.078, 5940,   0.055, 0.035, 0, 0, 0.375, 0.192,0, 0.075, 0.14, 0.128),
+    f(360000.01, 720000,  0.10,  13860,  0.055, 0.035, 0, 0, 0.375, 0.192,0, 0.075, 0.14, 0.128),
+    f(720000.01, 1800000, 0.112, 22500,  0.055, 0.035, 0, 0, 0.375, 0.192,0, 0.075, 0.14, 0.128),
+    f(1800000.01,3600000, 0.147, 85500,  0.055, 0.035, 0, 0, 0.375, 0.192,0, 0.075, 0.14, 0.128),
+    f(3600000.01,4800000, 0.30,  720000, 0.085, 0.075, 0, 0, 0.235, 0,    0, 0.35,  0.255,0    )
+  ],
+  2033: [
+    f(0,         180000,  0.045, 0,      0.055, 0.035, 0, 0, 0.375, 0, 0, 0.075, 0.14, 0.32),
+    f(180000.01, 360000,  0.078, 5940,   0.055, 0.035, 0, 0, 0.375, 0, 0, 0.075, 0.14, 0.32),
+    f(360000.01, 720000,  0.10,  13860,  0.055, 0.035, 0, 0, 0.375, 0, 0, 0.075, 0.14, 0.32),
+    f(720000.01, 1800000, 0.112, 22500,  0.055, 0.035, 0, 0, 0.375, 0, 0, 0.075, 0.14, 0.32),
+    f(1800000.01,3600000, 0.147, 85500,  0.055, 0.035, 0, 0, 0.375, 0, 0, 0.075, 0.14, 0.32),
+    f(3600000.01,4800000, 0.30,  720000, 0.085, 0.075, 0, 0, 0.235, 0, 0, 0.35,  0.255,0   )
+  ]
+};
+
+// ════════════════════════════════════════════════════════════════════
+// SIMPLES NACIONAL — ANEXO III (SERVIÇOS OPERACIONAIS)
+// ════════════════════════════════════════════════════════════════════
+const SIMPLES_ANEXO_III = {
+  2026: [
+    f(0,         180000,  0.06,  0,      0.04, 0.035, 0.1282, 0.0278, 0.434, 0, 0.335, 0, 0, 0),
+    f(180000.01, 360000,  0.112, 9360,   0.04, 0.035, 0.1405, 0.0305, 0.434, 0, 0.32,  0, 0, 0),
+    f(360000.01, 720000,  0.135, 17640,  0.04, 0.035, 0.1364, 0.0296, 0.434, 0, 0.325, 0, 0, 0),
+    f(720000.01, 1800000, 0.16,  35640,  0.04, 0.035, 0.1364, 0.0296, 0.434, 0, 0.325, 0, 0, 0),
+    f(1800000.01,3600000, 0.21,  125640, 0.04, 0.035, 0.1282, 0.0278, 0.434, 0, 0.335, 0, 0, 0),
+    f(3600000.01,4800000, 0.33,  648000, 0.35, 0.15,  0.1603, 0.0347, 0.305, 0, 0,     0, 0, 0)
+  ],
+  2027: [
+    f(0,         180000,  0.06,  0,      0.04,  0.035, 0, 0, 0.434, 0, 0.335, 0, 0.1543, 0.0017),
+    f(180000.01, 360000,  0.112, 9360,   0.04,  0.035, 0, 0, 0.434, 0, 0.32,  0, 0.1691, 0.0019),
+    f(360000.01, 720000,  0.135, 17640,  0.04,  0.035, 0, 0, 0.434, 0, 0.325, 0, 0.1641, 0.0019),
+    f(720000.01, 1800000, 0.16,  35640,  0.04,  0.035, 0, 0, 0.434, 0, 0.325, 0, 0.1641, 0.0019),
+    f(1800000.01,3600000, 0.21,  125640, 0.04,  0.035, 0, 0, 0.434, 0, 0.335, 0, 0.1543, 0.0017),
+    f(3600000.01,4800000, 0.329, 648000, 0.3509,0.1504,0, 0, 0.3058,0, 0,     0, 0.1929, 0     )
+  ],
+  2028: [
+    f(0,         180000,  0.06,  0,      0.04,  0.035, 0, 0, 0.434, 0, 0.335, 0, 0.1543, 0.0017),
+    f(180000.01, 360000,  0.112, 9360,   0.04,  0.035, 0, 0, 0.434, 0, 0.32,  0, 0.1691, 0.0019),
+    f(360000.01, 720000,  0.135, 17640,  0.04,  0.035, 0, 0, 0.434, 0, 0.325, 0, 0.1641, 0.0019),
+    f(720000.01, 1800000, 0.16,  35640,  0.04,  0.035, 0, 0, 0.434, 0, 0.325, 0, 0.1641, 0.0019),
+    f(1800000.01,3600000, 0.21,  125640, 0.04,  0.035, 0, 0, 0.434, 0, 0.335, 0, 0.1543, 0.0017),
+    f(3600000.01,4800000, 0.329, 648000, 0.3509,0.1504,0, 0, 0.3058,0, 0,     0, 0.1929, 0     )
+  ],
+  2029: [
+    f(0,         180000,  0.06,  0,      0.04, 0.035, 0, 0, 0.434, 0, 0.3015, 0, 0.156, 0.0335),
+    f(180000.01, 360000,  0.112, 9360,   0.04, 0.035, 0, 0, 0.434, 0, 0.288,  0, 0.171, 0.032 ),
+    f(360000.01, 720000,  0.135, 17640,  0.04, 0.035, 0, 0, 0.434, 0, 0.2925, 0, 0.166, 0.0325),
+    f(720000.01, 1800000, 0.16,  35640,  0.04, 0.035, 0, 0, 0.434, 0, 0.2925, 0, 0.166, 0.0325),
+    f(1800000.01,3600000, 0.21,  125640, 0.04, 0.035, 0, 0, 0.434, 0, 0.3015, 0, 0.156, 0.0335),
+    f(3600000.01,4800000, 0.33,  648000, 0.35, 0.15,  0, 0, 0.305, 0, 0,      0, 0.195, 0     )
+  ],
+  2030: [
+    f(0,         180000,  0.06,  0,      0.04, 0.035, 0, 0, 0.434, 0, 0.268, 0, 0.156, 0.067),
+    f(180000.01, 360000,  0.112, 9360,   0.04, 0.035, 0, 0, 0.434, 0, 0.256, 0, 0.171, 0.064),
+    f(360000.01, 720000,  0.135, 17640,  0.04, 0.035, 0, 0, 0.434, 0, 0.26,  0, 0.166, 0.065),
+    f(720000.01, 1800000, 0.16,  35640,  0.04, 0.035, 0, 0, 0.434, 0, 0.26,  0, 0.166, 0.065),
+    f(1800000.01,3600000, 0.21,  125640, 0.04, 0.035, 0, 0, 0.434, 0, 0.268, 0, 0.156, 0.067),
+    f(3600000.01,4800000, 0.33,  648000, 0.35, 0.15,  0, 0, 0.305, 0, 0,     0, 0.195, 0    )
+  ],
+  2031: [
+    f(0,         180000,  0.06,  0,      0.04, 0.035, 0, 0, 0.434, 0, 0.2345, 0, 0.156, 0.1005),
+    f(180000.01, 360000,  0.112, 9360,   0.04, 0.035, 0, 0, 0.434, 0, 0.224,  0, 0.171, 0.096 ),
+    f(360000.01, 720000,  0.135, 17640,  0.04, 0.035, 0, 0, 0.434, 0, 0.2275, 0, 0.166, 0.0975),
+    f(720000.01, 1800000, 0.16,  35640,  0.04, 0.035, 0, 0, 0.434, 0, 0.2275, 0, 0.166, 0.0975),
+    f(1800000.01,3600000, 0.21,  125640, 0.04, 0.035, 0, 0, 0.434, 0, 0.2345, 0, 0.156, 0.1005),
+    f(3600000.01,4800000, 0.33,  648000, 0.35, 0.15,  0, 0, 0.305, 0, 0,      0, 0.195, 0     )
+  ],
+  2032: [
+    f(0,         180000,  0.06,  0,      0.04, 0.035, 0, 0, 0.434, 0, 0.201, 0, 0.156, 0.134),
+    f(180000.01, 360000,  0.112, 9360,   0.04, 0.035, 0, 0, 0.434, 0, 0.192, 0, 0.171, 0.128),
+    f(360000.01, 720000,  0.135, 17640,  0.04, 0.035, 0, 0, 0.434, 0, 0.195, 0, 0.166, 0.13 ),
+    f(720000.01, 1800000, 0.16,  35640,  0.04, 0.035, 0, 0, 0.434, 0, 0.195, 0, 0.166, 0.13 ),
+    f(1800000.01,3600000, 0.21,  125640, 0.04, 0.035, 0, 0, 0.434, 0, 0.201, 0, 0.156, 0.134),
+    f(3600000.01,4800000, 0.33,  648000, 0.35, 0.15,  0, 0, 0.305, 0, 0,     0, 0.195, 0    )
+  ],
+  2033: [
+    f(0,         180000,  0.06,  0,      0.04, 0.035, 0, 0, 0.434, 0, 0, 0, 0.156, 0.335),
+    f(180000.01, 360000,  0.112, 9360,   0.04, 0.035, 0, 0, 0.434, 0, 0, 0, 0.171, 0.32 ),
+    f(360000.01, 720000,  0.135, 17640,  0.04, 0.035, 0, 0, 0.434, 0, 0, 0, 0.166, 0.325),
+    f(720000.01, 1800000, 0.16,  35640,  0.04, 0.035, 0, 0, 0.434, 0, 0, 0, 0.166, 0.325),
+    f(1800000.01,3600000, 0.21,  125640, 0.04, 0.035, 0, 0, 0.434, 0, 0, 0, 0.156, 0.335),
+    f(3600000.01,4800000, 0.33,  648000, 0.35, 0.15,  0, 0, 0.305, 0, 0, 0, 0.195, 0    )
+  ]
+};
+
+// ════════════════════════════════════════════════════════════════════
+// SIMPLES NACIONAL — ANEXO IV (CONSTRUÇÃO CIVIL / ADVOCACIA)
+// IMPORTANTE: CPP = 0 — INSS recolhido por fora pela empresa
+// ════════════════════════════════════════════════════════════════════
+const SIMPLES_ANEXO_IV = {
+  2026: [
+    f(0,         180000,  0.045, 0,      0.188, 0.152, 0.1767, 0.0383, 0, 0, 0.445, 0, 0, 0),
+    f(180000.01, 360000,  0.09,  8100,   0.198, 0.152, 0.2055, 0.0445, 0, 0, 0.40,  0, 0, 0),
+    f(360000.01, 720000,  0.102, 12420,  0.208, 0.152, 0.1973, 0.0427, 0, 0, 0.40,  0, 0, 0),
+    f(720000.01, 1800000, 0.14,  39780,  0.178, 0.192, 0.189,  0.041,  0, 0, 0.40,  0, 0, 0),
+    f(1800000.01,3600000, 0.22,  183780, 0.188, 0.192, 0.1808, 0.0392, 0, 0, 0.40,  0, 0, 0),
+    f(3600000.01,4800000, 0.33,  828000, 0.535, 0.215, 0.2055, 0.0445, 0, 0, 0,     0, 0, 0)
+  ],
+  2027: [
+    f(0,         180000,  0.045, 0,      0.188, 0.152, 0, 0, 0, 0, 0.445, 0, 0.2126, 0.0024),
+    f(180000.01, 360000,  0.09,  8100,   0.198, 0.152, 0, 0, 0, 0, 0.40,  0, 0.2473, 0.0027),
+    f(360000.01, 720000,  0.102, 12420,  0.208, 0.152, 0, 0, 0, 0, 0.40,  0, 0.2374, 0.0026),
+    f(720000.01, 1800000, 0.14,  39780,  0.178, 0.192, 0, 0, 0, 0, 0.40,  0, 0.2275, 0.0025),
+    f(1800000.01,3600000, 0.22,  183780, 0.188, 0.192, 0, 0, 0, 0, 0.40,  0, 0.2176, 0.0024),
+    f(3600000.01,4800000, 0.329, 828000, 0.5371,0.2159,0, 0, 0, 0, 0,     0, 0.247,  0     )
+  ],
+  2028: [
+    f(0,         180000,  0.045, 0,      0.188, 0.152, 0, 0, 0, 0, 0.445, 0, 0.2126, 0.0024),
+    f(180000.01, 360000,  0.09,  8100,   0.198, 0.152, 0, 0, 0, 0, 0.40,  0, 0.2473, 0.0027),
+    f(360000.01, 720000,  0.102, 12420,  0.208, 0.152, 0, 0, 0, 0, 0.40,  0, 0.2374, 0.0026),
+    f(720000.01, 1800000, 0.14,  39780,  0.178, 0.192, 0, 0, 0, 0, 0.40,  0, 0.2275, 0.0025),
+    f(1800000.01,3600000, 0.22,  183780, 0.188, 0.192, 0, 0, 0, 0, 0.40,  0, 0.2176, 0.0024),
+    f(3600000.01,4800000, 0.329, 828000, 0.5371,0.2159,0, 0, 0, 0, 0,     0, 0.247,  0     )
+  ],
+  2029: [
+    f(0,         180000,  0.045, 0,      0.188, 0.152, 0, 0, 0, 0, 0.4005, 0, 0.215, 0.0445),
+    f(180000.01, 360000,  0.09,  8100,   0.198, 0.152, 0, 0, 0, 0, 0.36,   0, 0.25,  0.04  ),
+    f(360000.01, 720000,  0.102, 12420,  0.208, 0.152, 0, 0, 0, 0, 0.36,   0, 0.24,  0.04  ),
+    f(720000.01, 1800000, 0.14,  39780,  0.178, 0.192, 0, 0, 0, 0, 0.36,   0, 0.23,  0.04  ),
+    f(1800000.01,3600000, 0.22,  183780, 0.188, 0.192, 0, 0, 0, 0, 0.36,   0, 0.22,  0.04  ),
+    f(3600000.01,4800000, 0.33,  828000, 0.535, 0.215, 0, 0, 0, 0, 0,      0, 0.25,  0     )
+  ],
+  2030: [
+    f(0,         180000,  0.045, 0,      0.188, 0.152, 0, 0, 0, 0, 0.356, 0, 0.215, 0.089),
+    f(180000.01, 360000,  0.09,  8100,   0.198, 0.152, 0, 0, 0, 0, 0.32,  0, 0.25,  0.08 ),
+    f(360000.01, 720000,  0.102, 12420,  0.208, 0.152, 0, 0, 0, 0, 0.32,  0, 0.24,  0.08 ),
+    f(720000.01, 1800000, 0.14,  39780,  0.178, 0.192, 0, 0, 0, 0, 0.32,  0, 0.23,  0.08 ),
+    f(1800000.01,3600000, 0.22,  183780, 0.188, 0.192, 0, 0, 0, 0, 0.32,  0, 0.22,  0.08 ),
+    f(3600000.01,4800000, 0.33,  828000, 0.535, 0.215, 0, 0, 0, 0, 0,     0, 0.25,  0    )
+  ],
+  2031: [
+    f(0,         180000,  0.045, 0,      0.188, 0.152, 0, 0, 0, 0, 0.3115, 0, 0.215, 0.1335),
+    f(180000.01, 360000,  0.09,  8100,   0.198, 0.152, 0, 0, 0, 0, 0.28,   0, 0.25,  0.12  ),
+    f(360000.01, 720000,  0.102, 12420,  0.208, 0.152, 0, 0, 0, 0, 0.28,   0, 0.24,  0.12  ),
+    f(720000.01, 1800000, 0.14,  39780,  0.178, 0.192, 0, 0, 0, 0, 0.28,   0, 0.23,  0.12  ),
+    f(1800000.01,3600000, 0.22,  183780, 0.188, 0.192, 0, 0, 0, 0, 0.28,   0, 0.22,  0.12  ),
+    f(3600000.01,4800000, 0.33,  828000, 0.535, 0.215, 0, 0, 0, 0, 0,      0, 0.25,  0     )
+  ],
+  2032: [
+    f(0,         180000,  0.045, 0,      0.188, 0.152, 0, 0, 0, 0, 0.267, 0, 0.215, 0.178),
+    f(180000.01, 360000,  0.09,  8100,   0.198, 0.152, 0, 0, 0, 0, 0.24,  0, 0.25,  0.16 ),
+    f(360000.01, 720000,  0.102, 12420,  0.208, 0.152, 0, 0, 0, 0, 0.24,  0, 0.24,  0.16 ),
+    f(720000.01, 1800000, 0.14,  39780,  0.178, 0.192, 0, 0, 0, 0, 0.24,  0, 0.23,  0.16 ),
+    f(1800000.01,3600000, 0.22,  183780, 0.188, 0.192, 0, 0, 0, 0, 0.24,  0, 0.22,  0.16 ),
+    f(3600000.01,4800000, 0.33,  828000, 0.535, 0.215, 0, 0, 0, 0, 0,     0, 0.25,  0    )
+  ],
+  2033: [
+    f(0,         180000,  0.045, 0,      0.188, 0.152, 0, 0, 0, 0, 0, 0, 0.215, 0.445),
+    f(180000.01, 360000,  0.09,  8100,   0.198, 0.152, 0, 0, 0, 0, 0, 0, 0.25,  0.40 ),
+    f(360000.01, 720000,  0.102, 12420,  0.208, 0.152, 0, 0, 0, 0, 0, 0, 0.24,  0.40 ),
+    f(720000.01, 1800000, 0.14,  39780,  0.178, 0.192, 0, 0, 0, 0, 0, 0, 0.23,  0.40 ),
+    f(1800000.01,3600000, 0.22,  183780, 0.188, 0.192, 0, 0, 0, 0, 0, 0, 0.22,  0.40 ),
+    f(3600000.01,4800000, 0.33,  828000, 0.535, 0.215, 0, 0, 0, 0, 0, 0, 0.25,  0    )
+  ]
+};
+
+// ════════════════════════════════════════════════════════════════════
+// SIMPLES NACIONAL — ANEXO V (SERVIÇOS INTELECTUAIS — sem Fator R)
+// ════════════════════════════════════════════════════════════════════
+const SIMPLES_ANEXO_V = {
+  2026: [
+    f(0,         180000,  0.155, 0,      0.25, 0.15,  0.141,  0.0305, 0.2885, 0, 0.14,  0, 0, 0),
+    f(180000.01, 360000,  0.18,  4500,   0.23, 0.15,  0.141,  0.0305, 0.2785, 0, 0.17,  0, 0, 0),
+    f(360000.01, 720000,  0.195, 9900,   0.24, 0.15,  0.1492, 0.0323, 0.2385, 0, 0.19,  0, 0, 0),
+    f(720000.01, 1800000, 0.205, 17100,  0.21, 0.15,  0.1574, 0.0341, 0.2385, 0, 0.21,  0, 0, 0),
+    f(1800000.01,3600000, 0.23,  62100,  0.23, 0.125, 0.141,  0.0305, 0.2385, 0, 0.235, 0, 0, 0),
+    f(3600000.01,4800000, 0.305, 540000, 0.35, 0.155, 0.1644, 0.0356, 0.295,  0, 0,     0, 0, 0)
+  ],
+  2027: [
+    f(0,         180000,  0.155, 0,      0.25,  0.15,  0, 0, 0.2885, 0, 0.14,  0, 0.1696, 0.0019),
+    f(180000.01, 360000,  0.18,  4500,   0.23,  0.15,  0, 0, 0.2785, 0, 0.17,  0, 0.1696, 0.0019),
+    f(360000.01, 720000,  0.195, 9900,   0.24,  0.15,  0, 0, 0.2385, 0, 0.19,  0, 0.1795, 0.002 ),
+    f(720000.01, 1800000, 0.205, 17100,  0.21,  0.15,  0, 0, 0.2385, 0, 0.21,  0, 0.1894, 0.0021),
+    f(1800000.01,3600000, 0.23,  62100,  0.23,  0.125, 0, 0, 0.2385, 0, 0.235, 0, 0.1696, 0.0019),
+    f(3600000.01,4800000, 0.304, 540000, 0.351, 0.1554,0, 0, 0.2958, 0, 0,     0, 0.1978, 0     )
+  ],
+  2028: [
+    f(0,         180000,  0.155, 0,      0.25,  0.15,  0, 0, 0.2885, 0, 0.14,  0, 0.1696, 0.0019),
+    f(180000.01, 360000,  0.18,  4500,   0.23,  0.15,  0, 0, 0.2785, 0, 0.17,  0, 0.1696, 0.0019),
+    f(360000.01, 720000,  0.195, 9900,   0.24,  0.15,  0, 0, 0.2385, 0, 0.19,  0, 0.1795, 0.002 ),
+    f(720000.01, 1800000, 0.205, 17100,  0.21,  0.15,  0, 0, 0.2385, 0, 0.21,  0, 0.1894, 0.0021),
+    f(1800000.01,3600000, 0.23,  62100,  0.23,  0.125, 0, 0, 0.2385, 0, 0.235, 0, 0.1696, 0.0019),
+    f(3600000.01,4800000, 0.304, 540000, 0.351, 0.1554,0, 0, 0.2958, 0, 0,     0, 0.1978, 0     )
+  ],
+  2029: [
+    f(0,         180000,  0.155, 0,      0.25, 0.15,  0, 0, 0.2885, 0, 0.126,  0, 0.1715, 0.014 ),
+    f(180000.01, 360000,  0.18,  4500,   0.23, 0.15,  0, 0, 0.2785, 0, 0.153,  0, 0.1715, 0.017 ),
+    f(360000.01, 720000,  0.195, 9900,   0.24, 0.15,  0, 0, 0.2385, 0, 0.171,  0, 0.1815, 0.019 ),
+    f(720000.01, 1800000, 0.205, 17100,  0.21, 0.15,  0, 0, 0.2385, 0, 0.189,  0, 0.1915, 0.021 ),
+    f(1800000.01,3600000, 0.23,  62100,  0.23, 0.125, 0, 0, 0.2385, 0, 0.2115, 0, 0.1715, 0.0235),
+    f(3600000.01,4800000, 0.305, 540000, 0.35, 0.155, 0, 0, 0.295,  0, 0,      0, 0.20,   0     )
+  ],
+  2030: [
+    f(0,         180000,  0.155, 0,      0.25, 0.15,  0, 0, 0.2885, 0, 0.112, 0, 0.1715, 0.028),
+    f(180000.01, 360000,  0.18,  4500,   0.23, 0.15,  0, 0, 0.2785, 0, 0.136, 0, 0.1715, 0.034),
+    f(360000.01, 720000,  0.195, 9900,   0.24, 0.15,  0, 0, 0.2385, 0, 0.152, 0, 0.1815, 0.038),
+    f(720000.01, 1800000, 0.205, 17100,  0.21, 0.15,  0, 0, 0.2385, 0, 0.168, 0, 0.1915, 0.042),
+    f(1800000.01,3600000, 0.23,  62100,  0.23, 0.125, 0, 0, 0.2385, 0, 0.188, 0, 0.1715, 0.047),
+    f(3600000.01,4800000, 0.305, 540000, 0.35, 0.155, 0, 0, 0.295,  0, 0,     0, 0.20,   0    )
+  ],
+  2031: [
+    f(0,         180000,  0.155, 0,      0.25, 0.15,  0, 0, 0.2885, 0, 0.098,  0, 0.1715, 0.042 ),
+    f(180000.01, 360000,  0.18,  4500,   0.23, 0.15,  0, 0, 0.2785, 0, 0.119,  0, 0.1715, 0.051 ),
+    f(360000.01, 720000,  0.195, 9900,   0.24, 0.15,  0, 0, 0.2385, 0, 0.133,  0, 0.1815, 0.057 ),
+    f(720000.01, 1800000, 0.205, 17100,  0.21, 0.15,  0, 0, 0.2385, 0, 0.147,  0, 0.1915, 0.063 ),
+    f(1800000.01,3600000, 0.23,  62100,  0.23, 0.125, 0, 0, 0.2385, 0, 0.1645, 0, 0.1715, 0.0705),
+    f(3600000.01,4800000, 0.305, 540000, 0.35, 0.155, 0, 0, 0.295,  0, 0,      0, 0.20,   0     )
+  ],
+  2032: [
+    f(0,         180000,  0.155, 0,      0.25, 0.15,  0, 0, 0.2885, 0, 0.084, 0, 0.1715, 0.056),
+    f(180000.01, 360000,  0.18,  4500,   0.23, 0.15,  0, 0, 0.2785, 0, 0.102, 0, 0.1715, 0.068),
+    f(360000.01, 720000,  0.195, 9900,   0.24, 0.15,  0, 0, 0.2385, 0, 0.114, 0, 0.1815, 0.076),
+    f(720000.01, 1800000, 0.205, 17100,  0.21, 0.15,  0, 0, 0.2385, 0, 0.126, 0, 0.1915, 0.084),
+    f(1800000.01,3600000, 0.23,  62100,  0.23, 0.125, 0, 0, 0.2385, 0, 0.141, 0, 0.1715, 0.094),
+    f(3600000.01,4800000, 0.305, 540000, 0.35, 0.155, 0, 0, 0.295,  0, 0,     0, 0.20,   0    )
+  ],
+  2033: [
+    f(0,         180000,  0.155, 0,      0.25, 0.15,  0, 0, 0.2885, 0, 0, 0, 0.1715, 0.14 ),
+    f(180000.01, 360000,  0.18,  4500,   0.23, 0.15,  0, 0, 0.2785, 0, 0, 0, 0.1715, 0.17 ),
+    f(360000.01, 720000,  0.195, 9900,   0.24, 0.15,  0, 0, 0.2385, 0, 0, 0, 0.1815, 0.19 ),
+    f(720000.01, 1800000, 0.205, 17100,  0.21, 0.15,  0, 0, 0.2385, 0, 0, 0, 0.1915, 0.21 ),
+    f(1800000.01,3600000, 0.23,  62100,  0.23, 0.125, 0, 0, 0.2385, 0, 0, 0, 0.1715, 0.235),
+    f(3600000.01,4800000, 0.305, 540000, 0.35, 0.155, 0, 0, 0.295,  0, 0, 0, 0.20,   0    )
+  ]
+};
+
+// Mapa para acesso uniforme aos anexos
+const ANEXOS = {
+  I:   SIMPLES_ANEXO_I,
+  II:  SIMPLES_ANEXO_II,
+  III: SIMPLES_ANEXO_III,
+  IV:  SIMPLES_ANEXO_IV,
+  V:   SIMPLES_ANEXO_V
+};
+
+
+// ═══════════════════════════════════════════════════════════════════════
+// CAMADA 3.5 — MOTOR DE CÁLCULO
+// ═══════════════════════════════════════════════════════════════════════
+// Lógica da precificação inversa (alinhada com a planilha do contador):
+//
+//   P − impostosVenda_unit(P) − outrosCustosVenda_unit = RLD
+//
+// • impostosVenda_unit(P) contém TODOS os tributos proporcionais à venda
+//   (DAS, ICMS, ISS, PIS, Cofins, CBS, IBS, IPI, DIFAL venda), abatidos de
+//   créditos CONSTANTES que entram como "parcela fixa" (ex.: crédito de ICMS
+//   sobre a compra unitária).
+// • IRPJ e CSLL NÃO entram na precificação — incidem sobre o lucro da empresa
+//   (não sobre a venda) e dependem de dados mensais/trimestrais que este
+//   simulador não coleta. Um aviso textual orienta o usuário.
+// • CMV = preço de compra unitário (+ DIFAL compra, no Simples). Custos fixos
+//   de empresa (folha, aluguel, etc.) NÃO entram — são apurados depois.
+// ═══════════════════════════════════════════════════════════════════════
+
+// ─── Helpers de UF / ICMS interestadual ───
+function regiaoUF(uf) {
+  return REGIAO_NORTE_NORDESTE_CO_ES.includes(uf) ? 'NNECOES' : 'SSE';
+}
+function aliqInterestadual(ufOrigem, ufDestino, importado) {
+  if (importado) return 0.04;                                                 // Resolução Senado 13/2012
+  if (regiaoUF(ufOrigem) === 'SSE' && regiaoUF(ufDestino) === 'NNECOES') return 0.07;
+  return 0.12;
+}
+function cronoAno(ano) { return CRONOGRAMA[ano]; }
+
+// ─── Fator R ───
+function fatorRok(folhaMes, prolaboreMes, rbt12) {
+  if (rbt12 <= 0) return false;
+  return ((folhaMes + prolaboreMes) * 12) / rbt12 >= PREMISSAS.PISO_FATOR_R;
+}
+
+// ─── Anexo do Simples ───
+function anexoSimples(r) {
+  if (r.atividade === 'comercio')  return 'I';
+  if (r.atividade === 'industria') return 'II';
+  if (r.tipoServico === 'operacional') return 'III';
+  if (r.tipoServico === 'construcao')  return 'IV';
+  return fatorRok(r.folha || 0, r.prolabore || 0, r.rbt12 || 0) ? 'III' : 'V';
+}
+
+// ─── Faixa + alíquota efetiva do DAS ───
+function descobrirFaixa(rbt12, anexo, ano) {
+  const faixas = ANEXOS[anexo][ano];
+  for (const fx of faixas) if (rbt12 >= fx.min && rbt12 <= fx.max) return fx;
+  return faixas[faixas.length - 1];
+}
+function aliqEfetivaDAS(rbt12, anexo, ano) {
+  const fx = descobrirFaixa(rbt12, anexo, ano);
+  if (rbt12 <= 0) return fx.aliq;
+  return Math.max(0, (rbt12 * fx.aliq - fx.dedu) / rbt12);
+}
+
+// ─── DIFAL de venda (% do preço) — aplicável em todos os regimes ───
+function difalVendaPct(r, ano) {
+  if (r.vendaConsumidorFinal !== 'sim' || r.vendaOutraUF !== 'sim') return 0;
+  const interest = aliqInterestadual(r.uf, r.ufDestino, false);
+  const interna = (r.icmsDestino || 18) / 100;
+  return Math.max(0, interna - interest) * cronoAno(ano).icmsPct;
+}
+
+// ─── DIFAL de compra (somente Simples; vira custo unit da aquisição) ───
+function difalCompraUnit(r, ano) {
+  if (r.compraOutraUF !== 'sim' || !r.precoCompra) return 0;
+  const importado = r.produtoImportado === 'sim';
+  const interest = aliqInterestadual(r.ufOrigem, r.uf, importado);
+  const interna = (r.icmsInterno || 18) / 100;
+  const dif = Math.max(0, interna - interest) * cronoAno(ano).icmsPct;
+  return r.precoCompra * dif;
+}
+
+// ─── ICMS efetivo (aliq interna ou interestadual, ajustado pelo cronograma) ───
+// VENDA outra UF (B2B ou B2C) → sempre interestadual. O DIFAL cobre a diferença (tratado à parte).
+// VENDA mesma UF → alíq interna.
+function aliqICMSvenda(r, ano) {
+  const c = cronoAno(ano);
+  if (r.atividade === 'servicos') return 0;
+  if (r.vendaOutraUF === 'sim') {
+    return aliqInterestadual(r.uf, r.ufDestino, false) * c.icmsPct;
+  }
+  return ((r.icmsInterno || 18) / 100) * c.icmsPct;
+}
+function aliqICMScompra(r, ano) {
+  const c = cronoAno(ano);
+  if (r.atividade === 'servicos') return 0;
+  if (r.compraOutraUF === 'sim') {
+    const importado = r.produtoImportado === 'sim';
+    return aliqInterestadual(r.ufOrigem, r.uf, importado) * c.icmsPct;
+  }
+  return ((r.icmsInterno || 18) / 100) * c.icmsPct;
+}
+
+// ─── Resolver preço por busca binária ───
+function resolverPreco(liquidoUnit, alvoRLD) {
+  let lo = 0, hi = 1e9;
+  for (let i = 0; i < 80; i++) {
+    const mid = (lo + hi) / 2;
+    if (liquidoUnit(mid) < alvoRLD) lo = mid; else hi = mid;
+  }
+  return (lo + hi) / 2;
+}
+
+// ════════════════════════════════════════════════════════════════════════
+// MOTOR DE PRECIFICAÇÃO — por unidade vendida / serviço prestado
+// ════════════════════════════════════════════════════════════════════════
+// Premissa central: o simulador calcula o PREÇO DE VENDA UNITÁRIO necessário
+// para que sobre a Receita Líquida Desejada (RLD) por unidade, considerando
+// APENAS os impostos sobre a venda e os custos unitários (compra + outros).
+//
+// Fórmula inversa (válida para todos os regimes):
+//   P − impVendaUnit(P) − precoCompraUnit − outrosVendaUnit = RLD
+//   Escrevendo impVendaUnit(P) = A × P + B (linear em P):
+//   P × (1 − A) = RLD + precoCompraUnit + outrosVendaUnit + B
+//
+// IRPJ e CSLL NÃO são calculados em nenhum regime — eles incidem sobre o
+// LUCRO DA EMPRESA (não sobre a venda) e exigem dados mensais/trimestrais
+// que este simulador não coleta. Um aviso textual na tela de resultados
+// deixa isso claro para o usuário.
+// ════════════════════════════════════════════════════════════════════════
+
+// ─── Dados base (tudo por unidade) ───
+function dadosBase(r) {
+  const ehServico = r.atividade === 'servicos';
+  const outrosVendaUnit = ehServico
+    ? (r.outrosCustosServico || 0)
+    : (r.outrosCustosRevenda || 0);
+  const precoCompraUnit = ehServico ? 0 : (r.precoCompra || 0);
+  return {
+    ehServico,
+    outrosVendaUnit,
+    precoCompraUnit,
+    folha:    r.folha || 0,        // só usado para Fator R (serviços)
+    prolab:   r.prolabore || 0,    // idem
+    rld:      r.rld || 0
+  };
+}
+
+// ─── Helper: aplica fórmula inversa dado A (alíq. linear em P) e B (créd/ajustes) ───
+// P − (A·P + B) − precoCompraEf − outrosVendaUnit = RLD
+// ⇒ P = (RLD + precoCompraEf + outrosVendaUnit + B) / (1 − A)
+function precoInverso(rld, precoCompraEf, outrosVendaUnit, A, B) {
+  if (A >= 1) return Infinity;
+  return (rld + precoCompraEf + outrosVendaUnit + B) / (1 - A);
+}
+
+// ════════════════════════════════════════════════
+// REGIME 1 — SIMPLES NACIONAL (modalidade NORMAL)
+// ════════════════════════════════════════════════
+// Alíquota efetiva do DAS + DIFAL venda (se houver) são % do preço.
+// Sem créditos na precificação. DIFAL compra entra como custo da aquisição.
+// Sublimite (RBT12 > 3,6M): ICMS (comércio/indústria) ou ISS (serviços) saem
+// do DAS e são recolhidos por fora, com crédito de ICMS na compra.
+function calcularSimplesNormal(ano, r) {
+  const b = dadosBase(r);
+  const anexo  = anexoSimples(r);
+  const fx     = descobrirFaixa(r.rbt12 || 0, anexo, ano);
+  const aliqDASCheio = aliqEfetivaDAS(r.rbt12 || 0, anexo, ano);
+  // ⚠ Simples Nacional NÃO recolhe DIFAL em vendas interestaduais a consumidor
+  //   final (PF ou PJ não contribuinte). Orientação pacificada — empresas do
+  //   Simples já tributam tudo dentro do DAS. Logo, difV = 0 neste regime.
+  const difV   = 0;
+  const difalCompUnit = difalCompraUnit(r, ano);
+  const precoCompraEf = b.precoCompraUnit + difalCompUnit;  // DIFAL compra entra no custo
+
+  // ─── SUBLIMITE: RBT12 entre 3,6M e 4,8M → ICMS (ou ISS) por fora ───
+  const emSublimite = (r.rbt12 || 0) > PREMISSAS.LIMITE_SIMPLES_NORMAL
+                   && (r.rbt12 || 0) <= PREMISSAS.LIMITE_SIMPLES_SUBLIMITE;
+  let aliqDAS = aliqDASCheio;
+  let aliqICMSv = 0, aliqISSext = 0, aliqICMScompraPct = 0, credICMSunit = 0;
+  if (emSublimite) {
+    if (b.ehServico) {
+      aliqDAS = aliqDASCheio * (1 - (fx.part.iss || 0));
+      aliqISSext = ((r.iss || 2) / 100) * cronoAno(ano).issPct;
+    } else {
+      aliqDAS = aliqDASCheio * (1 - (fx.part.icms || 0));
+      aliqICMSv = aliqICMSvenda(r, ano);
+      aliqICMScompraPct = aliqICMScompra(r, ano);
+      credICMSunit = aliqICMScompraPct * b.precoCompraUnit;
+    }
+  }
+
+  const A = aliqDAS + difV + aliqICMSv + aliqISSext;
+  const B = -credICMSunit;
+  const P = precoInverso(b.rld, precoCompraEf, b.outrosVendaUnit, A, B);
+
+  // Decomposição unitária dos impostos
+  const impDASunit   = aliqDAS * P;
+  const impDIFALvUnit = difV * P;
+  const impICMSunit  = Math.max(0, aliqICMSv * P - credICMSunit);
+  const impISSunit   = aliqISSext * P;
+  const impVendaUnit = impDASunit + impDIFALvUnit + impICMSunit + impISSunit;
+  const margemLiquidaUnit = P - impVendaUnit - precoCompraEf - b.outrosVendaUnit;
+
+  const fatorR_ok = fatorRok(b.folha, b.prolab, r.rbt12 || 0);
+  const fatorR_val = (r.rbt12 || 0) > 0 ? ((b.folha + b.prolab) * 12) / r.rbt12 : 0;
+  const memoria = {
+    ehServico: b.ehServico,
+    rbt12: r.rbt12 || 0,
+    anexo, faixa: fx,
+    aliqDASnominal: fx.aliq, parcelaDeduzir: fx.dedu,
+    aliqDASefetiva: aliqDAS,
+    aliqDASefetivaCheia: aliqDASCheio,
+    sublimite: emSublimite,
+    fatorR: fatorR_val, fatorR_ok,
+    folha: b.folha, prolab: b.prolab,
+    aliqDIFALcompraPct: (function(){
+      if (r.compraOutraUF !== 'sim') return 0;
+      const interest = aliqInterestadual(r.ufOrigem, r.uf, r.produtoImportado === 'sim');
+      return Math.max(0, ((r.icmsInterno || 18)/100) - interest) * cronoAno(ano).icmsPct;
+    })(),
+    difalCompraUnit: difalCompUnit,
+    precoCompraUnit: b.precoCompraUnit,
+    custoAquisicaoUnit: precoCompraEf,
+    aliqICMSvPct: aliqICMSv,
+    aliqICMScompraPct,
+    credICMSunit,
+    aliqISSsubPct: aliqISSext,
+    aliqDIFALvendaPct: difV,
+    outrosVendaUnit: b.outrosVendaUnit,
+    impDASunit, impDIFALvUnit, impICMSunit, impISSunit,
+    impVendaUnit,
+    aliqEfetivaVenda: P > 0 ? impVendaUnit / P : 0,
+    cargaPct: P > 0 ? impVendaUnit / P : 0,
+    rld: b.rld,
+    margemLiquidaUnit,
+    margemLiquidaPct: P > 0 ? margemLiquidaUnit / P : 0,
+    precoUnit: P,
+    precoNota: P,
+  };
+
+  return {
+    regime: 'Simples Normal',
+    precoUnit: P,
+    precoNota: P,
+    impVendaUnit,
+    aliqEfetivaVenda: memoria.aliqEfetivaVenda,
+    custoAquisicaoUnit: precoCompraEf,
+    outrosVendaUnit: b.outrosVendaUnit,
+    rld: b.rld,
+    info: { anexo, aliqDAS, sublimite: emSublimite },
+    memoria
+  };
+}
+
+// ════════════════════════════════════════════════
+// REGIME 2 — SIMPLES NACIONAL (modalidade HÍBRIDA)
+// ════════════════════════════════════════════════
+// 2026 = idêntico ao Normal. 2027+: DAS reduz (tira a parcela de CBS/IBS), e empresa
+// recolhe CBS cheia + IBS do ano POR FORA, com créditos amplos sobre compras e % de
+// outras despesas com NF. Os créditos entram como parcela fixa na precificação.
+function calcularSimplesHibrido(ano, r) {
+  if (ano === 2026) {
+    const sn = calcularSimplesNormal(ano, r);
+    return { ...sn, regime: 'Simples Híbrido' };
+  }
+  const b = dadosBase(r);
+  const c = cronoAno(ano);
+  const anexo = anexoSimples(r);
+  const fx    = descobrirFaixa(r.rbt12 || 0, anexo, ano);
+  const aliqDASCheio = aliqEfetivaDAS(r.rbt12 || 0, anexo, ano);
+  const repartCBSIBS = (fx.part.cbs || 0) + (fx.part.ibs || 0);
+  const aliqDASRed   = aliqDASCheio * (1 - repartCBSIBS);
+
+  const cbsA = PREMISSAS.CBS_CHEIA;
+  const ibsA = c.ibs;
+  // Simples Nacional não recolhe DIFAL venda — ver comentário em calcularSimplesNormal.
+  const difV = 0;
+  const difalCompUnit = difalCompraUnit(r, ano);
+  const precoCompraEf = b.precoCompraUnit + difalCompUnit;
+
+  // Créditos CBS/IBS por unidade — apenas sobre o preço de compra
+  const credCBSunit = b.precoCompraUnit * cbsA;
+  const credIBSunit = b.precoCompraUnit * ibsA;
+
+  const A = aliqDASRed + cbsA + ibsA + difV;
+  const B = -credCBSunit - credIBSunit;
+  const P = precoInverso(b.rld, precoCompraEf, b.outrosVendaUnit, A, B);
+
+  const impDASunit    = aliqDASRed * P;
+  const impCBSunit    = Math.max(0, cbsA * P - credCBSunit);
+  const impIBSunit    = Math.max(0, ibsA * P - credIBSunit);
+  const impDIFALvUnit = difV * P;
+  const impVendaUnit  = impDASunit + impCBSunit + impIBSunit + impDIFALvUnit;
+  const margemLiquidaUnit = P - impVendaUnit - precoCompraEf - b.outrosVendaUnit;
+
+  const memoria = {
+    ehServico: b.ehServico,
+    rbt12: r.rbt12 || 0,
+    anexo, faixa: fx,
+    aliqDASnominal: fx.aliq, parcelaDeduzir: fx.dedu,
+    aliqDASefetivaCheia: aliqDASCheio,
+    aliqDASReduzido: aliqDASRed,
+    repartCBSIBS,
+    fatorR: (r.rbt12||0)>0 ? ((b.folha+b.prolab)*12)/r.rbt12 : 0,
+    fatorR_ok: fatorRok(b.folha, b.prolab, r.rbt12||0),
+    folha: b.folha, prolab: b.prolab,
+    aliqDIFALcompraPct: (function(){
+      if (r.compraOutraUF !== 'sim') return 0;
+      const interest = aliqInterestadual(r.ufOrigem, r.uf, r.produtoImportado === 'sim');
+      return Math.max(0, ((r.icmsInterno||18)/100) - interest) * cronoAno(ano).icmsPct;
+    })(),
+    difalCompraUnit: difalCompUnit,
+    precoCompraUnit: b.precoCompraUnit,
+    custoAquisicaoUnit: precoCompraEf,
+    aliqCBS: cbsA, aliqIBS: ibsA,
+    credCBSunit, credIBSunit,
+    aliqDIFALvendaPct: difV,
+    outrosVendaUnit: b.outrosVendaUnit,
+    impDASunit, impCBSunit, impIBSunit, impDIFALvUnit,
+    impVendaUnit,
+    aliqEfetivaVenda: P > 0 ? impVendaUnit / P : 0,
+    cargaPct: P > 0 ? impVendaUnit / P : 0,
+    rld: b.rld,
+    margemLiquidaUnit,
+    margemLiquidaPct: P > 0 ? margemLiquidaUnit / P : 0,
+    precoUnit: P,
+    precoNota: P * (1 + cbsA + ibsA),
+  };
+
+  return {
+    regime: 'Simples Híbrido',
+    precoUnit: P,
+    precoNota: P * (1 + cbsA + ibsA),
+    impVendaUnit,
+    aliqEfetivaVenda: memoria.aliqEfetivaVenda,
+    custoAquisicaoUnit: precoCompraEf,
+    outrosVendaUnit: b.outrosVendaUnit,
+    rld: b.rld,
+    info: { anexo, aliqDASReduzido: aliqDASRed, cbs: cbsA, ibs: ibsA },
+    memoria
+  };
+}
+
+// ════════════════════════════════════════════════
+// REGIME 3 — LUCRO PRESUMIDO
+// ════════════════════════════════════════════════
+// ICMS não-cumulativo por natureza → crédito sobre compra (parcela fixa na precificação).
+// PIS/Cofins cumulativo em 2026 (sem crédito), COM BASE EXCLUINDO ICMS (Tese do Século).
+// 2027+: PIS/Cofins extintos; entra CBS/IBS POR FORA com créditos amplos.
+// IRPJ/CSLL sobre presunção, NÃO entram na precificação — calculados sobre o mensal.
+// IPI em 2026 (indústria) por fora.
+function calcularPresumido(ano, r) {
+  const b = dadosBase(r);
+  const c = cronoAno(ano);
+  const ehServ = b.ehServico;
+
+  const aliqICMSv = ehServ ? 0 : aliqICMSvenda(r, ano);
+  const aliqICMSc = ehServ ? 0 : aliqICMScompra(r, ano);
+  const credICMSunit = ehServ ? 0 : aliqICMSc * b.precoCompraUnit;
+
+  const aliqISS = ehServ ? ((r.iss || 2) / 100) * c.issPct : 0;
+  const aliqIPI = (r.atividade === 'industria' && c.ipiAtivoIndustria) ? ((r.ipi || 0) / 100) : 0;
+  const difV = difalVendaPct(r, ano);
+
+  const ativPC = c.pisCofinsAtivo;
+  const aliqPIS    = ativPC ? PREMISSAS.PIS_CUMULATIVO    : 0;
+  const aliqCofins = ativPC ? PREMISSAS.COFINS_CUMULATIVO : 0;
+
+  const cbsA = c.cbs, ibsA = c.ibs;
+  const credCBSunit = b.precoCompraUnit * cbsA;
+  const credIBSunit = b.precoCompraUnit * ibsA;
+
+  // impostosVenda_unit(P) = A·P + B linear em P
+  // Base PIS/Cofins (Tese do Século) = P·(1 − aliqICMSv − difV) + credICMSunit
+  const A = aliqICMSv + aliqISS + aliqIPI + difV + cbsA + ibsA
+          + (aliqPIS + aliqCofins) * (1 - aliqICMSv - difV);
+  const B = -credICMSunit - credCBSunit - credIBSunit
+          + (aliqPIS + aliqCofins) * credICMSunit;
+
+  const P = precoInverso(b.rld, b.precoCompraUnit, b.outrosVendaUnit, A, B);
+
+  // Decomposição unitária
+  const basePISCof_unit = P * (1 - aliqICMSv - difV) + credICMSunit;
+  const impICMSunit  = Math.max(0, aliqICMSv * P - credICMSunit);
+  const impPISunit    = aliqPIS    * basePISCof_unit;
+  const impCofinsUnit = aliqCofins * basePISCof_unit;
+  const impISSunit    = aliqISS * P;
+  const impIPIunit    = aliqIPI * P;
+  const impCBSunit    = Math.max(0, cbsA * P - credCBSunit);
+  const impIBSunit    = Math.max(0, ibsA * P - credIBSunit);
+  const impDIFALvUnit = difV * P;
+  const impVendaUnit  = impICMSunit + impPISunit + impCofinsUnit + impISSunit
+                      + impIPIunit + impCBSunit + impIBSunit + impDIFALvUnit;
+
+  const margemLiquidaUnit = P - impVendaUnit - b.precoCompraUnit - b.outrosVendaUnit;
+
+  const memoria = {
+    ehServico: ehServ,
+    precoCompraUnit: b.precoCompraUnit,
+    custoAquisicaoUnit: b.precoCompraUnit,
+    aliqICMSvPct: aliqICMSv,
+    aliqICMScompraPct: aliqICMSc,
+    credICMSunit,
+    aliqPISpct: aliqPIS,
+    aliqCofinspct: aliqCofins,
+    aliqISSpct: aliqISS,
+    aliqIPIpct: aliqIPI,
+    aliqCBS: cbsA, aliqIBS: ibsA,
+    aliqDIFALvendaPct: difV,
+    basePISCofinsUnit: basePISCof_unit,
+    outrosVendaUnit: b.outrosVendaUnit,
+    credCBSunit, credIBSunit,
+    impVendaUnit,
+    impICMSunit, impPISunit, impCofinsUnit, impISSunit, impIPIunit,
+    impCBSunit, impIBSunit, impDIFALvUnit,
+    aliqEfetivaVenda: P > 0 ? impVendaUnit / P : 0,
+    cargaPct: P > 0 ? impVendaUnit / P : 0,
+    rld: b.rld,
+    margemLiquidaUnit,
+    margemLiquidaPct: P > 0 ? margemLiquidaUnit / P : 0,
+    precoUnit: P,
+    precoNota: P * (1 + cbsA + ibsA + aliqIPI),
+  };
+
+  return {
+    regime: 'Lucro Presumido',
+    precoUnit: P,
+    precoNota: P * (1 + cbsA + ibsA + aliqIPI),
+    impVendaUnit,
+    aliqEfetivaVenda: memoria.aliqEfetivaVenda,
+    custoAquisicaoUnit: b.precoCompraUnit,
+    outrosVendaUnit: b.outrosVendaUnit,
+    rld: b.rld,
+    info: { credICMSunit, cbs: cbsA, ibs: ibsA },
+    memoria
+  };
+}
+
+// ════════════════════════════════════════════════
+// REGIME 4 — LUCRO REAL
+// ════════════════════════════════════════════════
+// Igual ao Presumido na parte de impostos sobre a venda, EXCETO:
+//   • PIS/Cofins 2026 são não-cumulativos (1,65% + 7,6%) COM CRÉDITO sobre compra
+//     (base ex-ICMS, como no Presumido — Tese do Século).
+//   • IRPJ/CSLL calculados sobre o LUCRO REAL (antes do IR). Se lucro negativo,
+//     geram valores negativos indicando prejuízo fiscal compensável.
+function calcularLucroReal(ano, r) {
+  const b = dadosBase(r);
+  const c = cronoAno(ano);
+  const ehServ = b.ehServico;
+
+  const aliqICMSv = ehServ ? 0 : aliqICMSvenda(r, ano);
+  const aliqICMSc = ehServ ? 0 : aliqICMScompra(r, ano);
+  const credICMSunit = ehServ ? 0 : aliqICMSc * b.precoCompraUnit;
+
+  const aliqISS = ehServ ? ((r.iss || 2) / 100) * c.issPct : 0;
+  const aliqIPI = (r.atividade === 'industria' && c.ipiAtivoIndustria) ? ((r.ipi || 0) / 100) : 0;
+  const difV = difalVendaPct(r, ano);
+
+  const ativPC = c.pisCofinsAtivo;
+  const aliqPIS    = ativPC ? PREMISSAS.PIS_NAO_CUMULATIVO    : 0;
+  const aliqCofins = ativPC ? PREMISSAS.COFINS_NAO_CUMULATIVO : 0;
+  const credPISunit    = ativPC ? aliqPIS    * b.precoCompraUnit : 0;
+  const credCofinsunit = ativPC ? aliqCofins * b.precoCompraUnit : 0;
+
+  const cbsA = c.cbs, ibsA = c.ibs;
+  const credCBSunit = b.precoCompraUnit * cbsA;
+  const credIBSunit = b.precoCompraUnit * ibsA;
+
+  const A = aliqICMSv + aliqISS + aliqIPI + difV + cbsA + ibsA
+          + (aliqPIS + aliqCofins) * (1 - aliqICMSv - difV);
+  const B = -credICMSunit - credPISunit - credCofinsunit - credCBSunit - credIBSunit
+          + (aliqPIS + aliqCofins) * credICMSunit;
+
+  const P = precoInverso(b.rld, b.precoCompraUnit, b.outrosVendaUnit, A, B);
+
+  const basePISCof_unit = P * (1 - aliqICMSv - difV) + credICMSunit;
+  const impICMSunit   = Math.max(0, aliqICMSv * P - credICMSunit);
+  const impPISunit    = Math.max(0, aliqPIS    * basePISCof_unit - credPISunit);
+  const impCofinsUnit = Math.max(0, aliqCofins * basePISCof_unit - credCofinsunit);
+  const impISSunit    = aliqISS * P;
+  const impIPIunit    = aliqIPI * P;
+  const impCBSunit    = Math.max(0, cbsA * P - credCBSunit);
+  const impIBSunit    = Math.max(0, ibsA * P - credIBSunit);
+  const impDIFALvUnit = difV * P;
+  const impVendaUnit  = impICMSunit + impPISunit + impCofinsUnit + impISSunit
+                      + impIPIunit + impCBSunit + impIBSunit + impDIFALvUnit;
+
+  const margemLiquidaUnit = P - impVendaUnit - b.precoCompraUnit - b.outrosVendaUnit;
+
+  const memoria = {
+    ehServico: ehServ,
+    precoCompraUnit: b.precoCompraUnit,
+    custoAquisicaoUnit: b.precoCompraUnit,
+    aliqICMSvPct: aliqICMSv,
+    aliqICMScompraPct: aliqICMSc,
+    credICMSunit,
+    aliqPISpct: aliqPIS,
+    aliqCofinspct: aliqCofins,
+    credPISunit, credCofinsunit,
+    aliqISSpct: aliqISS,
+    aliqIPIpct: aliqIPI,
+    aliqCBS: cbsA, aliqIBS: ibsA,
+    aliqDIFALvendaPct: difV,
+    basePISCofinsUnit: basePISCof_unit,
+    outrosVendaUnit: b.outrosVendaUnit,
+    credCBSunit, credIBSunit,
+    impVendaUnit,
+    impICMSunit, impPISunit, impCofinsUnit, impISSunit, impIPIunit,
+    impCBSunit, impIBSunit, impDIFALvUnit,
+    aliqEfetivaVenda: P > 0 ? impVendaUnit / P : 0,
+    cargaPct: P > 0 ? impVendaUnit / P : 0,
+    rld: b.rld,
+    margemLiquidaUnit,
+    margemLiquidaPct: P > 0 ? margemLiquidaUnit / P : 0,
+    precoUnit: P,
+    precoNota: P * (1 + cbsA + ibsA + aliqIPI),
+  };
+
+  return {
+    regime: 'Lucro Real',
+    precoUnit: P,
+    precoNota: P * (1 + cbsA + ibsA + aliqIPI),
+    impVendaUnit,
+    aliqEfetivaVenda: memoria.aliqEfetivaVenda,
+    custoAquisicaoUnit: b.precoCompraUnit,
+    outrosVendaUnit: b.outrosVendaUnit,
+    rld: b.rld,
+    info: { credICMSunit, credPISunit, credCofinsunit, cbs: cbsA, ibs: ibsA },
+    memoria
+  };
+}
+
+// ─── Calcula os 4 regimes para um ano ───
+function calcularAno(ano, r) {
+  const arr = [
+    calcularSimplesNormal(ano, r),
+    calcularSimplesHibrido(ano, r),
+    calcularPresumido(ano, r),
+    calcularLucroReal(ano, r)
+  ];
+  if ((r.rbt12 || 0) > PREMISSAS.LIMITE_SIMPLES_SUBLIMITE) {
+    arr[0].inviavel = 'RBT12 acima de R$ 4.800.000 — fora do Simples.';
+    arr[1].inviavel = 'RBT12 acima de R$ 4.800.000 — fora do Simples.';
+  }
+  return arr;
+}
+
+
+// ═══════════════════════════════════════════════════════════════════════
+// CAMADA 4 — DEFINIÇÃO DAS PERGUNTAS (data-driven)
+// ═══════════════════════════════════════════════════════════════════════
+// Cada pergunta é um objeto com:
+//   id           → chave onde a resposta fica salva
+//   titulo       → pergunta principal (texto grande)
+//   subtitulo    → texto explicativo opcional (cinza, menor)
+//   tipo         → 'select' | 'escolha' | 'simnao' | 'moeda' | 'numero' | 'percentual' | 'inteiro'
+//   opcoes       → lista de {valor, rotulo} para select/escolha
+//   mostrar      → função opcional que decide se a pergunta aparece (ramificação)
+//   valorPadrao  → valor inicial (usado para pré-preenchimento, ex. ICMS pela UF)
+//   min / max    → validação numérica
+// ═══════════════════════════════════════════════════════════════════════
+
+const PERGUNTAS = [
+
+  // ───── ETAPA 1 — Perguntas comuns a todas as atividades ─────
+
+  {
+    id: 'uf',
+    titulo: 'Em qual UF sua empresa está localizada?',
+    subtitulo: 'Usaremos esse dado para pré-preencher a alíquota interna de ICMS do seu estado.',
+    tipo: 'select',
+    opcoes: UFS.map(u => ({ valor: u.sigla, rotulo: `${u.sigla} — ${u.nome}` }))
+  },
+
+  {
+    id: 'atividade',
+    titulo: 'Qual é a atividade principal da sua empresa?',
+    subtitulo: 'Essa escolha define as próximas perguntas — cada atividade tem suas regras específicas.',
+    tipo: 'escolha',
+    opcoes: [
+      { valor: 'comercio',  rotulo: 'Comércio',  descricao: 'Compra e revenda de mercadorias' },
+      { valor: 'industria', rotulo: 'Indústria', descricao: 'Transformação de matéria-prima em produto' },
+      { valor: 'servicos',  rotulo: 'Serviços',  descricao: 'Prestação de serviços (com ou sem materiais)' }
+    ]
+  },
+
+  {
+    id: 'rld',
+    titulo: 'Qual a Receita Líquida Desejada por venda?',
+    subtitulo: 'É quanto você quer "embolsar" EM CADA VENDA, depois de pagar os impostos sobre ela. ' +
+               '<strong>É um valor UNITÁRIO</strong>: se você vende produto/kit, é por unidade vendida; ' +
+               'se você presta serviço, é por serviço prestado. ' +
+               '<br><em>Exemplo: se você quer que sobrem R$ 500 a cada venda, digite 500.</em>',
+    tipo: 'moeda',
+    min: 0.01
+  },
+
+  {
+    id: 'rbt12',
+    titulo: 'Qual a Receita Bruta dos Últimos 12 Meses (RBT12)?',
+    subtitulo: '<strong>RBT12</strong> é a soma do faturamento bruto (antes dos impostos) dos últimos 12 meses. ' +
+               'Esse valor determina a faixa do Simples Nacional e é usado nos cálculos. ' +
+               '<br>• Se sua empresa tem menos de 12 meses, some o que já faturou e projete o restante. ' +
+               '<br>• Se ainda não tem empresa, estime o faturamento anual previsto. ' +
+               '<br>• Se passar de R$ 4.800.000, o Simples não é mais possível (mostraremos só Presumido e Real).',
+    tipo: 'moeda',
+    min: 0
+  },
+
+  {
+    id: 'folha',
+    titulo: 'Valor total da Folha de Pagamento mensal',
+    subtitulo: 'Salários + 13º + férias + FGTS + INSS patronal + benefícios. ' +
+               'Se não tem folha (apenas sócios), digite 0. <strong>Usado apenas no cálculo do Fator R</strong> ' +
+               '(que pode migrar seu Anexo V para o Anexo III).',
+    tipo: 'moeda',
+    min: 0,
+    mostrar: r => r.atividade === 'servicos'
+  },
+
+  {
+    id: 'prolabore',
+    titulo: 'Valor total do Pró-labore mensal',
+    subtitulo: 'Remuneração dos sócios + encargos (INSS do sócio). Se não há pró-labore, digite 0. ' +
+               'Somado à folha apenas no cálculo do Fator R.',
+    tipo: 'moeda',
+    min: 0,
+    mostrar: r => r.atividade === 'servicos'
+  },
+
+  // ───── ETAPA 2A — Comércio e Indústria ─────
+
+  {
+    id: 'precoCompra',
+    titulo: 'Preço de compra do produto (unitário)',
+    subtitulo: 'Valor total unitário da nota fiscal de aquisição (será a base do seu CMV – Custo da Mercadoria Vendida).',
+    tipo: 'moeda',
+    min: 0.01,
+    mostrar: r => r.atividade === 'comercio' || r.atividade === 'industria'
+  },
+
+  {
+    id: 'compraOutraUF',
+    titulo: 'A compra foi feita em outra UF?',
+    subtitulo: 'Se sim, precisaremos da UF de origem e se o produto é importado (afeta DIFAL e alíquota interestadual).',
+    tipo: 'simnao',
+    mostrar: r => r.atividade === 'comercio' || r.atividade === 'industria'
+  },
+
+  {
+    id: 'ufOrigem',
+    titulo: 'De qual UF você comprou?',
+    subtitulo: 'A UF de origem define a alíquota interestadual aplicada na sua compra.',
+    tipo: 'select',
+    opcoes: UFS.map(u => ({ valor: u.sigla, rotulo: `${u.sigla} — ${u.nome}` })),
+    mostrar: r => (r.atividade === 'comercio' || r.atividade === 'industria') && r.compraOutraUF === 'sim',
+    filtrarUFAtual: true   // oculta a UF da empresa (resposta 1)
+  },
+
+  {
+    id: 'produtoImportado',
+    titulo: 'O produto é importado ou tem ≥ 40% de conteúdo importado?',
+    subtitulo: 'Se sim, a alíquota interestadual será 4% (Resolução Senado 13/2012). ' +
+               'Se "Não sei dizer", tratamos como "Não".',
+    tipo: 'escolha',
+    opcoes: [
+      { valor: 'nao',    rotulo: 'Não' },
+      { valor: 'sim',    rotulo: 'Sim' },
+      { valor: 'naosei', rotulo: 'Não sei dizer' }
+    ],
+    mostrar: r => (r.atividade === 'comercio' || r.atividade === 'industria') && r.compraOutraUF === 'sim'
+  },
+
+  {
+    id: 'icmsInterno',
+    titulo: 'Qual a alíquota interna de ICMS do seu produto na sua UF?',
+    subtitulo: 'Pré-preenchemos com a alíquota padrão da sua UF. Se o seu produto tem tributação diferenciada ' +
+               '(reduzida, ST, isenta), edite aqui.',
+    tipo: 'percentual',
+    mostrar: r => r.atividade === 'comercio' || r.atividade === 'industria',
+    valorPadrao: (r) => Math.round((ICMS_UF[r.uf] || 0.18) * 1000) / 10   // ex.: 0.18 → 18.0
+  },
+
+  {
+    id: 'outrosCustosRevenda',
+    titulo: 'Outros custos da revenda — unitário',
+    subtitulo: 'Frete, seguro, substituição tributária (ST), etc. — por unidade. São custos adicionais ' +
+               'que não geram crédito de ICMS. Se não tem, digite 0.',
+    tipo: 'moeda',
+    min: 0,
+    mostrar: r => r.atividade === 'comercio' || r.atividade === 'industria'
+  },
+
+  {
+    id: 'vendaConsumidorFinal',
+    titulo: 'Venda para consumidor final? (PF ou PJ não contribuinte)',
+    subtitulo: 'Se sim, e a venda for para outra UF, há DIFAL de venda (aplicável em TODOS os regimes — ADI 6030/STF).',
+    tipo: 'simnao',
+    mostrar: r => r.atividade === 'comercio' || r.atividade === 'industria'
+  },
+
+  {
+    id: 'vendaOutraUF',
+    titulo: 'A venda é para outra UF?',
+    subtitulo: 'Se sim, precisaremos da UF de destino para calcular o DIFAL.',
+    tipo: 'simnao',
+    mostrar: r => r.atividade === 'comercio' || r.atividade === 'industria'
+  },
+
+  {
+    id: 'ufDestino',
+    titulo: 'Qual a UF de destino da mercadoria?',
+    subtitulo: 'UF onde está o seu cliente.',
+    tipo: 'select',
+    opcoes: UFS.map(u => ({ valor: u.sigla, rotulo: `${u.sigla} — ${u.nome}` })),
+    mostrar: r => (r.atividade === 'comercio' || r.atividade === 'industria') && r.vendaOutraUF === 'sim',
+    filtrarUFAtual: true
+  },
+
+  {
+    id: 'icmsDestino',
+    titulo: 'Alíquota interna de ICMS + FCP na UF de destino',
+    subtitulo: 'Pré-preenchida pela UF de destino. Edite se o produto tiver tratamento diferenciado.',
+    tipo: 'percentual',
+    mostrar: r => (r.atividade === 'comercio' || r.atividade === 'industria') && r.vendaOutraUF === 'sim',
+    valorPadrao: (r) => Math.round((ICMS_UF[r.ufDestino] || 0.18) * 1000) / 10
+  },
+
+  // ───── ETAPA 2A-ind — Indústria (pergunta extra de IPI) ─────
+
+  {
+    id: 'ipi',
+    titulo: 'Qual a alíquota de IPI do seu produto?',
+    subtitulo: 'Imposto sobre Produtos Industrializados. Se não souber, coloque 0% e revise depois. ' +
+               'A partir de 2027 o IPI fica zerado na maior parte dos produtos (exceto ZFM).',
+    tipo: 'percentual',
+    min: 0, max: 30,
+    valorPadrao: 0,
+    mostrar: r => r.atividade === 'industria'
+  },
+
+  // ───── ETAPA 2B — Serviços ─────
+
+  {
+    id: 'tipoServico',
+    titulo: 'Qual tipo de serviço sua empresa presta?',
+    subtitulo: 'Define o Anexo do Simples. Serviços intelectuais (Anexo V) podem migrar para o Anexo III via Fator R.',
+    tipo: 'escolha',
+    opcoes: [
+      { valor: 'operacional', rotulo: 'Operacional (Anexo III)',
+        descricao: 'Instalação, manutenção, reparo, limpeza, beleza, hotel, restaurante, academia, escola' },
+      { valor: 'construcao',  rotulo: 'Construção Civil ou Advocacia (Anexo IV)',
+        descricao: 'Obras, reformas, advocacia, consultoria jurídica' },
+      { valor: 'intelectual', rotulo: 'Intelectual (Anexo V / III com Fator R)',
+        descricao: 'TI, medicina, engenharia, contabilidade, consultoria, publicidade, arquitetura' }
+    ],
+    mostrar: r => r.atividade === 'servicos'
+  },
+
+  {
+    id: 'outrosCustosServico',
+    titulo: 'Outros custos do serviço — por prestação',
+    subtitulo: 'Materiais aplicados, softwares, serviços tomados diretamente ligados à prestação. ' +
+               'Se não tem, digite 0.',
+    tipo: 'moeda',
+    min: 0,
+    mostrar: r => r.atividade === 'servicos'
+  },
+
+  {
+    id: 'iss',
+    titulo: 'Alíquota de ISS do seu município',
+    subtitulo: 'Varia de 2% (mínimo por lei) a 5% (máximo). Pré-preenchemos com 2%.',
+    tipo: 'percentual',
+    min: 2, max: 5, valorPadrao: 2,
+    mostrar: r => r.atividade === 'servicos'
+  }
+
+];
+
+
+// ═══════════════════════════════════════════════════════════════════════
+// CAMADA 5 — INTERFACE (wizard Typeform + handlers)
+// ═══════════════════════════════════════════════════════════════════════
+
+const respostas = {};            // onde salvamos as respostas do usuário
+let indicePerguntaAtual = -1;    // posição na lista PERGUNTAS
+
+const formatadorMoeda = new Intl.NumberFormat('pt-BR', {
+  style: 'currency', currency: 'BRL', minimumFractionDigits: 2
+});
+
+// ───── Navegação entre telas ─────
+function irParaEtapa1() {
+  document.getElementById('tela-abertura').classList.add('hidden');
+  document.getElementById('tela-formulario').classList.remove('hidden');
+  indicePerguntaAtual = -1;
+  perguntaProxima();
+}
+
+function voltarAbertura() {
+  document.getElementById('tela-formulario').classList.add('hidden');
+  document.getElementById('tela-resultados').classList.add('hidden');
+  document.getElementById('tela-abertura').classList.remove('hidden');
+  // Limpa respostas para nova simulação
+  Object.keys(respostas).forEach(k => delete respostas[k]);
+}
+
+let anoSelecionado = 2026;
+let resultadosCache = null;                                                   // { 2026: [...4 regimes], 2027: [...], ... }
+
+async function irParaResultados() {
+  // LIMITE TEMPORARIAMENTE DESABILITADO — reativar quando testes concluídos
+  // try {
+  //   const { data: resultado, error } = await _supa.rpc('registrar_simulacao');
+  //   if (!error && resultado && !resultado.tem_acesso) {
+  //     mostrarPaywall();
+  //     return;
+  //   }
+  //   if (!error && resultado && !resultado.assinante) {
+  //     const ddVenc = document.getElementById('dd-vencimento');
+  //     if (ddVenc) {
+  //       const restantes = Math.max(0, 3 - resultado.simulations_used);
+  //       ddVenc.textContent = `${restantes} simulação(ões) gratuita(s) restante(s)`;
+  //     }
+  //   }
+  // } catch (e) {
+  //   console.error('Erro ao registrar simulação:', e);
+  // }
+
+  document.getElementById('tela-formulario').classList.add('hidden');
+  document.getElementById('tela-resultados').classList.remove('hidden');
+  document.getElementById('respostas-debug').textContent = JSON.stringify(respostas, null, 2);
+
+  // Calcula 8 anos × 4 regimes UMA vez
+  resultadosCache = {};
+  ANOS.forEach(ano => { resultadosCache[ano] = calcularAno(ano, respostas); });
+
+  anoSelecionado = 2026;
+  regimeSelecionado = 0; // 0=Simples Normal, 1=Híbrido, 2=Presumido, 3=Real
+  renderizarSeletorAno();
+  renderizarCardsRegimes();
+  renderizarSeletorRegime();
+  renderizarPainelDetalhado();
+  renderizarMatriz();
+  renderizarAvisos();
+  window.scrollTo(0, 0);
+}
+
+function mostrarPaywall() {
+  const overlay = document.createElement('div');
+  overlay.id = 'overlay-paywall';
+  overlay.style.cssText = [
+    'position:fixed', 'inset:0', 'z-index:9999',
+    'background:rgba(2,6,23,0.93)',
+    'display:flex', 'flex-direction:column',
+    'align-items:center', 'justify-content:center',
+    'gap:1.5rem', 'padding:2rem'
+  ].join(';');
+  overlay.innerHTML = `
+    <div style="text-align:center;max-width:480px;">
+      <div style="font-size:2.5rem;margin-bottom:1rem;">🔒</div>
+      <h2 style="color:#fff;font-size:1.5rem;font-weight:700;margin-bottom:0.75rem;">
+        Você usou suas 3 simulações gratuitas
+      </h2>
+      <p style="color:#94a3b8;font-size:1rem;margin-bottom:2rem;">
+        Assine um plano para continuar simulando sem limites
+        e ter acesso completo ao simulador de 2026 a 2033.
+      </p>
+      <a href="plans.html" style="
+        display:inline-block;background:#7c3aed;color:#fff;
+        padding:0.875rem 2rem;border-radius:0.75rem;
+        font-weight:700;font-size:1rem;text-decoration:none;
+      ">Ver planos e preços →</a>
+      <p style="color:#64748b;font-size:0.8rem;margin-top:1rem;">
+        Já tem uma conta ativa?
+        <a href="auth.html" style="color:#a78bfa;">Faça login</a>
+      </p>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+}
+
+function selecionarAno(ano) {
+  anoSelecionado = ano;
+  renderizarSeletorAno();
+  renderizarCardsRegimes();
+  renderizarPainelDetalhado();
+  renderizarMatriz();
+}
+
+function selecionarRegime(idx) {
+  regimeSelecionado = idx;
+  renderizarSeletorRegime();
+  renderizarPainelDetalhado();
+}
+
+let regimeSelecionado = 0;
+
+function renderizarSeletorAno() {
+  const cont = document.getElementById('seletor-ano');
+  cont.innerHTML = ANOS.map(ano => {
+    const ativo = ano === anoSelecionado;
+    return `<button onclick="selecionarAno(${ano})"
+              class="px-4 py-2 rounded-lg font-semibold transition
+                ${ativo ? 'bg-indigo-600 text-white shadow' : 'bg-white border border-slate-300 text-slate-700 hover:bg-slate-100'}">
+              ${ano}
+            </button>`;
+  }).join('');
+}
+
+const fmtBRL = v => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const fmtPct = v => (v * 100).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '%';
+
+function renderizarCardsRegimes() {
+  const cont = document.getElementById('cards-regimes');
+  const arr = resultadosCache[anoSelecionado];
+  // Melhor regime = MENOR preço (mesma RLD entregue com menos imposto embutido)
+  const viaveis = arr.filter(x => !x.inviavel);
+  const melhor = viaveis.reduce((a, b) => b.precoUnit < a.precoUnit ? b : a, viaveis[0]);
+
+  const atividade = respostas.atividade;
+  const ehServico = atividade === 'servicos';
+  const lblPreco = ehServico ? 'Preço do Serviço' : 'Preço de Venda';
+  const lblCusto = ehServico ? 'Custo do Serviço' : 'Custo de Aquisição';
+  const lblUnid  = ehServico ? ' / serviço' : ' / un.';
+
+  cont.innerHTML = arr.map(reg => {
+    if (reg.inviavel) {
+      return `<div class="bg-slate-100 rounded-lg border border-slate-200 p-5 opacity-60">
+                <div class="text-xs uppercase tracking-wide text-slate-500 mb-1">${reg.regime}</div>
+                <div class="text-slate-700 text-sm">${reg.inviavel}</div>
+              </div>`;
+    }
+    const ehMelhor = reg === melhor;
+    const mostrarPrecoNota = reg.precoNota && Math.abs(reg.precoNota - reg.precoUnit) > 0.01;
+
+    const diff = mostrarPrecoNota ? (reg.precoNota - reg.precoUnit) : 0;
+    const labelAcrescimo = 'CBS/IBS' + (respostas.atividade === 'industria' ? '/IPI' : '');
+    const blocoPrecos = mostrarPrecoNota
+      ? `<div class="mb-4 rounded-lg border-2 border-indigo-500 overflow-hidden shadow-sm">
+           <div class="flex items-baseline justify-between px-3 py-2.5" style="background:#0f172a;">
+             <div>
+               <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold leading-tight">Por dentro</div>
+               <div class="text-[10px] text-slate-500 leading-tight">empresa recebe</div>
+             </div>
+             <div class="text-xl font-extrabold text-white tabular-nums whitespace-nowrap">${fmtBRL(reg.precoUnit)}</div>
+           </div>
+           <div class="flex items-center gap-1 px-3 py-0.5 text-[10px] font-semibold" style="background:#1e293b;color:#a5b4fc;">
+             <span class="text-base leading-none">+</span>
+             <span class="uppercase tracking-wider">${labelAcrescimo}</span>
+             <span class="ml-auto tabular-nums">${fmtBRL(diff)} (${fmtPct(diff / reg.precoUnit)})</span>
+           </div>
+           <div class="flex items-baseline justify-between px-3 py-2.5" style="background:#4f46e5;">
+             <div>
+               <div class="text-[10px] uppercase tracking-wider text-indigo-100 font-bold leading-tight">Por fora (na nota)</div>
+               <div class="text-[10px] text-indigo-200 leading-tight">cliente paga</div>
+             </div>
+             <div class="text-xl font-extrabold text-white tabular-nums whitespace-nowrap">${fmtBRL(reg.precoNota)}</div>
+           </div>
+         </div>`
+      : `<div class="mb-4 rounded-lg border-2 border-slate-600 px-3 py-2.5 flex items-baseline justify-between" style="background:#0f172a;">
+           <div>
+             <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold leading-tight">${lblPreco}${lblUnid}</div>
+             <div class="text-[10px] text-slate-500 leading-tight">por dentro = por fora</div>
+           </div>
+           <div class="text-xl font-extrabold text-white tabular-nums whitespace-nowrap">${fmtBRL(reg.precoUnit)}</div>
+         </div>`;
+
+    return `<div class="rounded-lg border-2 p-5 transition
+                ${ehMelhor ? 'border-emerald-500 bg-emerald-50 shadow-md' : 'border-slate-200 bg-white'}">
+              ${ehMelhor ? '<div class="text-xs font-bold text-emerald-700 uppercase mb-1">★ Menor preço</div>' : ''}
+              <div class="text-xs uppercase tracking-wide text-slate-500 mb-2">${reg.regime}</div>
+              ${blocoPrecos}
+              <div class="space-y-2 text-sm border-t border-slate-200 pt-3">
+                <div class="flex justify-between"><span class="text-slate-600">Impostos sobre a venda (un.)</span><span class="font-medium text-rose-600">${fmtBRL(reg.impVendaUnit)}</span></div>
+                <div class="flex justify-between"><span class="text-slate-600">Carga tributária</span><span class="font-medium text-rose-600">${fmtPct(reg.aliqEfetivaVenda)}</span></div>
+                ${!ehServico ? `<div class="flex justify-between"><span class="text-slate-600">${lblCusto} (un.)</span><span class="font-medium">${fmtBRL(reg.custoAquisicaoUnit)}</span></div>` : ''}
+                ${reg.outrosVendaUnit ? `<div class="flex justify-between"><span class="text-slate-600">Outros custos (un.)</span><span class="font-medium">${fmtBRL(reg.outrosVendaUnit)}</span></div>` : ''}
+                <div class="flex justify-between border-t border-slate-300 pt-2 mt-2">
+                  <span class="font-semibold text-slate-700">RLD (sobra na venda)</span>
+                  <span class="font-bold text-emerald-700">${fmtBRL(reg.rld)}</span>
+                </div>
+              </div>
+            </div>`;
+  }).join('');
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// PAINEL DETALHADO — Cálculos / Resultado Mensal / Resumo Precificação
+// ═══════════════════════════════════════════════════════════════════════
+
+const fmtPct4 = v => (v * 100).toLocaleString('pt-BR', { minimumFractionDigits: 4, maximumFractionDigits: 4 }) + '%';
+const fmtNum  = v => v.toLocaleString('pt-BR', { maximumFractionDigits: 2 });
+
+function formatarValor(v, fmt) {
+  if (v === null || v === undefined) return '—';
+  if (fmt === 'brl')   return fmtBRL(v);
+  if (fmt === 'pct')   return fmtPct(v);
+  if (fmt === 'pct4')  return fmtPct4(v);
+  if (fmt === 'num')   return fmtNum(v);
+  if (fmt === 'bool')  return v ? 'Sim' : 'Não';
+  return String(v);
+}
+
+function renderizarSeletorRegime() {
+  const cont = document.getElementById('seletor-regime');
+  const arr = resultadosCache[anoSelecionado];
+  cont.innerHTML = arr.map((reg, idx) => {
+    const ativo = idx === regimeSelecionado;
+    const inviavel = !!reg.inviavel;
+    return `<button onclick="selecionarRegime(${idx})"
+              ${inviavel ? 'disabled' : ''}
+              class="px-4 py-2 rounded-lg font-semibold transition text-sm
+                ${ativo ? 'bg-indigo-600 text-white shadow' : 'bg-white border border-slate-300 text-slate-700 hover:bg-slate-100'}
+                ${inviavel ? 'opacity-40 cursor-not-allowed' : ''}">
+              ${reg.regime}
+            </button>`;
+  }).join('');
+}
+
+// Retorna 2 blocos de linhas (Alíquotas & Créditos / Composição do Preço) para o regime
+function memoriaLinhas(regime, m, atividade) {
+  const isServico  = atividade === 'servicos';
+  const isIndustria = atividade === 'industria';
+  const lblPreco = isServico ? 'Preço do Serviço' : 'Preço de Venda';
+  const lblCusto = isServico ? 'Custo do Serviço (unit.)' : 'Custo de Aquisição (unit.)';
+  const lblOutros = isServico ? 'Outros Custos do Serviço (unit.)' : 'Outros Custos da Venda (unit.)';
+
+  // Bloco COMPOSIÇÃO (igual para todos os regimes) — mostra como se chega ao preço
+  const composicao = [
+    ['RLD (Receita Líquida Desejada)', m.rld, 'brl'],
+    ['(+) ' + lblCusto, m.custoAquisicaoUnit || 0, 'brl'],
+    ['(+) ' + lblOutros, m.outrosVendaUnit, 'brl'],
+    ['(+) Impostos sobre a Venda (unit.)', m.impVendaUnit, 'brl'],
+    ['(=) ' + lblPreco + ' (por dentro)', m.precoUnit, 'brl'],
+  ];
+  if (m.precoNota && Math.abs(m.precoNota - m.precoUnit) > 0.01) {
+    composicao.push(['Total na Nota (CBS/IBS/IPI por fora)', m.precoNota, 'brl']);
+  }
+  composicao.push(
+    ['Carga Tributária Efetiva (%)', m.aliqEfetivaVenda, 'pct'],
+    ['Margem Líquida (R$)', m.margemLiquidaUnit, 'brl'],
+    ['Margem Líquida (%)', m.margemLiquidaPct, 'pct'],
+  );
+
+  // ─── SIMPLES NORMAL ───
+  if (regime === 'Simples Normal') {
+    const aliquotas = [];
+    aliquotas.push(['Anexo Simples Nacional', m.anexo, 'texto']);
+    if (m.faixa) {
+      aliquotas.push(['Faixa Simples', `até ${fmtBRL(m.faixa.max)}`, 'texto']);
+    }
+    if (isServico) {
+      aliquotas.push(['Fator R (Folha+Pró-labore × 12 / RBT12)', m.fatorR, 'pct']);
+    }
+    aliquotas.push(
+      ['Acima do Sublimite?', m.sublimite, 'bool'],
+      ['Alíquota Nominal DAS (%)', m.aliqDASnominal, 'pct'],
+      ['Parcela a Deduzir', m.parcelaDeduzir, 'brl'],
+      ['Alíquota Efetiva DAS (%)', m.aliqDASefetiva, 'pct4'],
+      ['DAS por unidade (R$)', m.impDASunit, 'brl'],
+    );
+    if (!isServico) {
+      aliquotas.push(
+        ['Preço de Compra (unit.)', m.precoCompraUnit, 'brl'],
+        ['Alíquota DIFAL Compra (%)', m.aliqDIFALcompraPct, 'pct'],
+        ['DIFAL Compra (unit.)', m.difalCompraUnit, 'brl'],
+      );
+      if (m.sublimite) {
+        aliquotas.push(
+          ['Alíquota ICMS Venda (%)', m.aliqICMSvPct, 'pct'],
+          ['Alíquota ICMS Compra (%)', m.aliqICMScompraPct, 'pct'],
+          ['Crédito ICMS (unit.)', m.credICMSunit, 'brl'],
+          ['ICMS líquido por unidade (R$)', m.impICMSunit, 'brl'],
+        );
+      }
+    } else if (m.sublimite) {
+      aliquotas.push(
+        ['Alíquota ISS (sublimite, %)', m.aliqISSsubPct, 'pct'],
+        ['ISS por unidade (R$)', m.impISSunit, 'brl'],
+      );
+    }
+    if (m.aliqDIFALvendaPct > 0) {
+      aliquotas.push(
+        ['Alíquota DIFAL Venda (%)', m.aliqDIFALvendaPct, 'pct'],
+        ['DIFAL Venda (unit.)', m.impDIFALvUnit, 'brl'],
+      );
+    }
+    return { aliquotas, composicao };
+  }
+
+  // ─── SIMPLES HÍBRIDO ───
+  if (regime === 'Simples Híbrido') {
+    if (!m.aliqCBS) return memoriaLinhas('Simples Normal', m, atividade);
+    const aliquotas = [
+      ['Anexo Simples Nacional', m.anexo, 'texto'],
+      ['Alíquota Nominal DAS (%)', m.aliqDASnominal, 'pct'],
+      ['Parcela a Deduzir', m.parcelaDeduzir, 'brl'],
+      ['Alíquota Efetiva DAS Cheia (%)', m.aliqDASefetivaCheia, 'pct4'],
+      ['Repartição CBS/IBS retirada do DAS (%)', m.repartCBSIBS, 'pct'],
+      ['Alíquota DAS Reduzida (%)', m.aliqDASReduzido, 'pct4'],
+      ['DAS por unidade (R$)', m.impDASunit, 'brl'],
+    ];
+    if (!isServico) {
+      aliquotas.push(
+        ['Preço de Compra (unit.)', m.precoCompraUnit, 'brl'],
+        ['Alíquota DIFAL Compra (%)', m.aliqDIFALcompraPct, 'pct'],
+        ['DIFAL Compra (unit.)', m.difalCompraUnit, 'brl'],
+      );
+    }
+    aliquotas.push(
+      ['Alíquota CBS (%)', m.aliqCBS, 'pct'],
+      ['Crédito CBS da Compra (unit.)', m.credCBSunit, 'brl'],
+      ['CBS líquida por unidade (R$)', m.impCBSunit, 'brl'],
+      ['Alíquota IBS (%)', m.aliqIBS, 'pct'],
+      ['Crédito IBS da Compra (unit.)', m.credIBSunit, 'brl'],
+      ['IBS líquido por unidade (R$)', m.impIBSunit, 'brl'],
+    );
+    if (m.aliqDIFALvendaPct > 0) {
+      aliquotas.push(
+        ['Alíquota DIFAL Venda (%)', m.aliqDIFALvendaPct, 'pct'],
+        ['DIFAL Venda (unit.)', m.impDIFALvUnit, 'brl'],
+      );
+    }
+    return { aliquotas, composicao };
+  }
+
+  // ─── LUCRO PRESUMIDO & LUCRO REAL ───
+  const ehReal = regime === 'Lucro Real';
+  const aliquotas = [];
+  if (!isServico) {
+    aliquotas.push(['Preço de Compra (unit.)', m.precoCompraUnit, 'brl']);
+    aliquotas.push(
+      ['Alíquota ICMS Venda (%)', m.aliqICMSvPct, 'pct'],
+      ['Alíquota ICMS Compra (%)', m.aliqICMScompraPct, 'pct'],
+      ['Crédito ICMS da Compra (unit.)', m.credICMSunit, 'brl'],
+      ['ICMS líquido por unidade (R$)', m.impICMSunit, 'brl'],
+    );
+  }
+  if (m.aliqPISpct > 0 || m.aliqCofinspct > 0) {
+    aliquotas.push(
+      ['Alíquota PIS (%)', m.aliqPISpct, 'pct4'],
+      ['Alíquota COFINS (%)', m.aliqCofinspct, 'pct4'],
+      ['Base PIS/COFINS (Tese do Século — exclui ICMS' + (m.aliqDIFALvendaPct>0?' e DIFAL':'') + ')', m.basePISCofinsUnit, 'brl'],
+    );
+    if (ehReal) {
+      aliquotas.push(
+        ['Crédito PIS da Compra (unit.)', m.credPISunit, 'brl'],
+        ['Crédito COFINS da Compra (unit.)', m.credCofinsunit, 'brl'],
+      );
+    }
+    aliquotas.push(
+      ['PIS por unidade (R$)', m.impPISunit, 'brl'],
+      ['COFINS por unidade (R$)', m.impCofinsUnit, 'brl'],
+    );
+  }
+  if (isServico && m.aliqISSpct > 0) {
+    aliquotas.push(
+      ['Alíquota ISS (%)', m.aliqISSpct, 'pct'],
+      ['ISS por unidade (R$)', m.impISSunit, 'brl'],
+    );
+  }
+  if (isIndustria && m.aliqIPIpct > 0) {
+    aliquotas.push(
+      ['Alíquota IPI (%)', m.aliqIPIpct, 'pct'],
+      ['IPI por unidade (R$)', m.impIPIunit, 'brl'],
+    );
+  }
+  if (m.aliqCBS > 0) {
+    aliquotas.push(
+      ['Alíquota CBS (%)', m.aliqCBS, 'pct'],
+      ['Crédito CBS da Compra (unit.)', m.credCBSunit, 'brl'],
+      ['CBS líquida por unidade (R$)', m.impCBSunit, 'brl'],
+      ['Alíquota IBS (%)', m.aliqIBS, 'pct'],
+      ['Crédito IBS da Compra (unit.)', m.credIBSunit, 'brl'],
+      ['IBS líquido por unidade (R$)', m.impIBSunit, 'brl'],
+    );
+  }
+  if (m.aliqDIFALvendaPct > 0) {
+    aliquotas.push(
+      ['Alíquota DIFAL Venda (%)', m.aliqDIFALvendaPct, 'pct'],
+      ['DIFAL Venda (unit.)', m.impDIFALvUnit, 'brl'],
+    );
+  }
+  return { aliquotas, composicao };
+}
+
+function renderizarBloco(titulo, linhas, corTitulo = 'text-indigo-300') {
+  const itens = linhas.map(([label, valor, fmt]) => {
+    const isLucro = /Lucro L[íi]quido|Lucro da Opera|Resultado|Margem L[íi]quida|Lucro Antes/i.test(label);
+    let cor = 'text-slate-200';
+    if (isLucro && fmt === 'brl' && typeof valor === 'number') {
+      cor = valor >= 0 ? 'text-emerald-400 font-semibold' : 'text-rose-400 font-semibold';
+    }
+    return `<div class="flex justify-between gap-3 py-1.5 border-b border-slate-800 text-sm">
+              <span class="text-slate-400">${label}</span>
+              <span class="${cor} text-right font-mono whitespace-nowrap">${formatarValor(valor, fmt)}</span>
+            </div>`;
+  }).join('');
+  return `<div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <h4 class="text-sm uppercase tracking-wider font-bold mb-3 ${corTitulo}">${titulo}</h4>
+            <div class="space-y-0">${itens}</div>
+          </div>`;
+}
+
+function renderizarPainelDetalhado() {
+  const cont = document.getElementById('painel-detalhado');
+  const arr = resultadosCache[anoSelecionado];
+  const reg = arr[regimeSelecionado];
+  if (!reg || reg.inviavel) {
+    cont.innerHTML = `<div class="bg-slate-900 border border-slate-800 rounded-lg p-6 text-slate-400">
+                        ${reg?.inviavel || 'Regime indisponível neste ano.'}
+                      </div>`;
+    return;
+  }
+  const m = reg.memoria;
+  const atividade = respostas.atividade;
+  const blocos = memoriaLinhas(reg.regime, m, atividade);
+
+  cont.innerHTML = `
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      ${renderizarBloco('Alíquotas, Créditos & Impostos por unidade', blocos.aliquotas, 'text-indigo-300')}
+      ${renderizarBloco('Composição do Preço de Venda', blocos.composicao, 'text-emerald-300')}
+    </div>
+  `;
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// EXPORTAÇÃO PDF — Memória de cálculo completa (8 anos × 4 regimes)
+// ═══════════════════════════════════════════════════════════════════════
+function renderBlocoPDF(titulo, linhas) {
+  const itens = linhas.map(([label, valor, fmt]) => {
+    const isLucro = /Lucro L[íi]quido|Lucro da Opera|Resultado|Margem L[íi]quida|Lucro Antes/i.test(label);
+    let cor = '#1e293b';
+    if (isLucro && fmt === 'brl' && typeof valor === 'number') {
+      cor = valor >= 0 ? '#047857' : '#be123c';
+    }
+    return `<tr>
+              <td style="padding:4px 8px;border-bottom:1px solid #e2e8f0;font-size:10.5px;color:#475569;">${label}</td>
+              <td style="padding:4px 8px;border-bottom:1px solid #e2e8f0;font-size:10.5px;color:${cor};text-align:right;font-family:monospace;white-space:nowrap;font-weight:${isLucro?'bold':'normal'};">${formatarValor(valor, fmt)}</td>
+            </tr>`;
+  }).join('');
+  return `<div style="margin-bottom:14px;border:1px solid #cbd5e1;border-radius:6px;overflow:hidden;">
+            <div style="background:#1e293b;color:#ffffff;padding:6px 10px;font-weight:bold;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;">${titulo}</div>
+            <table style="width:100%;border-collapse:collapse;background:#ffffff;">${itens}</table>
+          </div>`;
+}
+
+function renderRegimePDF(reg, atividade) {
+  if (reg.inviavel) {
+    return `<div style="margin-bottom:18px;padding:12px;background:#f1f5f9;border:1px solid #cbd5e1;border-radius:6px;color:#64748b;font-size:11px;">
+              <strong>${reg.regime}:</strong> ${reg.inviavel}
+            </div>`;
+  }
+  const b = memoriaLinhas(reg.regime, reg.memoria, atividade);
+  return `<div style="margin-bottom:22px;page-break-inside:avoid;">
+            <h3 style="font-size:14px;color:#1e293b;margin:0 0 8px 0;padding:6px 10px;background:#e0e7ff;border-left:4px solid #4f46e5;">
+              ${reg.regime} — Preço: <strong>${fmtBRL(reg.precoUnit)}</strong> · Carga: <strong style="color:#be123c;">${(reg.aliqEfetivaVenda*100).toFixed(2)}%</strong>
+            </h3>
+            ${renderBlocoPDF('Alíquotas, Créditos & Impostos por unidade', b.aliquotas)}
+            ${renderBlocoPDF('Composição do Preço de Venda', b.composicao)}
+          </div>`;
+}
+
+async function exportarPDF() {
+  if (typeof html2pdf === 'undefined') {
+    alert('Biblioteca html2pdf não carregou. Verifique sua conexão com a internet.');
+    return;
+  }
+
+  const atividade = respostas.atividade;
+  const segmento = atividade === 'comercio' ? 'Comércio'
+                 : atividade === 'industria' ? 'Indústria' : 'Serviços';
+
+  // Monta HTML completo com marcadores de quebra de página entre os anos
+  let html = `<div style="font-family:'Segoe UI',Arial,sans-serif;color:#1e293b;background:#ffffff;padding:22px;">
+    <div style="border-bottom:3px solid #4f46e5;padding-bottom:12px;margin-bottom:16px;">
+      <h1 style="margin:0;font-size:20px;color:#1e293b;">Memória de Cálculo — Reforma Tributária</h1>
+      <p style="margin:4px 0 0 0;font-size:11px;color:#64748b;">
+        Segmento: <strong>${segmento}</strong> ·
+        RLD unitária: <strong>${fmtBRL(respostas.rld || 0)}</strong> ·
+        Gerado em ${new Date().toLocaleString('pt-BR')}
+      </p>
+    </div>`;
+
+  ANOS.forEach((ano, i) => {
+    const arr = resultadosCache[ano];
+    // Marcador de quebra de página que o html2pdf reconhece
+    if (i > 0) html += `<div class="html2pdf__page-break"></div>`;
+    html += `<h2 style="font-size:16px;background:#4f46e5;color:#ffffff;padding:8px 12px;margin:12px 0;border-radius:4px;">
+               Ano ${ano}
+             </h2>`;
+    arr.forEach(reg => { html += renderRegimePDF(reg, atividade); });
+  });
+  html += `</div>`;
+
+  // Mostra um indicador de "gerando..." e esconde a tela de resultados
+  // para que o html2canvas capture apenas o wrapper
+  const telaResult = document.getElementById('tela-resultados');
+  const visAnterior = telaResult.style.visibility;
+  const overlay = document.createElement('div');
+  overlay.style.cssText = 'position:fixed;inset:0;background:rgba(2,6,23,0.85);color:#fff;display:flex;align-items:center;justify-content:center;z-index:99999;font-size:18px;';
+  overlay.innerHTML = '⏳ Gerando PDF… aguarde alguns segundos.';
+  document.body.appendChild(overlay);
+
+  const wrapper = document.createElement('div');
+  wrapper.style.cssText = 'position:fixed;top:0;left:0;width:794px;background:#ffffff;color:#1e293b;z-index:99998;overflow:visible;';
+  wrapper.innerHTML = html;
+  document.body.appendChild(wrapper);
+  telaResult.style.visibility = 'hidden';
+
+  const opt = {
+    margin: [10, 10, 12, 10],
+    filename: `memoria-calculo-${segmento.toLowerCase()}-${new Date().toISOString().slice(0,10)}.pdf`,
+    image: { type: 'jpeg', quality: 0.95 },
+    html2canvas: { scale: 2, backgroundColor: '#ffffff', useCORS: true, logging: false },
+    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+    pagebreak: { mode: ['css', 'legacy'], before: '.html2pdf__page-break' }
+  };
+
+  // Aguarda um frame para o layout calcular, depois gera
+  await new Promise(r => requestAnimationFrame(() => setTimeout(r, 50)));
+
+  try {
+    await html2pdf().set(opt).from(wrapper).save();
+  } catch (err) {
+    console.error('Erro PDF:', err);
+    alert('Erro ao gerar PDF: ' + (err && err.message ? err.message : err));
+  } finally {
+    if (wrapper.parentNode) wrapper.parentNode.removeChild(wrapper);
+    if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
+    telaResult.style.visibility = visAnterior || '';
+  }
+}
+
+function renderizarMatriz() {
+  const tbody = document.querySelector('#tabela-matriz tbody');
+  tbody.innerHTML = ANOS.map(ano => {
+    const arr = resultadosCache[ano];
+    const viaveis = arr.filter(x => !x.inviavel);
+    const menorPreco = viaveis.length ? Math.min(...viaveis.map(x => x.precoUnit)) : null;
+    const cells = arr.map(reg => {
+      if (reg.inviavel) return `<td class="text-right p-2 text-slate-400 italic">—</td>`;
+      const destaqueCel = Math.abs(reg.precoUnit - menorPreco) < 0.01 ? 'bg-emerald-50 font-semibold text-emerald-700' : 'text-slate-800';
+      return `<td class="text-right p-2 ${destaqueCel}">${fmtBRL(reg.precoUnit)}</td>`;
+    }).join('');
+    const destaque = ano === anoSelecionado ? 'bg-indigo-50' : '';
+    return `<tr class="border-t border-slate-200 ${destaque}">
+              <td class="p-2 font-semibold text-slate-700">${ano}</td>
+              ${cells}
+            </tr>`;
+  }).join('');
+}
+
+function renderizarAvisos() {
+  const cont = document.getElementById('avisos-resultados');
+  const avisos = [];
+
+  // IRPJ / CSLL — não entram na precificação
+  avisos.push({
+    tipo: 'info',
+    texto: '<strong>IRPJ e CSLL não estão neste simulador:</strong> esses impostos incidem sobre o ' +
+           '<em>lucro da empresa</em> (não sobre a venda) e dependem de dados mensais/trimestrais ' +
+           '(receita total, folha, despesas gerais, prejuízos acumulados). Para uma simulação de ' +
+           '<strong>preço de venda por unidade</strong>, IRPJ e CSLL são apurados depois, no fechamento contábil. ' +
+           'Leve-os em conta ao projetar a lucratividade final da empresa, especialmente no Lucro Presumido ' +
+           '(IRPJ+CSLL ≈ 2,28% da receita em comércio/indústria, 4,48% em serviços) e no Lucro Real (34% do lucro).'
+  });
+
+  // Anexo IV — INSS por fora
+  if (respostas.atividade === 'servicos' && respostas.tipoServico === 'construcao') {
+    avisos.push({
+      tipo: 'aviso',
+      texto: '<strong>Atenção — Anexo IV:</strong> Empresas do Anexo IV (Construção Civil / Advocacia) recolhem INSS patronal POR FORA do DAS. ' +
+             'Considere esse custo adicional na sua precificação — ele não está embutido nos valores acima.'
+    });
+  }
+
+  // Imposto Seletivo
+  avisos.push({
+    tipo: 'info',
+    texto: '<strong>Imposto Seletivo:</strong> pode haver cobrança adicional sobre produtos específicos (bebidas alcoólicas, tabaco, veículos, refrigerantes etc.). ' +
+           'Não está calculado aqui — consulte legislação específica do seu produto.'
+  });
+
+  // DIFAL venda
+  if (respostas.vendaConsumidorFinal === 'sim' && respostas.vendaOutraUF === 'sim') {
+    avisos.push({
+      tipo: 'info',
+      texto: '<strong>DIFAL de venda (Lucro Presumido e Lucro Real):</strong> calculado sobre vendas ' +
+             'interestaduais a consumidor final. Algumas UFs oferecem reduções/isenções específicas — ' +
+             'confirme com a legislação do estado de destino.'
+    });
+    avisos.push({
+      tipo: 'aviso',
+      texto: '<strong>DIFAL não se aplica ao Simples Nacional:</strong> empresas optantes pelo Simples ' +
+             '<em>não recolhem DIFAL</em> em vendas interestaduais a consumidor final (PF ou PJ não ' +
+             'contribuinte) — já tributam tudo dentro do DAS. Por isso, os preços do Simples Normal e ' +
+             'Simples Híbrido desta simulação não incluem esse diferencial.'
+    });
+  }
+
+  // Sublimite
+  if (respostas.rbt12 > PREMISSAS.LIMITE_SIMPLES_NORMAL && respostas.rbt12 <= PREMISSAS.LIMITE_SIMPLES_SUBLIMITE) {
+    avisos.push({
+      tipo: 'aviso',
+      texto: '<strong>Sublimite do Simples:</strong> seu RBT12 está entre R$ 3,6 mi e R$ 4,8 mi. ' +
+             'Nessa faixa o ICMS/ISS (e o IBS, a partir de 2027) saem do DAS e são recolhidos por fora — ' +
+             'esta versão do simulador ainda calcula como se estivesse 100% dentro do DAS.'
+    });
+  }
+
+  // Acima do limite Simples
+  if (respostas.rbt12 > PREMISSAS.LIMITE_SIMPLES_SUBLIMITE) {
+    avisos.push({
+      tipo: 'aviso',
+      texto: '<strong>Acima do limite do Simples:</strong> com RBT12 acima de R$ 4,8 milhões, sua empresa não pode estar no Simples Nacional. ' +
+             'Compare apenas Lucro Presumido e Lucro Real.'
+    });
+  }
+
+  cont.innerHTML = avisos.map(a => {
+    const cls = a.tipo === 'aviso'
+      ? 'bg-amber-50 border-amber-300 text-amber-900'
+      : 'bg-sky-50 border-sky-300 text-sky-900';
+    return `<div class="border-l-4 ${cls} p-4 rounded-r">${a.texto}</div>`;
+  }).join('');
+}
+
+// ───── Quais perguntas são aplicáveis (dado o estado atual das respostas)? ─────
+function perguntasAplicaveis() {
+  return PERGUNTAS.filter(p => !p.mostrar || p.mostrar(respostas));
+}
+
+// ───── Avançar para a próxima pergunta válida ─────
+function perguntaProxima() {
+  // Se já estou em uma pergunta, valido e salvo antes de avançar
+  if (indicePerguntaAtual >= 0) {
+    const valido = validarEsalvar();
+    if (!valido) return;
+  }
+
+  // Encontra próxima pergunta aplicável
+  let i = indicePerguntaAtual + 1;
+  while (i < PERGUNTAS.length) {
+    const p = PERGUNTAS[i];
+    if (!p.mostrar || p.mostrar(respostas)) break;
+    i++;
+  }
+
+  if (i >= PERGUNTAS.length) {
+    // Chegou ao fim — vai para resultados
+    irParaResultados();
+    return;
+  }
+
+  indicePerguntaAtual = i;
+  renderizarPergunta(animarEntrada = true);
+}
+
+// ───── Voltar para pergunta anterior válida ─────
+function perguntaAnterior() {
+  let i = indicePerguntaAtual - 1;
+  while (i >= 0) {
+    const p = PERGUNTAS[i];
+    if (!p.mostrar || p.mostrar(respostas)) break;
+    i--;
+  }
+  if (i < 0) { voltarAbertura(); return; }
+  indicePerguntaAtual = i;
+  renderizarPergunta(animarEntrada = true);
+}
+
+// ───── Atualiza barra de progresso ─────
+function atualizarProgresso() {
+  const aplicaveis = perguntasAplicaveis();
+  const posicaoAtual = aplicaveis.findIndex(p => p.id === PERGUNTAS[indicePerguntaAtual].id);
+  const total = aplicaveis.length;
+  const pct = total > 0 ? ((posicaoAtual + 1) / total) * 100 : 0;
+  document.getElementById('barra-progresso').style.width = pct + '%';
+  document.getElementById('contador-progresso').textContent = `${posicaoAtual + 1} / ${total}`;
+}
+
+// ───── Renderizar pergunta atual na tela ─────
+function renderizarPergunta(animarEntrada = false) {
+  const p = PERGUNTAS[indicePerguntaAtual];
+  const container = document.getElementById('pergunta-container');
+
+  // Pré-preenchimento automático (ex.: ICMS pela UF)
+  let valorInicial = respostas[p.id];
+  if (valorInicial === undefined && p.valorPadrao !== undefined) {
+    valorInicial = (typeof p.valorPadrao === 'function') ? p.valorPadrao(respostas) : p.valorPadrao;
+  }
+
+  // HTML da pergunta
+  let html = `
+    <label class="block text-2xl md:text-3xl font-semibold text-slate-900 leading-snug mb-3">
+      ${p.titulo}
+    </label>
+    ${p.subtitulo ? `<p class="text-slate-600 mb-6 leading-relaxed">${p.subtitulo}</p>` : ''}
+    <div class="mt-6">${renderizarCampo(p, valorInicial)}</div>
+    <div id="erro-validacao" class="mt-3 text-sm text-rose-600 hidden"></div>
+  `;
+
+  container.innerHTML = html;
+
+  // Botão "Próximo" vira "Ver resultados" na última pergunta aplicável
+  const aplicaveis = perguntasAplicaveis();
+  const ehUltima = PERGUNTAS[indicePerguntaAtual].id === aplicaveis[aplicaveis.length - 1].id;
+  document.getElementById('btn-proximo-texto').textContent = ehUltima ? 'Ver resultados' : 'Próximo';
+
+  // Botão "Voltar" aparece a partir da 2ª pergunta
+  const btnVoltar = document.getElementById('btn-voltar');
+  if (indicePerguntaAtual === 0) btnVoltar.classList.add('hidden');
+  else btnVoltar.classList.remove('hidden');
+
+  atualizarProgresso();
+
+  // Foco automático no campo
+  setTimeout(() => {
+    const campo = container.querySelector('input, select');
+    if (campo) campo.focus();
+  }, 50);
+
+  // Animação de entrada
+  if (animarEntrada) {
+    container.classList.add('entrando');
+    setTimeout(() => container.classList.remove('entrando'), 10);
+  }
+}
+
+// ───── Renderiza o campo apropriado ao tipo da pergunta ─────
+function renderizarCampo(p, valorInicial) {
+  const val = valorInicial !== undefined ? valorInicial : '';
+
+  switch (p.tipo) {
+
+    case 'select': {
+      let opcoes = p.opcoes;
+      if (p.filtrarUFAtual && respostas.uf) {
+        opcoes = opcoes.filter(o => o.valor !== respostas.uf);
+      }
+      return `
+        <select id="campo-resposta" class="w-full px-4 py-3 text-lg bg-white border-2 border-slate-300 rounded-lg focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none">
+          <option value="" ${!val ? 'selected' : ''} disabled>Selecione...</option>
+          ${opcoes.map(o => `<option value="${o.valor}" ${val === o.valor ? 'selected' : ''}>${o.rotulo}</option>`).join('')}
+        </select>
+      `;
+    }
+
+    case 'escolha': {
+      return `
+        <div class="space-y-3">
+          ${p.opcoes.map(o => `
+            <label class="flex items-start gap-3 p-4 border-2 ${val === o.valor ? 'opcao-selecionada' : 'border-slate-200 bg-white hover:border-indigo-400'} rounded-lg cursor-pointer transition">
+              <input type="radio" name="campo-resposta" id="campo-resposta" value="${o.valor}" ${val === o.valor ? 'checked' : ''}
+                     class="mt-1 w-4 h-4 text-indigo-600" onchange="this.closest('.space-y-3').querySelectorAll('label').forEach(l => { l.classList.remove('opcao-selecionada'); l.classList.add('border-slate-200','bg-white','hover:border-indigo-400'); }); const lb=this.closest('label'); lb.classList.remove('border-slate-200','bg-white','hover:border-indigo-400'); lb.classList.add('opcao-selecionada');" />
+              <div>
+                <div class="font-medium text-slate-900">${o.rotulo}</div>
+                ${o.descricao ? `<div class="text-sm text-slate-500 mt-0.5">${o.descricao}</div>` : ''}
+              </div>
+            </label>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    case 'simnao': {
+      return `
+        <div class="grid grid-cols-2 gap-3">
+          ${['sim', 'nao'].map(v => `
+            <label class="flex items-center justify-center p-4 border-2 ${val === v ? 'opcao-selecionada' : 'border-slate-200 bg-white hover:border-indigo-400'} rounded-lg cursor-pointer transition text-lg font-semibold">
+              <input type="radio" name="campo-resposta" id="campo-resposta" value="${v}" ${val === v ? 'checked' : ''} class="sr-only" onchange="this.closest('div').querySelectorAll('label').forEach(l => { l.classList.remove('opcao-selecionada'); l.classList.add('border-slate-200','bg-white','hover:border-indigo-400'); }); const lb=this.closest('label'); lb.classList.remove('border-slate-200','bg-white','hover:border-indigo-400'); lb.classList.add('opcao-selecionada');" />
+              ${v === 'sim' ? 'Sim' : 'Não'}
+            </label>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    case 'moeda': {
+      return `
+        <div class="relative">
+          <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 text-lg">R$</span>
+          <input type="text" inputmode="decimal" id="campo-resposta" value="${val !== '' ? formatarMoedaInput(val) : ''}"
+                 oninput="mascaraMoeda(this)"
+                 placeholder="0,00"
+                 class="w-full pl-12 pr-4 py-3 text-lg bg-white border-2 border-slate-300 rounded-lg focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none" />
+        </div>
+      `;
+    }
+
+    case 'numero': case 'inteiro': {
+      return `
+        <input type="number" id="campo-resposta" value="${val}" min="${p.min ?? ''}" max="${p.max ?? ''}" step="${p.tipo === 'inteiro' ? 1 : 'any'}"
+               placeholder="0"
+               class="w-full px-4 py-3 text-lg bg-white border-2 border-slate-300 rounded-lg focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none" />
+      `;
+    }
+
+    case 'percentual': {
+      const v = val === '' ? (p.valorPadrao !== undefined ? (typeof p.valorPadrao === 'function' ? p.valorPadrao(respostas) : p.valorPadrao) : 50) : val;
+      return `
+        <div class="space-y-4">
+          <div class="flex items-center gap-4">
+            <input type="range" id="campo-resposta-slider" min="${p.min ?? 0}" max="${p.max ?? 100}" step="0.1" value="${v}"
+                   class="flex-1 h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-indigo-600"
+                   oninput="document.getElementById('campo-resposta').value = this.value; document.getElementById('campo-resposta-display').textContent = parseFloat(this.value).toFixed(1) + '%'" />
+            <div id="campo-resposta-display" class="text-2xl font-bold text-indigo-600 tabular-nums min-w-[80px] text-right">${parseFloat(v).toFixed(1)}%</div>
+          </div>
+          <div class="flex items-center gap-2">
+            <label class="text-sm text-slate-500">Ou digite:</label>
+            <input type="number" id="campo-resposta" value="${v}" min="${p.min ?? 0}" max="${p.max ?? 100}" step="0.1"
+                   class="w-24 px-3 py-2 border-2 border-slate-300 rounded-lg focus:border-indigo-500 focus:outline-none"
+                   oninput="document.getElementById('campo-resposta-slider').value = this.value; document.getElementById('campo-resposta-display').textContent = parseFloat(this.value || 0).toFixed(1) + '%'" />
+            <span class="text-slate-500">%</span>
+          </div>
+        </div>
+      `;
+    }
+  }
+  return '<p class="text-rose-600">Tipo de campo desconhecido: ' + p.tipo + '</p>';
+}
+
+// ───── Máscara de moeda (converte texto livre em valor formatado) ─────
+function mascaraMoeda(input) {
+  let v = input.value.replace(/\D/g, '');          // só dígitos
+  v = (parseInt(v || '0', 10) / 100).toFixed(2);   // coloca 2 casas decimais
+  input.value = v.replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+}
+
+function formatarMoedaInput(num) {
+  if (num === undefined || num === null || num === '') return '';
+  return Number(num).toFixed(2).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+}
+
+function parseMoeda(texto) {
+  if (texto === undefined || texto === null || texto === '') return NaN;
+  const limpo = String(texto).replace(/\./g, '').replace(',', '.');
+  return parseFloat(limpo);
+}
+
+// ───── Validar resposta atual e salvar ─────
+function validarEsalvar() {
+  const p = PERGUNTAS[indicePerguntaAtual];
+  const erroEl = document.getElementById('erro-validacao');
+  erroEl.classList.add('hidden');
+
+  let valor;
+
+  if (p.tipo === 'select') {
+    valor = document.getElementById('campo-resposta').value;
+    if (!valor) return mostrarErro('Por favor, selecione uma opção.');
+  }
+  else if (p.tipo === 'escolha' || p.tipo === 'simnao') {
+    const marcado = document.querySelector('input[name="campo-resposta"]:checked');
+    if (!marcado) return mostrarErro('Por favor, selecione uma opção.');
+    valor = marcado.value;
+  }
+  else if (p.tipo === 'moeda') {
+    valor = parseMoeda(document.getElementById('campo-resposta').value);
+    if (isNaN(valor)) return mostrarErro('Digite um valor numérico.');
+    if (p.min !== undefined && valor < p.min) return mostrarErro(`Valor mínimo: ${formatadorMoeda.format(p.min)}.`);
+  }
+  else if (p.tipo === 'numero' || p.tipo === 'inteiro' || p.tipo === 'percentual') {
+    valor = parseFloat(document.getElementById('campo-resposta').value);
+    if (isNaN(valor)) return mostrarErro('Digite um valor numérico.');
+    if (p.min !== undefined && valor < p.min) return mostrarErro(`Valor mínimo: ${p.min}.`);
+    if (p.max !== undefined && valor > p.max) return mostrarErro(`Valor máximo: ${p.max}.`);
+    if (p.tipo === 'inteiro' && !Number.isInteger(valor)) return mostrarErro('Digite um número inteiro.');
+  }
+
+  respostas[p.id] = valor;
+  return true;
+}
+
+function mostrarErro(msg) {
+  const erroEl = document.getElementById('erro-validacao');
+  erroEl.textContent = '⚠ ' + msg;
+  erroEl.classList.remove('hidden');
+  return false;
+}
+
+// ───── Atalho de teclado: Enter avança ─────
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' && !document.getElementById('tela-formulario').classList.contains('hidden')) {
+    // Não disparar em textarea (se houver no futuro)
+    if (e.target.tagName === 'TEXTAREA') return;
+    e.preventDefault();
+    perguntaProxima();
+  }
+});
+
+</script>
+</body>
+</html>

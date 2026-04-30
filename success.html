@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assinatura confirmada — Simule Reforma Tributária</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    body { background: #020617; color: #e2e8f0; min-height: 100vh;
+           display: flex; align-items: center; justify-content: center; padding: 1.5rem; }
+    @keyframes pop {
+      0%   { transform: scale(0.5); opacity: 0; }
+      80%  { transform: scale(1.1); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .icon-success { animation: pop 0.5s ease-out forwards; }
+  </style>
+</head>
+<body>
+  <div class="text-center max-w-md">
+    <div class="icon-success text-6xl mb-6">🎉</div>
+    <h1 class="text-3xl font-bold text-white mb-3">Assinatura confirmada!</h1>
+    <p class="text-slate-400 mb-2">
+      Bem-vindo ao <strong class="text-violet-300">Simule Reforma Tributária</strong>.
+    </p>
+    <p class="text-slate-500 text-sm mb-8">
+      Seu acesso está ativo. Você será redirecionado em <span id="countdown">5</span> segundos…
+    </p>
+    <a href="simulador.html"
+       class="inline-block px-8 py-3 rounded-xl font-semibold text-white transition"
+       style="background:#7c3aed;">
+      Acessar o simulador agora
+    </a>
+  </div>
+
+  <script>
+    let s = 5;
+    const el = document.getElementById('countdown');
+    const timer = setInterval(() => {
+      s--;
+      el.textContent = s;
+      if (s <= 0) {
+        clearInterval(timer);
+        window.location.href = 'simulador.html';
+      }
+    }, 1000);
+  </script>
+</body>
+</html>

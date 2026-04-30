@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planos — Simule Reforma Tributária</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    html { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    body { background: #020617; color: #e2e8f0; min-height: 100vh; }
+    .btn-primary {
+      background: #7c3aed;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      padding: 0.75rem 1.25rem;
+      width: 100%;
+      transition: background 0.15s;
+      cursor: pointer;
+      border: none;
+      font-size: 1rem;
+    }
+    .btn-primary:hover:not(:disabled) { background: #6d28d9; }
+    .btn-primary:disabled { background: #4c1d95; opacity: 0.6; cursor: not-allowed; }
+    .card-plano {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 1rem;
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: border-color 0.15s;
+    }
+    .card-plano.destaque {
+      border-color: #7c3aed;
+      background: #1a0f3a;
+      position: relative;
+    }
+    .input-field {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 0.5rem;
+      padding: 0.625rem 0.875rem;
+      color: #e2e8f0;
+      outline: none;
+      transition: border-color 0.15s;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .input-field:focus { border-color: #7c3aed; }
+    .input-field::placeholder { color: #64748b; }
+    .badge-destaque {
+      position: absolute;
+      top: -0.875rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #7c3aed;
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.2rem 0.75rem;
+      border-radius: 999px;
+      white-space: nowrap;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Overlay de loading (verificação de sessão) -->
+<div id="overlay-loading"
+     class="fixed inset-0 flex items-center justify-center"
+     style="background:#020617;z-index:9999;">
+  <div class="text-slate-400 animate-pulse">Verificando acesso…</div>
+</div>
+
+<div id="conteudo" class="hidden min-h-screen">
+
+  <!-- Header -->
+  <header class="border-b border-slate-800 py-4 px-6">
+    <div class="max-w-5xl mx-auto flex items-center justify-between">
+      <div class="text-sm font-semibold text-slate-300">
+        Simule Reforma Tributária
+      </div>
+      <button onclick="deslogar()"
+              class="text-sm text-slate-500 hover:text-slate-300 transition">
+        Sair
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <div class="max-w-5xl mx-auto px-6 py-12 text-center">
+    <div id="aviso-acesso" class="hidden inline-block px-4 py-2 mb-6 rounded-full bg-red-900/30 border border-red-700/40 text-red-300 text-sm font-medium">
+      Você usou suas 3 simulações gratuitas. Escolha um plano para continuar simulando sem limites.
+    </div>
+    <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">
+      Continue usando o Simulador
+    </h1>
+    <p class="text-slate-400 max-w-xl mx-auto">
+      Escolha o plano que melhor se encaixa na sua rotina. Cancele quando quiser.
+    </p>
+  </div>
+
+  <!-- Cards dos planos -->
+  <div class="max-w-5xl mx-auto px-6 pb-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+
+      <!-- Mensal -->
+      <div class="card-plano">
+        <div>
+          <div class="text-slate-400 text-sm font-medium mb-1">Mensal</div>
+          <div class="text-3xl font-bold text-white">R$ 499<span class="text-lg font-normal">,90</span></div>
+          <div class="text-slate-500 text-sm">/mês</div>
+        </div>
+        <ul class="text-sm text-slate-400 space-y-1 flex-1">
+          <li>✓ Acesso completo ao simulador</li>
+          <li>✓ Todos os 4 regimes tributários</li>
+          <li>✓ Projeção 2026–2033</li>
+          <li>✓ Exportação PDF</li>
+        </ul>
+        <button class="btn-primary" onclick="assinar('monthly')">Assinar mensal</button>
+      </div>
+
+      <!-- Trimestral -->
+      <div class="card-plano">
+        <div>
+          <div class="text-slate-400 text-sm font-medium mb-1">Trimestral</div>
+          <div class="text-3xl font-bold text-white">R$ 1.349<span class="text-lg font-normal">,00</span></div>
+          <div class="text-slate-500 text-sm">/trimestre · R$ 449,67/mês</div>
+          <div class="mt-1 text-emerald-400 text-xs font-semibold">Economize 10%</div>
+        </div>
+        <ul class="text-sm text-slate-400 space-y-1 flex-1">
+          <li>✓ Acesso completo ao simulador</li>
+          <li>✓ Todos os 4 regimes tributários</li>
+          <li>✓ Projeção 2026–2033</li>
+          <li>✓ Exportação PDF</li>
+        </ul>
+        <button class="btn-primary" onclick="assinar('quarterly')">Assinar trimestral</button>
+      </div>
+
+      <!-- Semestral -->
+      <div class="card-plano">
+        <div>
+          <div class="text-slate-400 text-sm font-medium mb-1">Semestral</div>
+          <div class="text-3xl font-bold text-white">R$ 2.249<span class="text-lg font-normal">,00</span></div>
+          <div class="text-slate-500 text-sm">/semestre · R$ 374,83/mês</div>
+          <div class="mt-1 text-emerald-400 text-xs font-semibold">Economize 25%</div>
+        </div>
+        <ul class="text-sm text-slate-400 space-y-1 flex-1">
+          <li>✓ Acesso completo ao simulador</li>
+          <li>✓ Todos os 4 regimes tributários</li>
+          <li>✓ Projeção 2026–2033</li>
+          <li>✓ Exportação PDF</li>
+        </ul>
+        <button class="btn-primary" onclick="assinar('semiannual')">Assinar semestral</button>
+      </div>
+
+      <!-- Anual (destaque) -->
+      <div class="card-plano destaque">
+        <div class="badge-destaque">Melhor custo-benefício</div>
+        <div>
+          <div class="text-violet-300 text-sm font-medium mb-1">Anual</div>
+          <div class="text-3xl font-bold text-white">R$ 2.999<span class="text-lg font-normal">,00</span></div>
+          <div class="text-slate-400 text-sm">/ano · R$ 249,92/mês</div>
+          <div class="mt-1 text-emerald-400 text-xs font-semibold">Economize 50%</div>
+        </div>
+        <ul class="text-sm text-slate-300 space-y-1 flex-1">
+          <li>✓ Acesso completo ao simulador</li>
+          <li>✓ Todos os 4 regimes tributários</li>
+          <li>✓ Projeção 2026–2033</li>
+          <li>✓ Exportação PDF</li>
+        </ul>
+        <button class="btn-primary" style="background:#7c3aed;" onclick="assinar('annual')">Assinar anual</button>
+      </div>
+
+    </div><!-- /grid -->
+
+    <!-- Cupom de desconto -->
+    <div class="mt-8 max-w-sm mx-auto text-center">
+      <p class="text-slate-500 text-sm mb-2">Tem um cupom de desconto?</p>
+      <div class="flex gap-2">
+        <input id="campo-cupom" type="text" class="input-field" placeholder="Ex: SIMULE100"
+               style="text-transform:uppercase;" oninput="this.value=this.value.toUpperCase()" />
+        <button onclick="aplicarCupom()"
+                class="px-4 py-2 bg-slate-700 hover:bg-slate-600 text-sm font-semibold text-slate-200 rounded-lg transition whitespace-nowrap">
+          Aplicar
+        </button>
+      </div>
+      <div id="msg-cupom" class="text-sm mt-2 hidden"></div>
+    </div>
+
+    <!-- Mensagem de erro de checkout -->
+    <div id="erro-checkout" class="hidden mt-6 text-center text-red-400 text-sm"></div>
+
+    <!-- Dúvidas / garantia -->
+    <div class="mt-12 text-center text-slate-500 text-sm space-y-1">
+      <p>Pagamento via cartão de crédito, PIX ou boleto.</p>
+      <p>Cancele a qualquer momento — sem multa ou fidelidade.</p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+// ════════════════════════════════════════════════════════════
+// CONFIGURAÇÃO — preencher com suas chaves
+// ════════════════════════════════════════════════════════════
+const SUPABASE_URL      = 'https://ylterbejupvgkxdguyuk.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlsdGVyYmVqdXB2Z2t4ZGd1eXVrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY5NTE2MTgsImV4cCI6MjA5MjUyNzYxOH0.LBZVD30pYHIqw8Mc99A3Kn6MxESvctKU8Jtvta3UZA8';
+
+// Price IDs do Stripe — preencher após criar os produtos no Stripe Dashboard
+const PRICE_IDS = {
+  monthly:    'price_1TPPj2JZCwK2IJGhcRglzza9',
+  quarterly:  'price_1TPPkOJZCwK2IJGhcbCS72J1',
+  semiannual: 'price_1TPPlRJZCwK2IJGh37AS8Dzc',
+  annual:     'price_1TPPmTJZCwK2IJGhEUYsDbNq',
+};
+
+const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+let cupomAtivo = null;
+
+// ─── Inicialização ───────────────────────────────────────────
+async function init() {
+  const { data: { session } } = await sb.auth.getSession();
+
+  if (!session) {
+    window.location.href = 'auth.html';
+    return;
+  }
+
+  // Verifica se assinatura ainda está ativa (usuário assinante não deveria estar aqui)
+  const { data: perfil } = await sb
+    .from('meu_acesso')
+    .select('tem_acesso, subscription_status, subscription_expires_at, simulations_used')
+    .single();
+
+  const assinaturaValida = perfil?.subscription_status === 'active'
+    && perfil?.subscription_expires_at
+    && new Date(perfil.subscription_expires_at) > new Date();
+
+  // Só redireciona de volta se for assinante ativo (trial esgotado pode ficar na página)
+  if (assinaturaValida) {
+    window.location.href = 'simulador.html';
+    return;
+  }
+
+  document.getElementById('overlay-loading').style.display = 'none';
+  document.getElementById('conteudo').classList.remove('hidden');
+
+  // Mostra aviso de simulações esgotadas
+  if (perfil?.simulations_used >= 3) {
+    document.getElementById('aviso-acesso').classList.remove('hidden');
+  }
+}
+
+// ─── Aplicar cupom ───────────────────────────────────────────
+function aplicarCupom() {
+  const codigo = document.getElementById('campo-cupom').value.trim();
+  const msgEl  = document.getElementById('msg-cupom');
+
+  if (!codigo) {
+    msgEl.textContent = 'Digite o código do cupom.';
+    msgEl.className = 'text-sm mt-2 text-red-400';
+    msgEl.classList.remove('hidden');
+    return;
+  }
+
+  cupomAtivo = codigo;
+  msgEl.textContent = `Cupom "${codigo}" será aplicado no checkout.`;
+  msgEl.className = 'text-sm mt-2 text-emerald-400';
+  msgEl.classList.remove('hidden');
+}
+
+// ─── Iniciar checkout ────────────────────────────────────────
+async function assinar(planKey) {
+  const erroEl = document.getElementById('erro-checkout');
+  erroEl.classList.add('hidden');
+
+  const priceId = PRICE_IDS[planKey];
+  if (!priceId || priceId.startsWith('COLE_')) {
+    erroEl.textContent = 'Configuração pendente: preencha os Price IDs do Stripe no plans.html.';
+    erroEl.classList.remove('hidden');
+    return;
+  }
+
+  const { data: { session } } = await sb.auth.getSession();
+  if (!session) { window.location.href = 'auth.html'; return; }
+
+  // Desabilita todos os botões durante o redirecionamento
+  document.querySelectorAll('.btn-primary').forEach(b => { b.disabled = true; b.textContent = 'Redirecionando…'; });
+
+  const body = { price_id: priceId };
+  if (cupomAtivo) body.coupon_id = cupomAtivo;
+
+  const { data, error } = await sb.functions.invoke('create-checkout', {
+    body,
+    headers: { Authorization: `Bearer ${session.access_token}` },
+  });
+
+  if (error || !data?.url) {
+    const msg = error?.message || 'Erro ao criar sessão de pagamento. Tente novamente.';
+    erroEl.textContent = msg;
+    erroEl.classList.remove('hidden');
+    document.querySelectorAll('.btn-primary').forEach(b => { b.disabled = false; });
+    // Restaura textos dos botões
+    document.querySelector('[onclick="assinar(\'monthly\')"]').textContent = 'Assinar mensal';
+    document.querySelector('[onclick="assinar(\'quarterly\')"]').textContent = 'Assinar trimestral';
+    document.querySelector('[onclick="assinar(\'semiannual\')"]').textContent = 'Assinar semestral';
+    document.querySelector('[onclick="assinar(\'annual\')"]').textContent = 'Assinar anual';
+    return;
+  }
+
+  window.location.href = data.url;
+}
+
+// ─── Logout ──────────────────────────────────────────────────
+async function deslogar() {
+  await sb.auth.signOut();
+  window.location.href = 'auth.html';
+}
+
+init();
+</script>
+</body>
+</html>

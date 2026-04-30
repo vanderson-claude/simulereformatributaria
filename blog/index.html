@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Reforma Tributária para Empresas | Simule Reforma Tributária</title>
+  <meta name="description" content="Artigos, guias e análises sobre a Reforma Tributária brasileira. Tudo o que sua empresa precisa saber sobre CBS, IBS, Simples Nacional e precificação de 2026 a 2033." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://simulereformatributaria.com.br/blog/" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MX6C5XMSKV"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MX6C5XMSKV');</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html{scroll-behavior:smooth;}
+    body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;}
+    .site-header{background:#020617;border-bottom:1px solid rgba(255,255,255,0.07);}
+    .header-logo{color:#a78bfa;font-weight:700;font-size:1.05rem;text-decoration:none;}
+    .header-logo span{color:#fff;}
+    .btn-header{background:linear-gradient(135deg,#7c3aed,#6d28d9);color:#fff;font-size:0.8rem;font-weight:600;padding:0.45rem 1rem;border-radius:0.5rem;text-decoration:none;}
+    .blog-hero{background:#020617;padding:3.5rem 0 3rem;text-align:center;}
+    .blog-hero h1{color:#f1f5f9;font-size:clamp(1.75rem,4vw,2.5rem);font-weight:800;letter-spacing:-0.02em;}
+    .blog-hero p{color:#94a3b8;font-size:1.05rem;max-width:560px;margin:0.75rem auto 0;line-height:1.65;}
+    .blog-hero-badge{display:inline-block;background:rgba(124,58,237,0.2);color:#a78bfa;font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.8rem;border-radius:99px;margin-bottom:1rem;}
+    .tag{display:inline-block;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;padding:0.2rem 0.65rem;border-radius:99px;}
+    .tag-guia{background:#ede9fe;color:#6d28d9;}
+    .tag-simples{background:#dbeafe;color:#1d4ed8;}
+    .tag-impostos{background:#dcfce7;color:#15803d;}
+    .tag-precificacao{background:#fef3c7;color:#92400e;}
+    .tag-estrategia{background:#fce7f3;color:#9d174d;}
+    .post-card{background:#fff;border:1px solid #e2e8f0;border-radius:1rem;overflow:hidden;transition:box-shadow .2s,transform .2s;display:flex;flex-direction:column;}
+    .post-card:hover{box-shadow:0 8px 32px rgba(0,0,0,0.08);transform:translateY(-2px);}
+    .post-card-img{height:160px;display:flex;align-items:center;justify-content:center;font-size:2.5rem;}
+    .post-card-body{padding:1.25rem 1.5rem 1.5rem;flex:1;display:flex;flex-direction:column;}
+    .post-card-title{font-size:1.05rem;font-weight:700;color:#0f172a;line-height:1.4;margin:0.5rem 0;}
+    .post-card-excerpt{font-size:0.875rem;color:#475569;line-height:1.6;flex:1;}
+    .post-card-meta{font-size:0.75rem;color:#94a3b8;margin-top:1rem;display:flex;align-items:center;gap:0.75rem;}
+    .post-card-cta{display:inline-block;margin-top:1rem;font-size:0.82rem;font-weight:600;color:#7c3aed;text-decoration:none;}
+    .post-card-cta::after{content:' →';}
+    .post-featured{background:#fff;border:1px solid #e2e8f0;border-radius:1rem;overflow:hidden;transition:box-shadow .2s,transform .2s;display:grid;grid-template-columns:1fr 1fr;}
+    @media(max-width:768px){.post-featured{grid-template-columns:1fr;}}
+    .post-featured:hover{box-shadow:0 8px 32px rgba(0,0,0,0.1);transform:translateY(-2px);}
+    .post-featured-img{min-height:220px;display:flex;align-items:center;justify-content:center;font-size:4rem;}
+    .post-featured-body{padding:2rem;display:flex;flex-direction:column;justify-content:center;}
+    .card-breve{opacity:0.65;pointer-events:none;}
+    .section-label{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#94a3b8;margin-bottom:1rem;}
+    .newsletter-banner{background:linear-gradient(135deg,#4c1d95,#5b21b6);border-radius:1.25rem;padding:2.5rem 2rem;text-align:center;color:#fff;}
+    .newsletter-banner h2{font-size:1.4rem;font-weight:800;margin-bottom:0.5rem;}
+    .newsletter-banner p{font-size:0.9rem;color:rgba(255,255,255,0.8);margin-bottom:1.5rem;}
+    .newsletter-form{display:flex;gap:0.5rem;max-width:420px;margin:0 auto;}
+    .newsletter-form input{flex:1;padding:0.65rem 1rem;border-radius:0.6rem;border:none;font-size:0.9rem;outline:none;}
+    .newsletter-form button{background:#fff;color:#6d28d9;font-weight:700;font-size:0.85rem;padding:0.65rem 1.25rem;border-radius:0.6rem;border:none;cursor:pointer;}
+    .sim-banner{background:#f8fafc;border:1px solid #e2e8f0;border-radius:1.25rem;padding:2rem;display:flex;align-items:center;gap:1.5rem;}
+    @media(max-width:640px){.sim-banner{flex-direction:column;text-align:center;}}
+    .sim-banner-icon{font-size:2.5rem;flex-shrink:0;}
+    .sim-banner-text h3{font-size:1.05rem;font-weight:700;color:#0f172a;margin-bottom:0.25rem;}
+    .sim-banner-text p{font-size:0.875rem;color:#475569;line-height:1.5;}
+    .btn-sim{flex-shrink:0;background:linear-gradient(135deg,#7c3aed,#6d28d9);color:#fff;font-size:0.85rem;font-weight:700;padding:0.65rem 1.4rem;border-radius:0.65rem;text-decoration:none;white-space:nowrap;}
+    .site-footer{background:#020617;border-top:1px solid rgba(255,255,255,0.07);}
+  </style>
+</head>
+<body class="bg-slate-50">
+  <header class="site-header sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-4">
+      <a href="https://simulereformatributaria.com.br/" class="header-logo">Simule<span> Reforma Tributária</span></a>
+      <nav class="hidden sm:flex items-center gap-6">
+        <a href="https://simulereformatributaria.com.br/" style="color:#94a3b8;font-size:0.875rem;text-decoration:none;">Início</a>
+        <a href="/blog/" style="color:#e2e8f0;font-weight:600;font-size:0.875rem;text-decoration:none;">Blog</a>
+        <a href="https://simulereformatributaria.com.br/plans.html" style="color:#94a3b8;font-size:0.875rem;text-decoration:none;">Planos</a>
+      </nav>
+      <a href="https://simulereformatributaria.com.br/simulador.html" class="btn-header">Simular agora →</a>
+    </div>
+  </header>
+  <section class="blog-hero">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="blog-hero-badge">Blog</div>
+      <h1>Reforma Tributária para Empresas</h1>
+      <p>Artigos, guias e análises sobre CBS, IBS, Simples Nacional e precificação durante a transição de 2026 a 2033. Publicado toda terça-feira.</p>
+    </div>
+  </section>
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+    <div class="section-label">Artigo mais recente</div>
+    <article class="post-featured mb-12">
+      <div class="post-featured-img" style="background:linear-gradient(135deg,#4c1d95,#6d28d9);">📖</div>
+      <div class="post-featured-body">
+        <div style="display:inline-flex;align-items:center;gap:0.4rem;margin-bottom:0.5rem;">
+          <span class="tag tag-guia">Guia completo</span>
+          <span style="color:#94a3b8;font-size:0.72rem;">· 5 mai 2026 · 15 min</span>
+        </div>
+        <h2 class="post-card-title" style="font-size:1.4rem;">Reforma Tributária para Empresas: Guia Completo de 2026 a 2033</h2>
+        <p class="post-card-excerpt" style="margin-top:0.75rem;">O que muda, quando muda, como cada regime é afetado e como calcular o impacto real no preço de venda da sua empresa durante os oito anos de transição.</p>
+        <div class="post-card-meta" style="margin-top:0.75rem;"><span>✍️ Vanderson Lima</span><span>·</span><span>Simples, Presumido, Real</span></div>
+        <a href="/blog/reforma-tributaria-para-empresas-guia-completo/" class="post-card-cta" style="margin-top:1.25rem;font-size:0.9rem;">Ler artigo completo</a>
+      </div>
+    </article>
+    <div class="sim-banner mb-12">
+      <div class="sim-banner-icon">🧮</div>
+      <div class="sim-banner-text">
+        <h3>Calcule o impacto no preço da sua empresa</h3>
+        <p>Compare Simples Nacional, Simples Híbrido, Lucro Presumido e Lucro Real de 2026 a 2033.</p>
+      </div>
+      <a href="https://simulereformatributaria.com.br/simulador.html" class="btn-sim">Simular gratuitamente</a>
+    </div>
+    <div class="section-label">Próximos artigos</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+      <article class="post-card card-breve"><div class="post-card-img" style="background:linear-gradient(135deg,#1e3a8a,#2563eb);">📅</div><div class="post-card-body"><span class="tag tag-simples">Simples Nacional</span><h2 class="post-card-title">Simples Nacional e a Reforma Tributária: Você Tem Até Setembro para Decidir</h2><p class="post-card-excerpt">O prazo para optar pelo modelo Híbrido está chegando. Entenda as opções e o que está em jogo para a sua empresa.</p><div class="post-card-meta"><span>📅 12 mai 2026</span><span>·</span><span>10 min</span></div><span style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:#94a3b8;font-weight:600;">Em breve</span></div></article>
+      <article class="post-card card-breve"><div class="post-card-img" style="background:linear-gradient(135deg,#14532d,#16a34a);">💡</div><div class="post-card-body"><span class="tag tag-impostos">Impostos</span><h2 class="post-card-title">CBS e IBS: O Que São e Como Vão Impactar o Preço da Sua Empresa</h2><p class="post-card-excerpt">Os dois novos tributos da Reforma explicados de forma prática — com exemplos de como afetam o preço de venda em cada regime.</p><div class="post-card-meta"><span>📅 19 mai 2026</span><span>·</span><span>12 min</span></div><span style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:#94a3b8;font-weight:600;">Em breve</span></div></article>
+      <article class="post-card card-breve"><div class="post-card-img" style="background:linear-gradient(135deg,#78350f,#d97706);">⚖️</div><div class="post-card-body"><span class="tag tag-precificacao">Precificação</span><h2 class="post-card-title">Lucro Presumido ou Lucro Real? O Que Muda com a Reforma Tributária</h2><p class="post-card-excerpt">Qual regime vai ser mais vantajoso para a sua empresa a partir de 2027? A comparação que todo empresário precisa fazer agora.</p><div class="post-card-meta"><span>📅 26 mai 2026</span><span>·</span><span>11 min</span></div><span style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:#94a3b8;font-weight:600;">Em breve</span></div></article>
+      <article class="post-card card-breve"><div class="post-card-img" style="background:linear-gradient(135deg,#831843,#db2777);">🏷️</div><div class="post-card-body"><span class="tag tag-precificacao">Precificação</span><h2 class="post-card-title">Como Calcular o Preço de Venda Certo em Cada Ano da Transição</h2><p class="post-card-excerpt">Sua margem vai mudar de 2026 a 2033 se você não ajustar o preço. Veja como montar uma estratégia de precificação dinâmica.</p><div class="post-card-meta"><span>📅 2 jun 2026</span><span>·</span><span>13 min</span></div><span style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:#94a3b8;font-weight:600;">Em breve</span></div></article>
+      <article class="post-card card-breve"><div class="post-card-img" style="background:linear-gradient(135deg,#1e3a8a,#4338ca);">🔄</div><div class="post-card-body"><span class="tag tag-simples">Simples Nacional</span><h2 class="post-card-title">Simples Híbrido: O Que É, Quando Compensa e Como Optar</h2><p class="post-card-excerpt">O novo modelo que separa CBS e IBS do DAS pode ser uma vantagem para muitas empresas. Entenda as regras e faça a conta.</p><div class="post-card-meta"><span>📅 9 jun 2026</span><span>·</span><span>10 min</span></div><span style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:#94a3b8;font-weight:600;">Em breve</span></div></article>
+      <article class="post-card card-breve"><div class="post-card-img" style="background:linear-gradient(135deg,#064e3b,#059669);">🗺️</div><div class="post-card-body"><span class="tag tag-impostos">Impostos</span><h2 class="post-card-title">DIFAL na Reforma Tributária: O Que Muda nas Vendas Interestaduais</h2><p class="post-card-excerpt">O DIFAL do ICMS será extinto gradualmente de 2029 a 2032. Saiba como calcular corretamente durante a transição.</p><div class="post-card-meta"><span>📅 16 jun 2026</span><span>·</span><span>9 min</span></div><span style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:#94a3b8;font-weight:600;">Em breve</span></div></article>
+      <article class="post-card card-breve"><div class="post-card-img" style="background:linear-gradient(135deg,#4c1d95,#7c3aed);">💰</div><div class="post-card-body"><span class="tag tag-estrategia">Estratégia</span><h2 class="post-card-title">Créditos de CBS e IBS: Quem Tem Direito e Como Aproveitar</h2><p class="post-card-excerpt">O sistema não cumulativo da Reforma permite descontar o imposto das compras. Saiba quem aproveita créditos e como isso impacta o preço de venda.</p><div class="post-card-meta"><span>📅 23 jun 2026</span><span>·</span><span>11 min</span></div><span style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:#94a3b8;font-weight:600;">Em breve</span></div></article>
+      <article class="post-card card-breve"><div class="post-card-img" style="background:linear-gradient(135deg,#0c4a6e,#0284c7);">🏢</div><div class="post-card-body"><span class="tag tag-impostos">Impostos</span><h2 class="post-card-title">Reforma Tributária para Serviços: ISS, CBS e IBS no Seu Negócio</h2><p class="post-card-excerpt">O ISS some e o IBS entra em cena. Para empresas de serviços, as mudanças são profundas e podem ser vantajosas se bem planejadas.</p><div class="post-card-meta"><span>📅 30 jun 2026</span><span>·</span><span>10 min</span></div><span style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:#94a3b8;font-weight:600;">Em breve</span></div></article>
+      <article class="post-card card-breve"><div class="post-card-img" style="background:linear-gradient(135deg,#92400e,#f59e0b);">⚠️</div><div class="post-card-body"><span class="tag tag-estrategia">Estratégia</span><h2 class="post-card-title">Imposto Seletivo: Quais Setores São Afetados e Como Se Preparar</h2><p class="post-card-excerpt">O IS vai incidir sobre bebidas alcoólicas, cigarros e veículos. Se a sua empresa atua nesses segmentos, leia com atenção.</p><div class="post-card-meta"><span>📅 7 jul 2026</span><span>·</span><span>8 min</span></div><span style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:#94a3b8;font-weight:600;">Em breve</span></div></article>
+      <article class="post-card card-breve"><div class="post-card-img" style="background:linear-gradient(135deg,#134e4a,#0d9488);">🏭</div><div class="post-card-body"><span class="tag tag-impostos">Impostos</span><h2 class="post-card-title">Zona Franca de Manaus e IPI: A Exceção que Todo Empresário Precisa Conhecer</h2><p class="post-card-excerpt">O IPI não foi extinto para todos. Entenda por que a ZFM muda o jogo para setores como motocicletas, eletrônicos e refrigerantes.</p><div class="post-card-meta"><span>📅 14 jul 2026</span><span>·</span><span>9 min</span></div><span style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:#94a3b8;font-weight:600;">Em breve</span></div></article>
+      <article class="post-card card-breve"><div class="post-card-img" style="background:linear-gradient(135deg,#1e1b4b,#4338ca);">🔭</div><div class="post-card-body"><span class="tag tag-guia">Guia</span><h2 class="post-card-title">Reforma Tributária 2033: O Sistema Tributário Final e O Que Esperar</h2><p class="post-card-excerpt">Em 2033, PIS, Cofins, ICMS e ISS deixam de existir definitivamente. Como vai funcionar o sistema tributário completo?</p><div class="post-card-meta"><span>📅 21 jul 2026</span><span>·</span><span>14 min</span></div><span style="display:inline-block;margin-top:1rem;font-size:0.78rem;color:#94a3b8;font-weight:600;">Em breve</span></div></article>
+    </div>
+    <div class="newsletter-banner mb-12">
+      <h2>Receba novos artigos toda terça-feira</h2>
+      <p>Junte-se a centenas de empresários que acompanham a Reforma Tributária pelo nosso blog. Sem spam — só conteúdo que importa.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault();document.getElementById('nl-msg').style.display='block';this.style.display='none';">
+        <input type="email" placeholder="Seu melhor e-mail" required />
+        <button type="submit">Quero receber</button>
+      </form>
+      <p id="nl-msg" style="display:none;margin-top:0.75rem;font-size:0.85rem;color:#c4b5fd;">✅ Ótimo! Você está na lista.</p>
+    </div>
+    <div style="background:#fff;border:1px solid #e2e8f0;border-radius:1rem;padding:1.5rem 2rem;display:flex;align-items:center;gap:1.5rem;" class="mb-8">
+      <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#6d28d9,#4f46e5);display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;">👨‍💼</div>
+      <div>
+        <div style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#94a3b8;margin-bottom:0.25rem;">Sobre o autor</div>
+        <div style="font-size:1rem;font-weight:700;color:#0f172a;">Vanderson Lima</div>
+        <div style="font-size:0.875rem;color:#475569;line-height:1.5;">Contador especialista em Reforma Tributária, planejamento tributário e precificação. Fundador do Simule Reforma Tributária e da <a href="https://meusetorcontabil.com.br" style="color:#7c3aed;">Meu Setor Contábil</a>.</div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer py-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <a href="https://simulereformatributaria.com.br/" style="color:#a78bfa;font-weight:700;text-decoration:none;font-size:0.95rem;">Simule Reforma Tributária</a>
+        <nav style="display:flex;gap:1.5rem;">
+          <a href="https://simulereformatributaria.com.br/" style="color:#64748b;font-size:0.85rem;text-decoration:none;">Início</a>
+          <a href="/blog/" style="color:#94a3b8;font-size:0.85rem;text-decoration:none;">Blog</a>
+          <a href="https://simulereformatributaria.com.br/simulador.html" style="color:#64748b;font-size:0.85rem;text-decoration:none;">Simulador</a>
+          <a href="https://simulereformatributaria.com.br/plans.html" style="color:#64748b;font-size:0.85rem;text-decoration:none;">Planos</a>
+        </nav>
+        <div style="font-size:0.78rem;color:#475569;">© 2026 Meu Setor Contábil. Todos os direitos reservados.</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

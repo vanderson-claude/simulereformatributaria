@@ -4,7 +4,7 @@
   <!-- Landing page — prioridade máxima -->
   <url>
     <loc>https://simulereformatributaria.com.br/</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,15 +12,31 @@
   <!-- Simulador — produto principal -->
   <url>
     <loc>https://simulereformatributaria.com.br/simulador.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <!-- Blog — índice -->
+  <url>
+    <loc>https://simulereformatributaria.com.br/blog/</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Blog — Post #1: Guia Completo da Reforma Tributária -->
+  <url>
+    <loc>https://simulereformatributaria.com.br/blog/reforma-tributaria-para-empresas-guia-completo/</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- Página de planos -->
   <url>
     <loc>https://simulereformatributaria.com.br/plans.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
